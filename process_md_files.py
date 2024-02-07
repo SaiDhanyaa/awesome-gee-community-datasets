@@ -26,39 +26,13 @@ Required
 
 The name of the dataset
 
-## Description
+## Description:
 
 Required
 
 Background information about the dataset and its history
 
-## Earth Engine Snippet
-
-Required
-
-Up to three sub-headers on the usage, sample code, and sample apps with hyperlinks
-
-### Usage 
-
-Optional
-
-step-by-step of working with these data
-
-### Sample Code
-
-Required
-
-`Block Code`
-
-[hyperlink]()
-
-### Sample Application
-
-Optional
-
-[hyperlink]()
-
-## Citations
+## Citations:
 
 ### Publication DOI
 
@@ -79,11 +53,24 @@ Required
 
 [hyperlink]()
 
-## License
+Insert Github GIF Link
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 Required
 
-## Changelog
+`Block Code`
+
+**Link for sample code:** [Sample code]()
+
+### Sample Application
+
+Optional
+[hyperlink]()
+
+## License
 
 Required
 
@@ -93,7 +80,18 @@ Required
 
 ## Date Created
 
-Required
+Use the one given updated date
+
+## Changelog
+
+Optional
+
+## Provider
+
+Company's/Agency
+
+## Curated in GEE by
+Samapriya Roy
 """
 
 #===========================================================================================================================

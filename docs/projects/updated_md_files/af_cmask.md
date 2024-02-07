@@ -1,75 +1,67 @@
 
-# Title
+# Ensemble Source Africa Cropland Mask 2016
 
-Required
+## Description:
 
-The name of the dataset
+In order to produce the most accurate cropland layer at 30 m spatial resolution for Africa, the cropland layers extracted from four remote sensing land cover datasets were integrated. The four datasets covered the period 2015 to 2017. Hence, the constructed cropland layer was produced for the nominal year 2016. To build the final layer, the cropland mapping accuracies of the four cropland layers were firstly investigated at the units of Agro-ecological zones. Then, the best cropland layers for all zones were spatially joined. The resulted cropland layer is a binary mask with higher overall accuracy than individual layers and more consistent with FAO official statistics. You can download [the datasets here](https://figshare.com/articles/dataset/A_30m_African_Cropland_Layer_for_2016_by_Integrating_Multiple_Remote_sensing_Crowdsource_and_Auxiliary_Datasets_/13520141). You can read [additional details from the paper here](https://www.tandfonline.com/doi/citedby/10.1080/20964471.2021.1914400)
 
-## Description
+Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
-Required
-
-Background information about the dataset and its history
-
-## Earth Engine Snippet
-
-Required
-
-Up to three sub-headers on the usage, sample code, and sample apps with hyperlinks
-
-### Usage 
-
-Optional
-
-step-by-step of working with these data
-
-### Sample Code
-
-Required
-
-`Block Code`
-
-[hyperlink]()
-
-### Sample Application
-
-Optional
-
-[hyperlink]()
-
-## Citations
+## Citations:
 
 ### Publication DOI
 
-Required
-
-[hyperlink]()
+NA
 
 ### Dataset DOI
 
-Optional
-
-
-[hyperlink]()
+```
+Nabil, Mohsen; Zhang, Miao; Wu, Bingfang; Bofana, Jose; Elnashar, Abdelrazek (2021): A 30m African Cropland Layer for 2016 by Integrating Multiple
+Remote sensing, Crowdsource, and Auxiliary Datasets.. figshare. Dataset. 
+```
+https://doi.org/10.6084/m9.figshare.13520141.v1
 
 ### Published Paper Citations
 
-Required
+```
+Nabil, Mohsen, Miao Zhang, Bingfang Wu, Jose Bofana, and Abdelrazek Elnashar. "Constructing a 30m African Cropland Layer for 2016 by Integrating Multiple Remote sensing, crowdsourced, and Auxiliary Datasets." Big Earth Data 6, no. 1 (2022): 54-76.
+```
 
-[hyperlink]()
+![cropland_mask_2016_af](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/fee77abf-89d6-4c34-83ba-32cee901adc7)
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+```js
+var af_cropmask_2016 = ee.Image("projects/sat-io/open-datasets/landcover/AF_Cropland_mask_30m_2016_v3");
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/AF-CROPLAND-MASK-30M-2016)
+
+### Sample Application
+
+NA
 
 ## License
 
-Required
-
-## Changelog
-
-Required
+CC BY Attribution 4.0 International License
 
 ## Keywords
 
-Required
+Agriculture, Africa, cropland, cropland maps, agriculture land use
 
 ## Date Created
 
-Required
+2016
+
+## Changelog
+
+NA
+
+## Provider
+
+Nabil, Mohsen; Zhang, Miao; Wu, Bingfang; Bofana, Jose; Elnashar, Abdelrazek
+
+## Curated in GEE by:
+Samapriya Roy
