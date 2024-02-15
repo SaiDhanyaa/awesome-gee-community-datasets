@@ -1,73 +1,110 @@
 
-# Title
-
-Required
-
-The name of the dataset
+# North American Drought Monitor (NADM)
 
 ## Description:
 
-Required
+The North American Drought Monitor (NADM) raster dataset is produced by the National Centers for Environmental Information (NCEI) and the National Oceanic and Atmospheric Administration's (NOAA) National Integrated Drought Information System (NIDIS). This dataset is a gridded version of the North American Drought Monitor (NADM) produced by Canadian, Mexican and US authors where for each 2.5-km gridcell, the value is given by the current NADM drought classification for that region is:
 
-Background information about the dataset and its history
+Drought categories are coded as the following values in the images:
+
+* NoData Value = -1 = no drought or wet
+* 0 = abnormal dry
+* 1 = moderate drought
+* 2 = severe drought
+* 3 = extreme drought
+* 4 = exceptional drought
+
+Additional [details can be found here](https://www.ncdc.noaa.gov/temp-and-precip/drought/nadm/) and information about this dataset is also available at [climate engine org](https://support.climateengine.org/article/73-nadm).
+
+
+#### Dataset details
+
+<center>
+
+| **Spatial extent**   | North America                             |
+|----------------------|-------------------------------------------|
+| **Spatial resolution**| 2.5-km (0.025 deg)                        |
+| **Temporal resolution**| Monthly                                  |
+| **Time span**        | 2001-11-01 to present                     |
+| **Update frequency** | Updated Monthly                           |
+
+</center>
+
+**Variables**
+
+<center>
+
+| Variable                | Drought category ('nadm')                   |
+|------------------------|--------------------------------------------|
+| Units                  | Drought classification                      |
+| Scale factor           | 1.0                                        |
+
+</center>
 
 ## Citations:
 
 ### Publication DOI
 
-Required
-
-[hyperlink]()
+NA
 
 ### Dataset DOI
 
-Optional
-
-
-[hyperlink]()
+NA
 
 ### Published Paper Citations
 
-Required
+```
+Heim, Jr., R. R., 2002. A review of Twentieth-Century drought indices used in the United States. Bulletin of the American Meteorological Society, 83, 1149-1165.
 
-[hyperlink]()
+Lawrimore, J., et al., 2002. Beginning a new era of drought monitoring across North America. Bulletin of the American Meteorological Society, 83, 1191-1192.
 
-Insert Github GIF Link
+Lott, N., and T. Ross, 2000. NCDC Technical Report 2000-02, A Climatology of Recent Extreme Weather and Climate Events. [Asheville, N.C.]: National Climatic Data Center.
+
+Svoboda, M., et al., 2002. The Drought Monitor. Bulletin of the American Meteorological Society, 83, 1181-1190.
+```
 
 ## Earth Engine Snippet:
-
+![nadm_img](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/bf161494-350b-49da-a724-b55b768c6a50)
 ### Sample Code
 
-Required
+```js
+// Read in Image Collection and mosaic to single image
+var nadm_ic = ee.ImageCollection('projects/climate-engine/nadm/monthly')
+var nadm_i = nadm_ic.first()
 
-`Block Code`
+// Print image to see bands
+print(nadm_i)
 
-**Link for sample code:** [Sample code]()
+// Visualize a single image
+var nadm_palette = ["#ffffff", "#ffff00", "#fcd37f", "#ffaa00", "#e60000", "#730000"]
+Map.addLayer(nadm_i, {min:-1, max:4, palette: nadm_palette}, 'nadm_i')
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NADM-MONTHLY)
 
 ### Sample Application
 
-Optional
-[hyperlink]()
+NA
 
 ## License
 
-Required
+NOAA data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no restrictions on their subsequent use by the public. Once obtained, they may be put to any lawful use. The forgoing data is in the public domain and is being provided without restriction on use and distribution. For more information visit the NWS disclaimer site.
 
 ## Keywords
 
-Required
+drought, NADM, North America, United States, Canada, Mexico
 
 ## Date Created
 
-Use the one given updated date
+NA
 
 ## Changelog
 
-Optional
+NA
 
 ## Provider
 
-Company's/Agency
+NOAA, NIDIS, NCEI
 
 ## Curated in GEE by
-Samapriya Roy
+Climate Engine Org
