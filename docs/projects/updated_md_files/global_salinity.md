@@ -1,73 +1,65 @@
 
-# Title
-
-Required
-
-The name of the dataset
+# Global Soil Salinity Maps (1986-2016)
 
 ## Description:
 
-Required
-
-Background information about the dataset and its history
+This dataset includes global soil salinity layers for the years 1986, 1992, 2000, 2002, 2005, 2009 and 2016. The maps were generated with a random forest classifier that was trained using seven soil properties maps, thermal infrared imagery and the ECe point data from the WoSIS database. The validation accuracy of the resulting maps was in the range of 67–70%. The total area of salt affected lands by our assessment is around 1 billion hectares, with a clear increasing trend. Further details are provided in a peer-reviewed journal article (https://doi.org/10.1016/j.rse.2019.111260). The main data page for this [dataset can be found here](https://data.isric.org/geonetwork/srv/eng/catalog.search;jsessionid=9251411A3E92851C12FAA0C06EB6745F#/metadata/c59d0162-a258-4210-af80-777d7929c512) along with links to the VRT and tiff files.
 
 ## Citations:
 
 ### Publication DOI
 
-Required
-
-[hyperlink]()
+NA
 
 ### Dataset DOI
 
-Optional
-
-
-[hyperlink]()
+NA
 
 ### Published Paper Citations
 
-Required
+#### Paper Citation
 
-[hyperlink]()
+```
+Ivushkin, Konstantin, Harm Bartholomeus, Arnold K. Bregt, Alim Pulatov, Bas Kempen, and Luis De Sousa. "Global mapping of soil salinity change."
+Remote sensing of environment 231 (2019): 111260.
+```
 
-Insert Github GIF Link
+![soil_salinity](https://user-images.githubusercontent.com/6677629/145707831-e5e9fbd3-c9e5-4581-a5f8-bd31395781c0.gif)
+
 
 ## Earth Engine Snippet:
 
 ### Sample Code
 
-Required
+```js
+var soil_salinity = ee.ImageCollection("projects/sat-io/open-datasets/global_soil_salinity");
+```
 
-`Block Code`
-
-**Link for sample code:** [Sample code]()
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/GLOBAL-SOIL-SALINITY)
 
 ### Sample Application
 
-Optional
-[hyperlink]()
+NA
 
 ## License
 
-Required
+This work is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0). Users are free to use, copy, distribute, transmit, and adapt the work for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.
 
 ## Keywords
 
-Required
+salinity, digital soil mapping, electrical conductivity, global map, soilgrids, landsat, thermal, salinisation
 
 ## Date Created
 
-Use the one given updated date
+2021-11-25
 
 ## Changelog
 
-Optional
+NA
 
 ## Provider
 
-Company's/Agency
+Ivushkin et al
 
 ## Curated in GEE by
 Samapriya Roy

@@ -1,73 +1,90 @@
 
-# Title
-
-Required
-
-The name of the dataset
+# High Resolution Settlement Layer
 
 ## Description:
 
-Required
+In partnership with the Center for International Earth Science Information Network (CIESIN) at Columbia University, Facebook used state-of-the-art computer vision techniques to identify buildings from publicly accessible mapping services to create the world's most accurate population datasets. You can [read about their project here](https://dataforgood.fb.com/tools/population-density-maps/). These are the datasets available for download on the Humanitarian Data Exchange for nearly every country in the world:
 
-Background information about the dataset and its history
+* Overall population density
+* Male
+* Female
+* Women of reproductive age (ages 15-49)
+* Children (ages 0-5)
+* Youth (ages 15-24)
+* Elderly (ages 60+)
+
+
+To reference this data, please use the following citation:
+
+```
+Facebook Connectivity Lab and Center for International Earth Science Information Network - CIESIN - Columbia University. 2016. High Resolution Settlement Layer (HRSL). Source imagery for HRSL Copyright 2016 DigitalGlobe. Accessed DAY MONTH YEAR. Data shared under: Creative Commons Attribution International.
+```
+You can get methodology here:
+
+https://dataforgood.fb.com/docs/methodology-high-resolution-population-density-maps-demographic-estimates/
+
+and step by step download here
+
+https://dataforgood.fb.com/docs/high-resolution-population-density-maps-demographic-estimates-documentation/
 
 ## Citations:
 
 ### Publication DOI
 
-Required
-
-[hyperlink]()
-
+NA
 ### Dataset DOI
 
-Optional
-
-
-[hyperlink]()
+NA
 
 ### Published Paper Citations
 
-Required
-
-[hyperlink]()
-
-Insert Github GIF Link
+![HRSL_pop](https://user-images.githubusercontent.com/6677629/110987570-e648c980-8334-11eb-8615-535114fde903.gif)
 
 ## Earth Engine Snippet:
 
 ### Sample Code
 
-Required
+```js
+var HRSL = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrslpop");
+var HRSL_men = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_men");
+var HRSL_women = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_women");
+var HRSL_youth = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_youth");
+var HRSL_children_under_five = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_children_under_five");
+var HRSL_women_reproductive_age = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_women_reproductive_age");
+var HRSL_elderly_over_sixty = ee.ImageCollection("projects/sat-io/open-datasets/hrsl/hrsl_elderly_over_sixty");
+```
 
-`Block Code`
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/FACEBOOK-HRSL-30m)
 
-**Link for sample code:** [Sample code]()
+Extra Info: [Medium Article here](https://medium.com/@samapriyaroy/community-datasets-in-google-earth-engine-an-experiment-b72daa474819)
+
+Download Tool/Code snippets if any: [hdxpop](https://github.com/samapriya/hdxpop)
 
 ### Sample Application
 
-Optional
-[hyperlink]()
+NA
 
 ## License
 
-Required
+License: Creative Commons Attribution International
 
 ## Keywords
 
-Required
+High Density Population, Population, Facebook
 
 ## Date Created
 
-Use the one given updated date
+2022-08-27
 
 ## Changelog
 
-Optional
+* Automated version check & updated added
+* Now includes data version as metadata & uses global COGs
+* Now includes data from HRSL v1.5+
 
 ## Provider
 
-Company's/Agency
+NA
 
 ## Curated in GEE by
 Samapriya Roy

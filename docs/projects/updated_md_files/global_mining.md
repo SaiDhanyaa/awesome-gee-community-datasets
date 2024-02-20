@@ -1,73 +1,76 @@
 
-# Title
-
-Required
-
-The name of the dataset
+# Global Mining Areas and Validation Datasets
 
 ## Description:
 
-Required
+This data set provides spatially explicit estimates of the area directly used for surface mining on a global scale. It contains more than 21,000 polygons of activities related to mining, mainly of coal and metal ores. Several data sources were compiled to identify the approximate location of mines active at any time between the years 2000 to 2017. This data set does not cover all existing mining locations across the globe. The polygons were delineated by experts using Sentinel-2 cloudless (https://s2maps.eu by EOX IT Services GmbH (contains modified Copernicus Sentinel data 2017 & 2018)) and very high-resolution satellite images available from Google Satellite and Bing Imagery. The derived polygons cover the direct land used by mining activities, including open cuts, tailing dams, waste rock dumps, water ponds, and processing infrastructure.
 
-Background information about the dataset and its history
+The overall accuracy calculated from the control points was 88.4%
+
+Read about the [methodology here](https://www.nature.com/articles/s41597-020-00624-w)
 
 ## Citations:
 
 ### Publication DOI
 
-Required
-
-[hyperlink]()
+NA
 
 ### Dataset DOI
 
-Optional
+Use the following credit when these data are cited:
 
+```
+Maus, Victor; Giljum, Stefan; Gutschlhofer, Jakob; da Silva, Dieison M; Probst, Michael; Gass, Sidnei L B; Luckeneder, Sebastian; Lieber, Mirko; McCallum, Ian (2020): Global-scale mining polygons (Version 1). PANGAEA https://doi.org/10.1594/PANGAEA.910894
+```
 
-[hyperlink]()
+You can cite the original paper using:
+
+```
+Maus, Victor, Stefan Giljum, Jakob Gutschlhofer, Dieison M. da Silva, Michael Probst, Sidnei LB Gass, Sebastian Luckeneder, Mirko Lieber, and Ian McCallum. "A global-scale data set of mining areas." Scientific Data 7, no. 1 (2020): 1-13.
+```
 
 ### Published Paper Citations
 
-Required
+NA
+![mining](https://user-images.githubusercontent.com/6677629/113477655-fc840a00-9448-11eb-9216-b617e831568a.gif)
 
-[hyperlink]()
-
-Insert Github GIF Link
 
 ## Earth Engine Snippet:
 
 ### Sample Code
 
-Required
+```js
+var mining = ee.FeatureCollection("projects/sat-io/open-datasets/global-mining/global_mining_polygons");
+var validation = ee.FeatureCollection("projects/sat-io/open-datasets/global-mining/global_mining_validation");
+```
+#### Additional Info
+21,000 main polygons and 1000 validation polygons
 
-`Block Code`
-
-**Link for sample code:** [Sample code]()
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-MINING-AND-VALIDATION)
 
 ### Sample Application
 
-Optional
-[hyperlink]()
+NA
 
 ## License
 
-Required
+This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
 ## Keywords
 
-Required
+Mining, High Resolution, Global, coal, land-use, metal ores, minerals, raw material extraction
 
 ## Date Created
 
-Use the one given updated date
+2021
 
 ## Changelog
 
-Optional
+NA
 
 ## Provider
 
-Company's/Agency
+NA
 
 ## Curated in GEE by
 Samapriya Roy
