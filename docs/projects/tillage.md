@@ -1,29 +1,10 @@
+
 # Global crop production tillage practices
+
+## Description:
 
 No tillage (NT) is often presented as a means to grow crops with positive environmental externalities, such as enhanced carbon sequestration, improved soil quality, reduced soil erosion, and increased biodiversity. However, whether NT systems are as productive as those relying on conventional tillage (CT) is a controversial issue, fraught by a high variability over time and space. Here, we expand existing datasets to include the results of the most recent field experiments, and we produce a global dataset comparing the crop yields obtained under CT and NT systems. In addition to crop yield, our dataset also reports information on crop growing season, management practices, soil characteristics and key climate parameters throughout the experimental year. The final dataset contains 4403 paired yield observations between 1980 and 2017 for eight major staple crops in 50 countries. This dataset can help to gain insight into the main drivers explaining the variability of the productivity of NT and the consequence of its adoption on crop yields.
 
-
-#### Data Citation
-
-```
-Su, Y., Gabrielle, B. & Makowski, D. A global dataset for crop production under conventional tillage and no tillage systems. figshare https://doi.org/10.6084/m9.figshare.12155553 (2020). v14
-```
-
-#### Paper Citation
-
-```
-Su, Y., Gabrielle, B. & Makowski, D. A global dataset for crop production under conventional tillage and no tillage systems. Scientific Data 8, 33 (2021).
-```
-
-![tillage](https://user-images.githubusercontent.com/6677629/131391652-b7319de6-ab6c-4a2b-851b-0bc23c3af547.gif)
-
-#### Earth Engine Snippet
-
-```js
-var tillage = ee.FeatureCollection("projects/sat-io/open-datasets/global_tillage_production");
-```
-
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-CROP-PRODUCTION-TILLAGE-PRACTICES
 
 #### Property Mapping
 
@@ -83,14 +64,59 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 |Tmin                                                                 |Tmin            |
 |ST                                                                   |ST              |
 
-#### License
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+Su, Y., Gabrielle, B. & Makowski, D. A global dataset for crop production under conventional tillage and no tillage systems. figshare https://doi.org/10.6084/m9.figshare.12155553 (2020). v14
+```
+
+### Published Paper Citations
+
+```
+Su, Y., Gabrielle, B. & Makowski, D. A global dataset for crop production under conventional tillage and no tillage systems. Scientific Data 8, 33 (2021).
+```
+
+![tillage](https://user-images.githubusercontent.com/6677629/131391652-b7319de6-ab6c-4a2b-851b-0bc23c3af547.gif)
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+```js
+var tillage = ee.FeatureCollection("projects/sat-io/open-datasets/global_tillage_production");
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-CROP-PRODUCTION-TILLAGE-PRACTICES)
+
+### Sample Application
+
+NA
+
+## License
 
 This work is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0). Users are free to use, copy, distribute, transmit, and adapt the work for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.
 
-Created by: Yang Su et al.
+## Keywords
 
-Curated by: Samapriya Roy
+Conservation agriculture, Conventional tillage, crop yield, No tillage, No-till
 
-Keywords:  Conservation agriculture, Conventional tillage, crop yield, No tillage, No-till
+## Date Created
 
-Last updated: 2021-08-30
+2021-08-30
+
+## Changelog
+
+NA
+
+## Provider
+
+Yang Su et al.
+
+## Curated in GEE by
+Samapriya Roy

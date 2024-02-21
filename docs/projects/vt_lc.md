@@ -1,4 +1,7 @@
+
 # Vermont High Resolution Land Cover 2016
+
+## Description:
 
 High resolution land cover dataset for Vermont. The primary sources used to derive this land cover layer were 2013-2017 LiDAR data and 2016 NAIP imagery. Ancillary data sources included GIS data provided by the State of Vermont or created by the UVM Spatial Analysis Laboratory. Object-based image analysis techniques (OBIA) were employed to extract land cover information using the best available remotely sensed and vector GIS datasets. OBIA systems work by grouping pixels into meaningful objects based on their spectral and spatial properties, while taking into account boundaries imposed by existing vector datasets. Within the OBIA environment a rule-based expert system was designed to effectively mimic the process of manual image analysis by incorporating the elements of image interpretation (color/tone, texture, pattern, location, size, and shape) into the classification process. A series of morphological procedures were employed to insure that the end product is both accurate and cartographically pleasing. Following the automated OBIA mapping a detailed manual review of the dataset was carried out at a scale of 1:3000 and all observable errors were corrected.
 
@@ -20,6 +23,10 @@ This assessment and development of methods necessary for its conduct were comple
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
+## Citations:
+
+### Publication DOI
+
 ```
 University of Vermont Spatial Analysis Laboratory and VT Center for Geographic Information. Vermont High Resolution Land Cover. Accessed [Month
 Year] at https://geodata.vermont.gov/pages/land-cover
@@ -27,22 +34,45 @@ Year] at https://geodata.vermont.gov/pages/land-cover
 
 ![VT-LC](https://user-images.githubusercontent.com/6677629/173284265-eacfa233-16d6-4256-a90b-c06e6d87a58c.gif)
 
-#### Earth Engine Snippet
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var VT_baseLC2016 = ee.Image("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/VT_BaseLC_2016");
 ```
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/VT-BASE-LC-2016)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/VT-BASE-LC-2016
+### Sample Application
 
-#### License
+NA
+
+## License
 
 The dataset is released under an assumed CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. VCGI and the State of Vermont make no representations of any kind, including but not limited to the warranties of merchantability or fitness for a particular use, nor are any such warranties to be implied with respect to the data.
 
-Produced by: University of Vermont Spatial Analysis Laboratory, VT Center for Geographic Information
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA
 
-Keywords: Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA
+## Date Created
 
-Last updated on GEE: 2022-06-12
+2022-06-12
+
+## Changelog
+
+NA
+
+## Provider
+University of Vermont Spatial Analysis Laboratory, VT Center for Geographic Information
+
+## Curated in GEE by
+Samapriya Roy

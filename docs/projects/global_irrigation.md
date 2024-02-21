@@ -1,8 +1,29 @@
+
 # Global irrigation areas (2001 to 2015)
+
+## Description:
 
 About 40% of global crop production takes place on irrigated land, which accounts for approximately 20% of the global farmland. The great majority of freshwater consumption by human societies is associated with irrigation, which contributes to a major modification of the global water cycle by enhancing evapotranspiration and reducing surface and groundwater runoff. In many regions of the world irrigation contributes to streamflow and groundwater depletion, soil salinization, cooler microclimate conditions, and altered land-atmosphere interactions. Despite the important role played by irrigation in food security, water cycle, soil productivity, and near-surface atmospheric conditions, its global extent remains poorly quantified. To date global maps of irrigated land are often based on estimates from circa year 2000. Here we apply artificial intelligence methods based on machine learning algorithms to satellite remote sensing and monthly climate data to map the spatial extent of irrigated areas between 2001 and 2015. We provide global annual maps of irrigated land at ≈9km resolution for the 2001-2015 and we make this dataset available online.
 
-#### Citation:
+#### Band Info: Irrigation classes are present in the band "classification"
+
+|Band Value|Irrigation Class                                                      |
+|:---------|:---------------------------------------------------------------------|
+|0         |no or very little irrigation                                          |
+|1         |low-to-medium irrigation (<= 2000 hectares in 86 sq km square of land)|
+|2         |high irrigation (>2000 hectares in 86 sq km square of land)   
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Deepak Nagaraj, Eleanor Proust, Alberto Todeschini, Maria Cristina Rulli, Paolo D'Odorico,
@@ -14,7 +35,10 @@ You can read the paper here : https://www.sciencedirect.com/science/article/pii/
 
 ![Irrigation map](https://ndeepak.com/files/irr_extent.png)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
+
 ```js
 var irrigation_maps = ee.ImageCollection("users/deepakna/global_irrigation_maps");
 ```
@@ -27,21 +51,31 @@ var highly_irrigated_areas_2001 = ee.Image("users/deepakna/global_irrigation_map
 Map.addLayer(highly_irrigated_areas_2001.updateMask(highly_irrigated_areas_2001.neq(0))
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-IRRIGATION-AREAS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-IRRIGATION-AREAS)
 
-#### Band Info: Irrigation classes are present in the band "classification"
+### Sample Application
 
-|Band Value|Irrigation Class                                                      |
-|:---------|:---------------------------------------------------------------------|
-|0         |no or very little irrigation                                          |
-|1         |low-to-medium irrigation (<= 2000 hectares in 86 sq km square of land)|
-|2         |high irrigation (>2000 hectares in 86 sq km square of land)           |
+NA
 
-#### License
+## License
+
 Creative Commons Attribution 4.0 International License
 
-Curated by: Deepak Nagaraj
+## Keywords
 
-Keywords: Global irrigation, agriculture, water sustainability, machine learning
+Global irrigation, agriculture, water sustainability, machine learning
 
-Last updated: 2020-06-10
+## Date Created
+
+2020-06-10
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+ Deepak Nagaraj

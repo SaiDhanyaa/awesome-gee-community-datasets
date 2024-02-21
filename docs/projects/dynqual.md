@@ -1,4 +1,7 @@
+
 # DynQual Global Surface Water Quality Dataset
+
+## Description:
 
 Maintaining optimal surface water quality is essential for preserving ecosystems and ensuring safe human water utilization. However, our understanding of surface water quality relies heavily on data from monitoring stations, which are spatially limited and temporally fragmented. Addressing these limitations, we introduce the dynamical surface water quality model (DynQual). This model offers simulations of water temperature (Tw), as well as concentrations of total dissolved solids (TDS), biological oxygen demand (BOD), and fecal coliform (FC). DynQual operates at a daily time step and boasts a spatial resolution of 5 arcmin (∼ 10 km).
 
@@ -8,12 +11,14 @@ The constituents, such as total dissolved solids (TDS), biological oxygen demand
 
 **Please refer to the original paper on guidance on displaying the concentration maps, the authors recommend these are only plotted above a given discharge/channelStorage threshold**
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description were provided by the author(s) or their works.
 
 #### Datasets preprocessing
 The datasets were downloaded and converted from NetCDF to Geotiff format for ingestion. Since this was a multi band monthly aggregated image and I wanted to allow the user to slice by time frame, the image bands were seperated as individual images and the overall results are image collections with date range information attached.
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
 Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.:
@@ -21,7 +26,7 @@ DynQual v1.0: a high-resolution global surface water quality model, Geosci. Mode
 org/10.5194/gmd-16-4481-2023, 2023.
 ```
 
-#### Dataset citation
+### Dataset DOI
 
 ```
 Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., & van Vliet, M. T. H.
@@ -32,7 +37,13 @@ model (DynQual) at 10 km spatial resolution [Data set]. In Geoscientific Model D
 
 ![fc_constrained](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/62afe386-ec7b-4000-b758-4e7f655f0b4f)
 
-#### Earth Engine Snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var fc = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/fecal-coliform");
@@ -46,15 +57,32 @@ var bod = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/biological-o
 var routed_bod = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/routed_bod");
 var water_temp = ee.ImageCollection("projects/sat-io/open-datasets/DYNQUAL/water-temperature");
 ```
+ 
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/DYNQUAL-EXAMPLE
+### Sample Application
 
-#### License
+NA
+
+## License
+
 Creative Commons Attribution 4.0 International Public License
 
-Created by: Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC
 
-Keywords: water quality, discharge, water temperature, total dissolved solids, TDS, salinity, biological oxygen demand, BOD, fecal coliform, FC
+## Date Created
 
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+Jones, E. R., Bierkens, M. F. P., Wanders, N., Sutanudjaja, E. H., van Beek, L. P. H., and van Vliet, M. T. H.
+
+## Curated in GEE by
+Samapriya Roy

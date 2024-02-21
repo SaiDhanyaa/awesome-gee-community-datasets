@@ -1,4 +1,7 @@
+
 # Current and projected climate data for North America (CMIP6 scenarios)
+
+## Description:
 
 Atmosphere-Ocean General Circulation Model (AOGCM) were developed to simulate climate variability on a wide range of time scales and are often tested in coupled simulations and data assimilation mode. You can [read more about AOGCMs and CMIP6 here](https://www.carbonbrief.org/cmip6-the-next-generation-of-climate-models-explained). The datasets on this page have been developed by AdaptWest, a project funded by the Wilburforce Foundation to develop information resources for climate adaptation planning. The data were generated using the ClimateNA software. ClimateNA uses data from PRISM and WorldClim for current climate, and downscales data from the Coupled Model Intercomparison Project phase 6 (CMIP6) database corresponding to the 6th IPCC Assessment Report for future projections.
 
@@ -24,27 +27,35 @@ Ensemble projections are average projections from 8 CMIP5 models (table below) t
 
 </center>
 
+## Citations:
 
-#### Data citation
+### Publication DOI
+```
+Wang, T., A. Hamann, D. Spittlehouse, C. Carroll. 2016. Locally Downscaled and Spatially Customizable Climate Data for Historical and Future Periods for North America. PLoS One 11(6): e0156720
+```
+ https://doi.org/10.1371/journal.pone.0156720
 
+ ```
+Mahony, C.R., T. Wang, A. Hamann, and A.J. Cannon. 2022. A global climate model ensemble for downscaled monthly climate normals over North America. International Journal of Climatology. 1-21.
+```
+ https://doi.org/10.1002/joc.7566
+
+ 
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 ```
 AdaptWest Project. 2022. Gridded current and projected climate data for North America at 1km resolution,
 generated using the ClimateNA v7.30 software (T. Wang et al., 2022). Available at adaptwest.databasin.org.
 ```
 
-### Paper citation
-
 You can read the [paper here](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0156720) and cite as as below
 
 ```
 AdaptWest Project. 2022. Gridded current and projected climate data for North America at 1km resolution, generated using the ClimateNA v7.30 software (T. Wang et al., 2022). Available at adaptwest.databasin.org.
-For further information and citation refer to:
-
-Wang, T., A. Hamann, D. Spittlehouse, C. Carroll. 2016. Locally Downscaled and Spatially Customizable Climate Data for Historical and Future Periods for North America. PLoS One 11(6): e0156720 https://doi.org/10.1371/journal.pone.0156720
-
-Mahony, C.R., T. Wang, A. Hamann, and A.J. Cannon. 2022. A global climate model ensemble for downscaled monthly climate normals over North America. International Journal of Climatology. 1-21. https://doi.org/10.1002/joc.7566
 ```
-
 The current climatic variables included in the datasets for climate normals, AOGCM models and AOGCM ensemble model are listed below
 
 <center>
@@ -60,7 +71,9 @@ The current climatic variables included in the datasets for climate normals, AOG
 
 ![cimp6_scenario3-70](https://user-images.githubusercontent.com/6677629/122656133-8fb20f00-d11d-11eb-80eb-b21dc41106b4.gif)
 
-#### Earth Engine Snippet Climate variables
+## Earth Engine Snippet:
+
+### 1. Climate variables
 
 ```js
 var climate_models_ppt = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_ppt");
@@ -77,7 +90,7 @@ var aogcm_ensemble_tmax = ee.ImageCollection("projects/sat-io/open-datasets/CMIP
 var aogcm_ensemble_tmin = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_tmin");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-SCENARIOS)
 
 #### Post processing for Google Earth Engine v7.3
 * All of the 9 individual AOGCM models are added to the collection pertaining to each climate variable and named Climate-Models_(Variable Name). The ensemble models are ingested as along with the climate normals.
@@ -88,16 +101,13 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 ![cimp6_scenario3-70_mat](https://user-images.githubusercontent.com/6677629/122716774-50281780-d230-11eb-9a48-b42699ad93ae.gif)
 
-#### Earth Engine Snippet Bioclimatic variables
+### 2. Bioclimatic variables
 
 ```js
 var climate_models_bioclim = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Models_bioclim");
 var aogcm_ensemble_bioclim = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/AOGCM-ensemble_bioclim");
 var climate_normals_bioclim = ee.ImageCollection("projects/sat-io/open-datasets/CMIP6-scenarios-NA/Climate-Normals_bioclim");
 ```
-
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-BIOCLIMATIC
-
 There are a total of 33 bioclimatic variables included for the collections and models , the reference table is included below and you can filter using the metadata property **bioclim_variable** and the property names from the table.
 
 
@@ -144,22 +154,32 @@ There are a total of 33 bioclimatic variables included for the collections and m
 
 2. Mean annual solar radiation (MAR) data are provisional and are slated to be revised in an upcoming release of the ClimateNA software.
 
-#### License
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/CMIP6-CURRENT-FUTURE-BIOCLIMATIC)
+
+### Sample Application
+
+NA
+
+## License
+
 These datasets  are made available under the CC BY 4.0 Attribution 4.0 International license. This license allows users to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator.
 
-#### Changelog
+## Keywords
+
+climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables
+
+## Date Created
+
+2023-03-24
+
+## Changelog
 
 * Updated to v7.3
 * Added 20 year periods apart from 30 year periods
 
-Data Website: You can download the [data and description here](https://adaptwest.databasin.org/pages/adaptwest-climatena/)
+## Provider
 
-Explore the data in [R-Shiny apps here](https://bcgov-env.shinyapps.io/cmip6-NA/)
+AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll
 
-Created by: AdaptWest Project, Wang, T., A. Hamann, D. Spittlehouse, C. Carroll
-
-Curated in GEE by: Samapriya Roy
-
-Keywords: climate change, global circulation models, gridded climate data, north america,emission scenarios,climate variables
-
-Last updated: 2023-03-24
+## Curated in GEE by
+Samapriya Roy

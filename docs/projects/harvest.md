@@ -1,32 +1,14 @@
+
 # NASA Harvest Layers
 
-This page includes studies and geospatial layers made available as a result of publications from the NASA Harvest group members and made available in Google Earth Engine. This will be updated as newer and updated studies get published.
+## Description:
 
+This page includes studies and geospatial layers made available as a result of publications from the NASA Harvest group members and made available in Google Earth Engine. This will be updated as newer and updated studies get published.
 
 ## Rapid Response Crop Maps in Data Sparse Regions
 
 We present a method for rapid mapping of croplands in regions where little to no ground data is available. We present results for this method in Togo, where we delivered a high-resolution (10 m) cropland map in under 10 days to facilitate rapid response to the COVID-19 pandemic by the Togolese government. This demonstrated a successful transition of machine learning applications research to operational rapid response in a real humanitarian crisis. All maps, data, and code are publicly available to enable future
 research and operational systems in data-sparse regions. [Read the paper here](https://arxiv.org/pdf/2006.16866.pdf)
-
-#### Earth Engine Snippet
-
-```js
-var togo_cropland_binary = ee.Image("projects/sat-io/open-datasets/nasa-harvest/togo_cropland_binary");
-var togo_cropland_probability = ee.Image("projects/sat-io/open-datasets/nasa-harvest/togo_cropland_probability");
-```
-
-![togo_binary_probability](https://user-images.githubusercontent.com/6677629/116005416-6a48cf00-a5cc-11eb-8938-2fd5e3e907f8.gif)
-
-#### Citation
-
-```
-Hannah Kerner, Gabriel Tseng, Inbal Becker-Reshef, Catherine Nakalembe,Brian Barker, Blake Munshell,
-Madhava Paliyam, and Mehdi Hosseini. 2020.Rapid Response Crop Maps in Data Sparse Regions.
-KDD ’20: ACMSIGKDDConference on Knowledge Discovery and Data Mining Workshops, August22–27, 2020, San Diego, CA.
-```
-
-Sample code:https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND
-
 
 ## Annual and in-season mapping of cropland at field scale with sparse labels
 
@@ -35,8 +17,38 @@ Previously, we developed a method for binary classification of cropland that lea
 
 ![kenya_binary_probability](https://user-images.githubusercontent.com/6677629/116005494-cdd2fc80-a5cc-11eb-8d2d-eec240680174.gif)
 
+## Citations:
 
-#### Earth Engine Snippet
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+```
+Hannah Kerner, Gabriel Tseng, Inbal Becker-Reshef, Catherine Nakalembe,Brian Barker, Blake Munshell,
+Madhava Paliyam, and Mehdi Hosseini. 2020.Rapid Response Crop Maps in Data Sparse Regions.
+KDD ’20: ACMSIGKDDConference on Knowledge Discovery and Data Mining Workshops, August22–27, 2020, San Diego, CA.
+```
+
+![togo_binary_probability](https://user-images.githubusercontent.com/6677629/116005416-6a48cf00-a5cc-11eb-8938-2fd5e3e907f8.gif)
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+```js
+var togo_cropland_binary = ee.Image("projects/sat-io/open-datasets/nasa-harvest/togo_cropland_binary");
+var togo_cropland_probability = ee.Image("projects/sat-io/open-datasets/nasa-harvest/togo_cropland_probability");
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND
+)
+
 
 ```js
 var kenya_cropland_binary = ee.Image("projects/sat-io/open-datasets/nasa-harvest/kenya_cropland_binary");
@@ -44,22 +56,31 @@ var kenya_cropland_probability = ee.Image("projects/sat-io/open-datasets/nasa-ha
 var busia_cropland_probability = ee.Image("projects/sat-io/open-datasets/nasa-harvest/busia_cropland_probability");
 var busia_cropland_binary = ee.Image("projects/sat-io/open-datasets/nasa-harvest/busia_cropland_binary");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND)
 
-#### Citation
+### Sample Application
 
-```
-Tseng, Gabriel, Hannah Kerner, Catherine Nakalembe, and Inbal Becker-Reshef.
-"Annual and in-season mapping of cropland at field scale with sparse labels."
-```
+NA
 
-Sample code:https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/NASA-HARVEST-CROPLAND
-
-#### License
+## License
 
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Curated by: Samapriya Roy
+## Keywords
 
-Keywords: agriculture, Africa, Togo, crops, crop classification, food security, satellite data, Earth observation, GIS
+agriculture, Africa, Togo, crops, crop classification, food security, satellite data, Earth observation, GIS
 
-Last updated: 2021-04-25
+## Date Created
+
+2021-04-25
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

@@ -1,4 +1,7 @@
+
 # World Settlement Footprint & Evolution
+
+## Description:
 
 ### World Settlement Footprint 2015
 
@@ -34,8 +37,13 @@ This repository contains the Input Data Consistency (IDC) score, which provides 
 The dataset is organized in 5138 GeoTIFF files (EPSG4326 projection) each one referring to a portion of 2x2 degree size (~222x222km on the ground) with an extra buffer of 0.1 degree to avoid any discontinuity between neighbour tiles. Each tile is identified by the lower-left corner coordinates specified in the file name [e.g., the tile IDC_Score_12_18.tif covers the area between (12E;18N) and (14E;20N)].
 Values range from 6 to 1 with: 6) very good; 5) good; 4) fair; 3) moderate; 2) low; 1) very low. You can [download the files here](https://download.geoservice.dlr.de/WSF_EVO/files/idcscore/)
 
+## Citations:
 
-#### Data Citation
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Marconcini, Mattia; Metz-Marconcini, Annekatrin; Üreyen, Soner; Palacios-Lopez,
@@ -46,7 +54,7 @@ figshare. Dataset. https://doi.org/10.6084/m9.figshare.10048412.v1
 You can read the [Outlining where humans live, the World Settlement Footprint 2015 here](https://www.nature.com/articles/s41597-020-00580-5) and [Understanding Current Trends
 in Global Urbanisation – The World Settlement Footprint suite here](https://austriaca.at/0xc1aa5576_0x003c9b4c.pdf)
 
-#### Paper Citation
+### Published Paper Citations
 
 ```
 Marconcini, Mattia, Annekatrin Metz-Marconcini, Soner Üreyen, Daniela Palacios-Lopez,
@@ -60,8 +68,9 @@ https://doi.org/10.1553/giscience2021_01_s33.
 
 ![wsf](https://user-images.githubusercontent.com/6677629/143169273-5acbf695-fd6e-44eb-af47-f5109bbbeab1.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet
+### Sample Code
 
 The dataset is single value only with a value of 255 for WSF 2015 and 2019 and pixel values are 1985 to 2015 for the WSF evolution dataset.
 
@@ -72,7 +81,7 @@ var wsf_evo = ee.ImageCollection("projects/sat-io/open-datasets/WSF/WSF_EVO");
 ```
 
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT)
 
 
 the IDC Score is a measure of goodness of imagery used for evolution layers
@@ -84,19 +93,35 @@ the IDC Score is a measure of goodness of imagery used for evolution layers
 var wsf_evo_idc = ee.ImageCollection("projects/sat-io/open-datasets/WSF/WSF_EVO_IDC");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT-IDC
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/WORLD-SETTLEMENT-FOOTPRINT-IDC)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 The World Settlement Footprint 2015 is released under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission.
-
-The World Settlement Footprint 2019 is licensed under CC-BY-4.0.
 
 The World Settlement Footprint evolution 1985-2015 is licensed under CC-BY-4.0.
 
-Created by : Marconcini, et al
+The World Settlement Footprint 2019 is licensed under CC-BY-4.0.
 
-Curated in GEE by: Samapriya Roy
+## Keywords
 
-Keywords: World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8
+ World Settlement Footprint, Settlement Extent, Urbanization, Earth Observation, Remote Sensing, Sentinel-1, Landsat-8
 
-Last updated : 2021-12-12
+## Date Created
+
+2021-12-12
+
+## Changelog
+
+NA
+
+## Provider
+
+Marconcini, et al
+
+## Curated in GEE by
+Samapriya Roy

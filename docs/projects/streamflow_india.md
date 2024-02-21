@@ -1,4 +1,7 @@
+
 # Streamflow reconstruction for Indian sub-continental river basins 1951–2021
+
+## Description:
 
 The Hydrological Model-Simulated Monthly Streamflow Dataset for Indian-Subcontinental (ISC) River Basins, spanning from 1951 to 2021, addresses a critical need for long-term streamflow observations in the ISC region. Given the essential role of streamflow data in water resources management, hydroclimatic analysis, and ecological assessments, this dataset provides a valuable resource for a wide range of applications. The dataset is constructed through a multi-faceted approach that combines meteorological data, sophisticated hydrological modeling, and a high-resolution vector-based routing model known as mizuRoute. By synthesizing these elements, the dataset yields monthly streamflow simulations for 9579 stream reaches within the ISC river basins.
 
@@ -17,14 +20,17 @@ The datasets are available [for download on Zenodo here](https://zenodo.org/reco
 | **Trend_analysis** | This folder contains the list of stream reaches that exhibit a statistically significant trend in streamflow between 1951 and 2021. The segment ID can be obtained from the India_streams.shp shapefile in this directory. | - **streamflow_trend**: seg_id, hypothesis_test (h=1: significant), sen’s_slope |
 | **SSI** | This folder contains the standardized streamflow index (SSI) for the top four dry and wet months during the 1951-2021 period. The top four driest and wettest months were calculated based on the Standardized Precipitation Index (SPI) from the monthly average rainfall data for the Indian Subcontinent. The segment ID can be obtained from the India_streams.shp shapefile in this directory. | - **dry_years** (Sub-folder):<br>  - **SSI_**month**_**year****: seg_id, SSI<br>- **wet_years** (Sub-folder):<br>  - **SSI_**month**_**year****: seg_id, SSI |
 
-#### Citation
+
+## Citations:
+
+### Publication DOI
 
 ```
 Chuphal, D.S., Mishra, V. Hydrological model-based streamflow reconstruction for Indian sub-continental river basins, 1951–2021. Sci Data 10, 717
 (2023). https://doi.org/10.1038/s41597-023-02618-w
 ```
 
-#### Dataset citation
+### Dataset DOI
 
 ```
 Chuphal, D. S., & Mishra, V. (2023). Reconstructed streamflow for Indian sub-continental river basins, 1951-2021 [Data set].
@@ -33,7 +39,13 @@ Zenodo. https://doi.org/10.5281/zenodo.8004633
 
 ![streamflow_india](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/d336de90-7d9a-4c9d-ad61-05aab43cc7d4)
 
-#### Earth Engine Snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var cv_annual_flow = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/CV/cv_annual_flow");
@@ -54,15 +66,31 @@ var streamflow_trend = ee.FeatureCollection("projects/sat-io/open-datasets/india
 var streams = ee.FeatureCollection("projects/sat-io/open-datasets/indian-streams/streams");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/STREAMFLOW-RECONSTRUCTION-INDIAN-SUBCONTINENT)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 These datasets are available under the Creative Commons Attribution 4.0 International license.
 
-Provided by: Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+H08, mizuRoute, Streamflow,India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis
 
-Keywords: H08, mizuRoute, Streamflow,India, Hydrology, Water Management, Climate change adaptation, Hydroclimatic extremes analysis
+## Date Created
 
-Last updated in GEE: 2023-10-18
+2023-10-18
+
+## Changelog
+
+NA
+
+## Provider
+
+Chuphal, D. S., & Mishra, V., Indian Institute of Technology (IIT) Gandhinagar
+
+## Curated in GEE by
+Samapriya Roy

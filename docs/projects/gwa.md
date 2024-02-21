@@ -1,4 +1,7 @@
+
 # Global Wind Atlas Datasets
+
+## Description:
 
 The Global Wind Atlas is a free, web-based application developed to help policymakers, planners, and investors identify high-wind areas for wind power generation virtually anywhere in the world, and then perform preliminary calculations. The Global Wind Atlas facilitates online queries and provides freely downloadable datasets based on the latest input data and modeling methodologies. Users can additionally download high-resolution maps of the wind resource potential, for use in GIS tools, at the global, country, and first-administrative unit (State/Province/Etc.) levels. You can read more about the [methods used here](https://globalwindatlas.info/about/method)
 
@@ -35,8 +38,40 @@ where AEP is annual energy production, Prated is rated power, and CF is capacity
 
 </center>
 
-#### Attribution and License
-If you get the data or use the dataset within the GWA app attribution below, the Works (datasets) themselves are under are licensed under the Creative Commons Attribution 4.0 International license, CC BY 4.0, except where expressly stated that another license applies.
+#### Data Preprocessing for GEE
+Capacity Factors were added onto a single collection and rotor diameter and hub height was added as metadata property for filtering. For variables that have height gradients, height was added as a metadata for filtering.
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+![gwa](https://user-images.githubusercontent.com/6677629/125204763-7b58c200-e244-11eb-9932-79e7c9c0fb6c.gif)
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+```js
+var air_density = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/air-density');
+var capacity_factor = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/capacity-factor');
+var power_density = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/power-density');
+var rix= ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/ruggedness-index');
+var wind_speed= ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/wind-speed');
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS)
+
+### Sample Application
 
 ```
 [Data/information/map obtained from the] “Global Wind Atlas 3.0, a free, web-based application developed,
@@ -47,28 +82,25 @@ the Energy Sector Management Assistance Program (ESMAP). For additional informat
 
 You can also find the Global Wind Atlas [here](https://globalwindatlas.info/) and you can interact and download the datasets [here](https://globalwindatlas.info/download/gis-files)
 
-![gwa](https://user-images.githubusercontent.com/6677629/125204763-7b58c200-e244-11eb-9932-79e7c9c0fb6c.gif)
+## License
 
-#### Data Preprocessing for GEE
-Capacity Factors were added onto a single collection and rotor diameter and hub height was added as metadata property for filtering. For variables that have height gradients, height was added as a metadata for filtering.
+If you get the data or use the dataset within the GWA app attribution below, the Works (datasets) themselves are under are licensed under the Creative Commons Attribution 4.0 International license, CC BY 4.0, except where expressly stated that another license applies.
 
-#### Earth Engine Datasets
+## Keywords
 
-```js
-var air_density = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/air-density');
-var capacity_factor = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/capacity-factor');
-var power_density = ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/power-density');
-var rix= ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/ruggedness-index');
-var wind_speed= ee.ImageCollection('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_wind_atlas/wind-speed');
-```
+Wind, energy, ruggedness index, capacity factor, wind speed, power density
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-WIND-ATLAS
+## Date Created
 
+2021-07-11
+
+## Changelog
+
+NA
+
+## Provider
 
 Produced and maintained by the [Global Wind Atlas](https://globalwindatlas.info/), Department of Wind Energy at the Technical University of Denmark (DTU Wind Energy) and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)
 
-Processed secondary/formatted & Curated by: Samapriya Roy
-
-Keywords: : Wind, energy, ruggedness index, capacity factor, wind speed, power density
-
-Last updated: 2021-07-11
+## Curated in GEE by
+Samapriya Roy

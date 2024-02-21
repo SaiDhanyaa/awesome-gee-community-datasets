@@ -1,29 +1,13 @@
+
 # Argo Float Data(Subset)
+
+## Description:
 
 Argo is an international program that collects information from inside the ocean using a fleet of robotic instruments that drift with the ocean currents and move up and down between the surface and a mid-water level. Each instrument (float) spends almost all its life below the surface. The name Argo was chosen because the array of floats works in partnership with the Jason earth observing satellites that measure the shape of the ocean surface. (In Greek mythology Jason sailed on his ship the Argo in search of the golden fleece). To learn more about Argo, how it works, [its data and technology, and its scientific and environmental impact, click here](https://argo.ucsd.edu/).
 
 ![float_cycle_1](https://user-images.githubusercontent.com/6677629/127728607-85e6328f-0323-4ca2-a8da-4d3e8a79d141.png)
 
-#### Citation
 
-These data were collected and made freely available by the International Argo Program and the national programs that contribute to it.  (https://argo.ucsd.edu,  https://www.ocean-ops.org).  The Argo Program is part of the Global Ocean Observing System.
-
-The general Argo DOI is below.
-
-Argo (2000). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC). SEANOE. https://doi.org/10.17882/42182
-
-If you used data from a particular month, please add the month key to the end of the DOI url to make it reproducible.  The key is comprised of the hashtag symbol (#) and then numbers.  For example, the key for August 2020 is 76230. The citation would look like:
-
-Argo (2020). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC) – Snapshot of Argo GDAC of August 2020. SEANOE. https://doi.org/10.17882/42182#76230
-
-#### ArgoVis citation
-Argovis API was used to parse through and get to the datasets, you can cite argovis using the following
-
-```
-Tucker, T., D. Giglio, M. Scanderbeg, and S.S. Shen, 2020: Argovis: A Web Application for Fast Delivery,
-Visualization, and Analysis of Argo Data. J. Atmos. Oceanic Technol., 37 (3), 401-416
-https://doi.org/10.1175/JTECH-D-19-0041.1
-```
 
 #### Argo Float data tables
 
@@ -50,23 +34,68 @@ Argo float dataset has been parsed into a small subset of about 20,000 feature c
 
 </center>
 
-#### Earth Engine Snippet
+## Citations:
 
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+These data were collected and made freely available by the International Argo Program and the national programs that contribute to it.  (https://argo.ucsd.edu,  https://www.ocean-ops.org).  The Argo Program is part of the Global Ocean Observing System.
+
+**The general Argo DOI is below:**
+
+Argo (2000). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC). SEANOE. https://doi.org/10.17882/42182
+
+If you used data from a particular month, please add the month key to the end of the DOI url to make it reproducible.  The key is comprised of the hashtag symbol (#) and then numbers.  For example, the key for August 2020 is 76230. The citation would look like:
+
+Argo (2020). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC) – Snapshot of Argo GDAC of August 2020. SEANOE. https://doi.org/10.17882/42182#76230
+
+**Argovis API was used to parse through and get to the datasets, you can cite argovis using the following:**
+
+Tucker, T., D. Giglio, M. Scanderbeg, and S.S. Shen, 2020: Argovis: A Web Application for Fast Delivery,
+Visualization, and Analysis of Argo Data. J. Atmos. Oceanic Technol., 37 (3), 401-416
+ https://doi.org/10.1175/JTECH-D-19-0041.1
+
+
+### Published Paper Citations
+NA 
+
+![argo_floats_10000](https://user-images.githubusercontent.com/6677629/127728608-08ed871a-bab4-46df-9cad-628760e6b335.png)
+
+## Earth Engine Snippet:
+
+### Sample Code
 ```js
 var argo = ee.FeatureCollection("projects/sat-io/open-datasets/argo-subset");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/ARGOFLOAT-SUBSET
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/ARGOFLOAT-SUBSET)
 
-![argo_floats_10000](https://user-images.githubusercontent.com/6677629/127728608-08ed871a-bab4-46df-9cad-628760e6b335.png)
+### Sample Application
 
-#### License
+NA
+
+## License
+
 Argo data are freely available without restriction and are released in a model similar to a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
 
-Created by : International Argo Program, Global Data Assembly Centre
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+float, Argo, global ocean observing system, ocean circulation, in-situ, ocean pressure, sea water salinity, sea water temperature, multi-year, weather climate and seasonal observation, global-ocean
 
-Keywords: float, Argo, global ocean observing system, ocean circulation, in-situ, ocean pressure, sea water salinity, sea water temperature, multi-year, weather climate and seasonal observation, global-ocean
+## Date Created
 
-Last updated : 2021-07-30
+2021-07-30
+
+## Changelog
+
+NA
+
+## Provider
+
+International Argo Program, Global Data Assembly Centre
+
+## Curated in GEE by
+Samapriya Roy

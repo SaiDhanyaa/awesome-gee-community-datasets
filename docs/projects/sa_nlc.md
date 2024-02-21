@@ -1,4 +1,7 @@
+
 # South African National Land Cover (SANLC)
+
+## Description:
 
 The South African National Land Cover (SANLC) datasets are a series of land cover classification datasets for South Africa. The datasets are based on the gazetted land-cover classification standard (SANS 19144-2) and have 73 classes of information. New updates includes the 2020 SANLC apart from the 2018 dataset included earlier.The South African National Land-Cover 2018 dataset has been generated from 20 meter multi-seasonal Sentinel 2 satellite imagery. The imagery used represents the full temporal range of available imagery acquired by Sentinel 2 during the period 01 January 2018 to 31 December 2018. The SANLC 2018 dataset is based primarily on the new gazetted land-cover classification standard (SANS 19144-2) with 73 classes of information and is comparable, with the previous 1990 and 2013-14 South African National Land-Cover (SANLC) datasets. The previous land cover classes are also included for comparisons.
 
@@ -6,16 +9,6 @@ The SANLC 2018 data was launched on the 1st October 2019 and is now available fo
 
 ![sa_nlc2018](https://user-images.githubusercontent.com/6677629/122017527-ab1cc300-cd87-11eb-95bd-aa66c9e4d53a.gif)
 
-#### Earth Engine Snippet
-
-```js
-var sa_nlc2018 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_1990');
-var sa_nlc2018 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_2018');
-var sa_nlc2013_2014 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_2013_2014');
-var sa_nlc_2020 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_2020');
-```
-
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/SOUTH-AFRICA-LULC
 
 
 |No.|Legend Colour|2018 NLC Class Name                                              |
@@ -95,14 +88,56 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 |73 |#6CE7DC      |Fallow Land & Old Fields (wetlands)                              |
 
 
-#### License
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+```js
+var sa_nlc2018 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_1990');
+var sa_nlc2018 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_2018');
+var sa_nlc2013_2014 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_2013_2014');
+var sa_nlc_2020 = ee.Image('projects/sat-io/open-datasets/landcover/SA_NLC_2020');
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/SOUTH-AFRICA-LULC)
+
+### Sample Application
+
+NA
+
+## License
 
 The South African National Land-Cover 2018 dataset is available on an open licence agreement.
 
-Created by: Department of Forestry, Fisheries and the Environment, Republic of South Africa
+## Keywords
 
-Curated by: Geethen Singh & Samapriya Roy
+land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite
 
-Keywords: : land use, South Africa, land cover, Sentinel-2, copernicus, sentinel, satellite
+## Date Created
 
-Last updated: 2023-09-07
+2023-09-07
+
+## Changelog
+
+NA
+
+## Provider
+
+Department of Forestry, Fisheries and the Environment, Republic of South Africa
+
+## Curated in GEE by
+Geethen Singh & Samapriya Roy

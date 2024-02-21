@@ -1,4 +1,7 @@
+
 # Plastic Inputs from Rivers into Oceans
+
+## Description:
 
 This dataset shows a global estimate of plastic inputs from rivers into the oceans for 2010, expressed in kilograms per year. The authors used data on waste management, population density, and hydrological information to create this model. The dataset includes information on 40,760 watersheds and 182 different countries. The data is presented in a vector format.
 
@@ -13,30 +16,55 @@ For each catchment area mismanaged plastic waste production (MPW) rates per day 
 
 In total the dataset includes information for 40,760 watersheds worldwide. For the full documentation, please see the [source methodology](https://www.nature.com/articles/ncomms15611#Sec6).
 
-#### Citation
+## Citations:
 
+### Publication DOI
+
+NA
+
+### Dataset DOI
 ```
 lebreton, laurent; Reisser, Julia (2018): Supplementary data for 'River plastic emissions to the world's oceans'. figshare. Dataset. https://doi.org/10.6084/m9.figshare.4725541
 ```
 
 ![plastic_rivers](https://user-images.githubusercontent.com/6677629/148834056-18f0dbea-52cf-4bc8-af54-e078a8f80b21.gif)
 
-#### Earth Engine Snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var plastic = ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/river_plastic_emissions");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/PLASTIC-INPUT-RIVERS)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/PLASTIC-INPUT-RIVERS
+### Sample Application
 
-#### License
+NA
+
+## License
 
 This work is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0). Users are free to use, copy, distribute, transmit, and adapt the work for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.
 
-Created by: Ocean Cleanup Foundation
+## Keywords
 
-Curated by: Samapriya Roy
+ Pollution, Society, Coral Reefs, SDG 14, Life below Water, Cities, Reefs Water, Oceans Waste, hydrology, waste management, marine plastic
 
-Keywords: : Pollution, Society, Coral Reefs, SDG 14, Life below Water, Cities, Reefs Water, Oceans Waste, hydrology, waste management, marine plastic
+## Date Created
 
-Last updated: 2022-01-05
+2022-01-05
+
+## Changelog
+
+NA
+
+## Provider
+
+Ocean Cleanup Foundation
+
+## Curated in GEE by
+Samapriya Roy

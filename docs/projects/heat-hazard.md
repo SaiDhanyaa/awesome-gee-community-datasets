@@ -1,4 +1,7 @@
+
 # Global Extreme Heat Hazard
+
+## Description:
 
 Published by the World Bank (2017), this is a global data layer for extreme heat hazard, which is classified based on an existing and widely
 accepted heat stress indicator, the Wet Bulb Globe Temperature (WBGT, in °C) – more specifically the daily maximum WGBT. The WBGT has an obvious
@@ -10,23 +13,53 @@ Attribution 4.0. You can [download the report here](https://datacatalogfiles.wor
 
 Extra Info: There are three global GeoTIFF files in total, which can be combined into one single collection 5 year, 20 year and 100 year return period.
 
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
 ![gehh](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/30e5d77c-ee26-4252-80a0-74aee4dce3c3)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var global_extreme_heat_hazard = ee.ImageCollection('projects/sat-io/open-datasets/WORLD-BANK/global-ext-heat-hazard');
 ```
 
-Sample code: : https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-EXTREME-HEAT-HAZARD
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-EXTREME-HEAT-HAZARD)
 
+### Sample Application
 
-#### License
+NA
+
+## License
+
 This dataset is classified as Public under the Access to Information Classification Policy. Users inside and outside the Bank can access this dataset under a Creative Commons Attribution 4.0
 
-Curated by: Koen De Ridder, Dirk Lauwaet, Hans Hooyberghs and Filip Lefebre from VITO (Author)
+## Keywords
 
-Keywords: Hazard Assessment, Extreme Heat, Climatology, Climate Change
+Hazard Assessment, Extreme Heat, Climatology, Climate Change
 
-Last updated: Mar 1, 2017
+## Date Created
 
+Mar 1, 2017
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Koen De Ridder, Dirk Lauwaet, Hans Hooyberghs and Filip Lefebre from VITO (Author)

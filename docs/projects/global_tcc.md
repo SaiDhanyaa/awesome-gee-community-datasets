@@ -1,4 +1,7 @@
+
 # Global 30m Landsat Tree Canopy Cover v4
+
+## Description:
 
 The Global 30m Landsat Tree Canopy Version 4 (TCC) product is a 30-meter resolution dataset that shows tree canopy coverage per pixel between 0% and
 100%. The TCC product was announced in May 2019 and was processed from the Landsat image archive. It replaces the previous version of global tree
@@ -6,9 +9,19 @@ canopy cover estimates for 2000, 2005, 2010, and 2015. It also includes annual t
 The TCC datasets are based on Landsat and Sentinel-2 imagery. The most recent TCC version 2021.4 product suite released in 2023 includes several
 components, including an annual Science product with maps and data for years 2008-2021. You can find [additional information here]() and download the [datasets here](https://e4ftl01.cr.usgs.gov/MEASURES/GFCC30TC.003/)
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description were provided by the author(s) or their works.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Sexton, J. O., Song, X.-P., Feng, M., Noojipady, P., Anand, A., Huang, C., Kim, D.-H., Collins, K.M., Channan, S., DiMiceli, C., Townshend, J.R.G. (2013). Global, 30-m resolution continuous fields of tree cover: Landsat-based rescaling of MODIS Vegetation Continuous Fields with lidar-based estimates of error.
@@ -17,21 +30,39 @@ International Journal of Digital Earth, 130321031236007. doi:10.1080/17538947.20
 
 ![gfcc30](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/f414d80e-e9e6-46ec-8c4b-0e42b1e6c7c5)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var GFCC30TC=  ee.ImageCollection("projects/sat-io/open-datasets/GFCC30TC");
 ```
 
-Sample Script:  https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GFCC30TC-TREE-CANOPY-COVER
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GFCC30TC-TREE-CANOPY-COVER)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 This data is open to the public and browse images are freely available without restriction.
 
-Created by: Sexton, J. O et al
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Global Tree Canopy, Forestry, Time series, Landsat
 
-keywords: Global Tree Canopy, Forestry, Time series, Landsat
+## Date Created
 
-Last updated on GEE: 2023-07-05
+2023-07-05
+
+## Changelog
+
+NA
+
+## Provider
+
+Sexton, J. O et al
+
+## Curated in GEE by
+Samapriya Roy

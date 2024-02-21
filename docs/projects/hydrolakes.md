@@ -1,4 +1,7 @@
+
 # HydroLAKES v1.0
+
+## Description:
 
 Lakes are key components of biogeochemical and ecological processes, thus knowledge about their distribution, volume and residence time is crucial in understanding their properties and interactions within the Earth system. However, global information is scarce and inconsistent across spatial scales and regions. Here we develop a geo-statistical model to estimate the volume of global lakes with a surface area of at least 10 ha based on the surrounding terrain information.
 
@@ -20,28 +23,6 @@ HydroLAKES is publicly available for download at http://www.hydrosheds.org and i
 |Global Reservoir and Dam database (GRanD)                               |World                                   |Vector; varying resolutions (1:1 million or better)                 |Lehner et al. (2011)              |1133           |
 |Other (own mapping)                                                     |World                                   |Vector; varying resolutions (1:1 million or better)                 |n/a                               |781            |
 |Total                                                                   |                                        |                                                                    |                                  |1427688        |
-
-
-#### Paper Citation
-
-```
-Messager, Mathis Loïc, Bernhard Lehner, Günther Grill, Irena Nedeva, and Oliver Schmitt. "Estimating the volume and
-age of water stored in global lakes using a geo-statistical approach."
-Nature communications 7, no. 1 (2016): 1-11.
-```
-
-You can read the paper here : https://www.nature.com/articles/ncomms13603?origin=ppub
-
-![hydrolakes](https://user-images.githubusercontent.com/6677629/132138861-cbb35781-a412-4ded-b8f4-f0a5fe56cbbc.gif)
-
-#### Earth Engine Snippet
-
-```js
-var lake_poly = ee.FeatureCollection("projects/sat-io/open-datasets/HydroLakes/lake_poly_v10");
-var lake_points = ee.FeatureCollection("projects/sat-io/open-datasets/HydroLakes/lake_points_v10");
-```
-
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROLAKES
 
 
 #### Attribute table of HydroLAKES polygon and point layers
@@ -70,13 +51,63 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 |Pour_long|Longitude of the lake pour point, in decimal degrees.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |Pour_lat |Latitude of the lake pour point, in decimal degrees.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
-#### License
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+```
+Messager, Mathis Loïc, Bernhard Lehner, Günther Grill, Irena Nedeva, and Oliver Schmitt. "Estimating the volume and
+age of water stored in global lakes using a geo-statistical approach."
+Nature communications 7, no. 1 (2016): 1-11.
+```
+
+You can read the paper here : https://www.nature.com/articles/ncomms13603?origin=ppub
+
+![hydrolakes](https://user-images.githubusercontent.com/6677629/132138861-cbb35781-a412-4ded-b8f4-f0a5fe56cbbc.gif)
+
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+```js
+var lake_poly = ee.FeatureCollection("projects/sat-io/open-datasets/HydroLakes/lake_poly_v10");
+var lake_points = ee.FeatureCollection("projects/sat-io/open-datasets/HydroLakes/lake_points_v10");
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROLAKES)
+
+### Sample Application
+
+NA
+
+## License
+
 The data is licensed under a Creative Commons Attribution 4.0 International License (see section 4). By downloading and using the data the user agrees to the terms and conditions of this license.
 
-Created by: Messager, M. L., Lehner, B., Grill, G., Nedeva, I., & Schmitt, O
+## Keywords
 
-Curated by: Samapriya Roy
+water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes
 
-Keywords: water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes
+## Date Created
 
-Last updated: 2021-09-05
+2021-09-05
+
+## Changelog
+
+NA
+
+## Provider
+
+Messager, M. L., Lehner, B., Grill, G., Nedeva, I., & Schmitt, O
+
+## Curated in GEE by
+Samapriya Roy

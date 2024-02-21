@@ -1,4 +1,7 @@
+
 # ASTER Global Digital Elevation Model (GDEM) v3
+
+## Description:
 
 The first version of the ASTER GDEM, released in June 2009, was generated using stereo-pair images collected by the ASTER instrument onboard Terra. ASTER GDEM coverage spans from 83 degrees north latitude to 83 degrees south, encompassing 99 percent of Earth's landmass.
 
@@ -9,30 +12,58 @@ Disclaimer: Parts or all of the dataset description is borrowed from existing de
 #### Source Data structure
 The data are in Geotiff format, with each file divided into 1x1 degree tiles. To allow for adding a single image instead of a collection output, the zip files were unzipped and a single composite tif file was generated.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team. ASTER Global
 Digital Elevation Model V003. 2018, distributed by NASA EOSDIS Land Processes DAAC,
-https://doi.org/10.5067/ASTER/ASTGTM.003
 ```
+https://doi.org/10.5067/ASTER/ASTGTM.003
+
+### Published Paper Citations
+NA
 
 ![gdem_global](https://user-images.githubusercontent.com/6677629/158051813-d20de8bb-f467-4024-be46-a225d6323a0c.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var gdem = ee.Image("projects/sat-io/open-datasets/ASTER/GDEM");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTER-GDEM
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTER-GDEM)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 All LP DAAC current data and products acquired through the LP DAAC have no restrictions on reuse, sale, or redistribution. This license can thus be treated similar to a public domain CC0 license. ASTER GDEM Version 3 (ASTGTM V003) was released on August, 5, 2019 and contains no redistribution requirements. The LP DAAC kindly requests that you properly cite the data in your research.
 
-Created by:  NASA, METI, AIST, Japan Spacesystems and U.S./Japan ASTER Science Team
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+ASTER, DEM, elevation, remote sensing
 
-Keywords: ASTER, DEM, elevation, remote sensing
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+NASA, METI, AIST, Japan Spacesystems and U.S./Japan ASTER Science Team
+
+## Curated in GEE by
+Samapriya Roy

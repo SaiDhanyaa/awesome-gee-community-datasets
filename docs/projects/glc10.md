@@ -1,4 +1,7 @@
+
 # Finer Resolution Observation and Monitoring of Global Land Cover 10m (FROM-GLC10)
+
+## Description:
 
 This work and the paper was designed with an aim to classify 10-m resolution images acquired in 2017 with a sensor on board a different satellite. We examined through the 10-m resolution map, FROM-GLC10, and compared it with our 2017 30-m global land cover map, FROM-GLC30. We found while the results are comparable the 10-m map did provide more spatial details. Although an overall accuracy comparable to the 30-m resolution data was achieved, the actual accuracy of the 10-m resolution map can only be properly assessed with test samples collected from the 10-m resolution data. You can [read the paper here](https://www.sciencedirect.com/science/article/abs/pii/S2095927319301380)
 
@@ -11,16 +14,6 @@ Disclaimer: Whole or parts of the dataset description were provided by the autho
 
 #### Data preprocessing
 The datasets were downloaded and a MODE pyramiding scheme was applied owing to the fact that these are classified datasets. The RGB values were provided by the authors and these were converted to hex code for creating a palette. The sample script also takes into consideration remapping the values to provide a more continuous mix max distribution.
-
-#### Data Citation
-
-```
-Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, and J. J. S. B. Yang. "Stable classification with limited sample: Transferring a
-30-m resolution sample set collected in 2015 to mapping 10-m resolution global land cover in 2017." Sci. Bull 64 (2019): 370-373.
-```
-
-![glc10_LC](https://user-images.githubusercontent.com/6677629/189573190-7e0fa889-47d8-448e-80e1-db71eae8e5aa.gif)
-
 
 <center>
 
@@ -40,20 +33,57 @@ Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, a
 
 </center>
 
+## Citations:
 
-#### Earth Engine Snippet
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, and J. J. S. B. Yang. "Stable classification with limited sample: Transferring a
+30-m resolution sample set collected in 2015 to mapping 10-m resolution global land cover in 2017." Sci. Bull 64 (2019): 370-373.
+```
+
+### Published Paper Citations
+
+NA
+![glc10_LC](https://user-images.githubusercontent.com/6677629/189573190-7e0fa889-47d8-448e-80e1-db71eae8e5aa.gif)
+
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var GLC10 = ee.ImageCollection("projects/sat-io/open-datasets/FROM-GLC10");
 ```
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLC10
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLC10)
 
-#### Credits, Attributions and License
+### Sample Application
+
+NA
+
+## License
 
 This dataset is available under a Creative Commons BY-4.0 license.
 
-Curated in GEE by: Samapriya Roy
+## Keywords
 
-Keywords: : landcover, landuse, lulc, 10m, global, world, sentinel 2, FROM-GLC
+landcover, landuse, lulc, 10m, global, world, sentinel 2, FROM-GLC
 
-Last updated on GEE: 2022-09-10
+## Date Created
+
+2022-09-10
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

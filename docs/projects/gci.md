@@ -1,12 +1,13 @@
+
 # Areas of global conservation value
+
+## Description:
 
 A series of global priority layers are provided from the [NatureMap project](https://iiasa.ac.at/models-tools-data/areas-of-global-conservation-importance-for-biodiversity-carbon-and-water). These maps were created by jointly optimizing biodiversity and NCPs such as carbon and/or water. They describe on a continuous scale the amount of land area with the greatest upper potential value for expanding conservation efforts.
 
 <div class="result" markdown>
 
-???+ note
-
-    **Conservation in this context should be interpreted as not prescriptive (e.g. specifically the establishment of protected areas), but rather means that a certain area harbour great biophysical potential for contributing to the conservation of biodiversity, carbon and water assets.**
+    Conservation in this context should be interpreted as not prescriptive (e.g. specifically the establishment of protected areas), but rather means that a certain area harbour great biophysical potential for contributing to the conservation of biodiversity, carbon and water assets.**
 
 </div>
 
@@ -29,7 +30,20 @@ The datasets cover roughly the period of 2015 to 2019 and with a spatial resolut
 
 The layers can be navigated openly through a dedicated Earth engine app ([conservation importance](https://uploads.users.earthengine.app/view/conservationimportance)).Coarser grained versions at 50km are also available [see Zenodo data repository](https://doi.org/10.5281/zenodo.5006332) but not uploaded to Google Earth Engine.
 
-#### Citation
+#### Additional resources
+You can explore the dataset layers [using this app](https://uploads.users.earthengine.app/view/conservationimportance)
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 - Jung, M., Arnell, A., de Lamo, X. et al. Areas of global importance for conserving terrestrial biodiversity, carbon and water. Nat Ecol Evol 5, 1499–1509 (2021). https://doi.org/10.1038/s41559-021-01528-7
@@ -39,7 +53,9 @@ The layers can be navigated openly through a dedicated Earth engine app ([conser
 
 ![areas_global_conservation_value_small](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/b990e8f6-4545-427f-84f1-5f52ec5fb329)
 
-### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // ------------------------ //
@@ -82,19 +98,31 @@ var bio30x30 = biodiv.expression("b(0) <= 10");
 Map.addLayer(bio30x30.mask(bio30x30.eq(1)), {'palette':['red']}, "Top 10% value for biodiversity only", false);
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/biodiversity-ecosystems-habitat/GLOBAL-CONSERVATION-IMP-BIODIV-CARBON-WATER)
 
-#### Enter license information
+### Sample Application
+
+NA
+
+## License
 
 The datasets are provided under a CC-BY-SA 4.0
 
-#### Additional resources
-You can explore the dataset layers [using this app](https://uploads.users.earthengine.app/view/conservationimportance)
+## Keywords
 
-Keywords: biodiversity, conservation importance, priorities, carbon, water
+biodiversity, conservation importance, priorities, carbon, water
 
-Provided by: IIASA
+## Date Created
 
-Curated in GEE by: IISA, Samapriya Roy
+2023-10-31
 
-Last updated in GEE: 2023-10-31
+## Changelog
+
+NA
+
+## Provider
+
+IIASA
+
+## Curated in GEE by
+IISA, Samapriya Roy

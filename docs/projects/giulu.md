@@ -1,4 +1,7 @@
+
 # Global Intra-Urban Land Use
+
+## Description:
 
 This dataset provides land use maps for the year 2020 for all 4,000+ cities and metropolitan areas in the world with populations exceeding 100,000.
 The resulting product is the first freely available, global intra-urban land use maps at 5-meter resolution. The data includes a 4-tier land use
@@ -7,7 +10,17 @@ and residential areas. The third tier distinguishes formal from informal residen
 informal residential land uses into more detailed categories. Results of a separate road/street classification model based on the same methods are
 also provided. You can read more [in the paper here](https://doi.org/10.1016/j.compenvurbsys.2022.101917)
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Guzder-Williams, Brookie, Eric Mackres, Shlomo Angel, Alejandro M. Blei, and Patrick Lamson-Hall. "Intra-urban land use maps for a global sample of
@@ -16,7 +29,9 @@ cities from Sentinel-2 satellite imagery and computer vision." Computers, Enviro
 
 ![intra_urban_small](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/8e1491c0-882b-4908-8a01-8f8609db3eac)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var ULU = ee.ImageCollection('projects/wri-datalab/cities/urban_land_use/V1')
@@ -59,16 +74,31 @@ Map.addLayer(ULUimage, ULU7Params, 'Intra-urban land use, 6-class (2020)');
 Map.addLayer(ULUandRoads, ULU7Params, 'Intra-urban land use, 7-class (2020)');
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-INTRA-URBAN-LANDUSE
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-INTRA-URBAN-LANDUSE)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 The dataset is provided under a [Creative Commons BY-4.0 license](https://creativecommons.org/licenses/by/4.0/)
 
-Keywords: Urban land use maps; Land use land cover; Sentinel-2; Neural networks; Computer vision; Supervised classification; Google Earth Engine; Informal settlements
+## Keywords
 
-Provided by: WRI
+Urban land use maps; Land use land cover; Sentinel-2; Neural networks; Computer vision; Supervised classification; Google Earth Engine; Informal settlements
 
-Curated in GEE by: WRI
+## Date Created
 
-Last updated in GEE: 2023-05-29
+2023-05-29
+
+## Changelog
+
+NA
+
+## Provider
+
+WRI
+
+## Curated in GEE by
+WRI

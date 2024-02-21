@@ -1,4 +1,7 @@
+
 # Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2)
+
+## Description:
 
 NASAs Global Modeling and Assimilation Office (GMAO) produces the Modern-Era Retrospective analysis for Research and Applications, Version 2 (MERRA2) which is a 30+ year global climate reanalysis dataset.This dataset complements existing MERRA2 Earth Engine assets: https://developers.google.com/earth-engine/datasets/tags/merra. You can find additional information on this [dataset here](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/) and read more about the dataset in the [climate org data page](https://support.climateengine.org/article/70-merra2)
 
@@ -42,17 +45,28 @@ NASAs Global Modeling and Assimilation Office (GMAO) produces the Modern-Era Ret
 | Surface incoming shortwave flux assuming    | - Units: W m-2                              |
 | clear sky ('SWGDNCLR')                      | - Scale factor: 1.0                         |
 
+## Citations:
 
-#### Citation
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 MERRA-2 Overview: The Modern-Era Retrospective Analysis for Research and Applications, Version 2 (MERRA-2), Ronald Gelaro, et al., 2017, J. Clim.,
 doi: 10.1175/JCLI-D-16-0758.1
 ```
 
+## Earth Engine Snippet:
 ![merra_v2](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/f407dfc8-ab4d-435c-adff-048cc9687c35)
 
-#### Earth Engine Snippet
+### Sample Code
+
 
 ```js
 // Read in Image Collection and get first image
@@ -73,14 +87,31 @@ Map.addLayer(merra2_i.select('ETo_ASCE'), {min: 0, max: 10, palette: eto_palette
 Map.addLayer(merra2_i.select('ETr_ASCE'), {min: 0, max: 10, palette: eto_palette}, 'ETr_ASCE')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/MERRA-2
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/MERRA-2)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 NASA promotes the full and open sharing of all data with research and applications communities, private industry, academia, and the general public.
 
-Keywords: MERRA2, NASA, global, climate, reanalysis, temperature, precipitation, evapotranspiration, evaporative demand, wind
+## Keywords
 
-Datasets provided by: NASA
+MERRA2, NASA, global, climate, reanalysis, temperature, precipitation, evapotranspiration, evaporative demand, wind
 
-Dataset curated in GEE by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+NASA
+
+## Curated in GEE by
+Climate Engine Org

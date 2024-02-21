@@ -1,17 +1,12 @@
+
 # National Hydrography Dataset (NHD)
+
+## Description:
 
 The National Hydrography Dataset (NHD) represents the water drainage network of the United States with features such as rivers, streams, canals, lakes, ponds, coastline, dams, and streamgages. The National Hydrography Dataset (NHD) is mapped at 1:24,000 or larger scale (1:63,360 or larger scale in Alaska). These data are updated and maintained through [Stewardship](https://www.usgs.gov/national-hydrography/stewardship-and-community) partnerships with states and other collaborative bodies ([source](https://www.usgs.gov/national-hydrography/national-hydrography-dataset))
 
 The NHD is a national framework for assigning reach addresses to water-related entities, such as industrial discharges, drinking water supplies, fish habitat areas, wild and scenic rivers. Furthermore, because the NHD provides a nationally consistent framework for addressing and analysis, water-related information linked to reach addresses by one organization (national, state, local) can be shared with other organizations and easily integrated into many different types of applications to the benefit of all. You can find the [dataset and additional links here](https://www.usgs.gov/national-hydrography)
 
-#### Data Citation
-You can find citation [information here](https://www.usgs.gov/faqs/how-should-i-cite-datasets-and-services-national-map). The USGS recommends the user to follow guidelines from the journal in question.
-
-Citation example
-
-```
-U.S. Geological Survey, 2022, National Hydrography Dataset (ver. USGS National Hydrography Dataset Best Resolution (NHD) for Hydrologic Unit (HU) 4 - 2001 (published 20191002)), accessed April 29, 2022 at URL https://www.usgs.gov/national-hydrography/access-national-hydrography-products
-```
 
 #### Dataset Descriptions
 
@@ -40,16 +35,36 @@ individual shapefiles pertaining to each dataset within a state is ingested to G
 earthengine ls "projects/sat-io/open-datasets/NHD"
 ```
 
-![nhd](https://user-images.githubusercontent.com/6677629/166146991-c05e0e5c-876c-41e1-a289-9cc7b3a9dbc0.gif)
-
-
 #### Dataset structure
 The datasets are arranged by state abbreviations, so to get to a specific state simply replace state abbreviation
 
 Example Path: projects/sat-io/open-datasets/NHD/NHD_AK
 
+## Citations:
 
-#### Earth Engine Snippet
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+You can find citation [information here](https://www.usgs.gov/faqs/how-should-i-cite-datasets-and-services-national-map). The USGS recommends the user to follow guidelines from the journal in question.
+
+Citation example
+
+```
+U.S. Geological Survey, 2022, National Hydrography Dataset (ver. USGS National Hydrography Dataset Best Resolution (NHD) for Hydrologic Unit (HU) 4 - 2001 (published 20191002)), accessed April 29, 2022 at URL https://www.usgs.gov/national-hydrography/access-national-hydrography-products
+```
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+![nhd](https://user-images.githubusercontent.com/6677629/166146991-c05e0e5c-876c-41e1-a289-9cc7b3a9dbc0.gif)
+
+### Sample Code
+
 Sample example for state Missouri with state abbreviation MO
 ```js
 var nhd_area = ee.FeatureCollection("projects/sat-io/open-datasets/NHD/NHD_MO/NHDArea");
@@ -68,22 +83,32 @@ var nhd_wbdhu8 = ee.FeatureCollection("projects/sat-io/open-datasets/NHD/NHD_MO/
 var nhd_wbdline = ee.FeatureCollection("projects/sat-io/open-datasets/NHD/NHD_MO/WBDLine");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/NATIONAL-HYDROGRAPHY-DATASET
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/NATIONAL-HYDROGRAPHY-DATASET)
 
+### Sample Application
 
-#### License
+NA
+
+## License
+
 The NHD data is distributed under a license similar to Public domain license and distributed by United States Geological Survey (USGS)
 
-Created by: United States Geological Survey (USGS)
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset
 
-Keywords: Hydrography, Hydrologic, United States, USGS, NHD, National Hydrography Dataset
+## Date Created
 
-Last updated on GEE: 2022-05-04
+2022-05-04
 
-
-#### Data changelog
+## Changelog
 
 * Fixed property field permanent post reprocessing entire dataset and change field permanent_id listed as Permanent_ to permanent for reference.
 * Merged all flowlines and waterbodies to be single objects
+
+## Provider
+
+United States Geological Survey (USGS)
+
+## Curated in GEE by
+Samapriya Roy

@@ -1,10 +1,11 @@
+
 # Canada High Resolution Digital Elevation Model (HRDEM)
 
+## Description:
+
 <div class="result" markdown>
-
-???+ note
-
-    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+ 
+    This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)
 
 </div>
 
@@ -18,15 +19,26 @@ Disclaimer: Whole or parts of the dataset description were provided by the autho
 
 Most of the 2m resolution datasets are generated from ArcticDEM project and as such not ingested in this effort and only 1m resolution tiles were ingested. Since tile edges were not matched and datasets were from various sources and dates a simple approach was used for tiles with same names where the largest file size replaced any file of that name. This was a decision to help deconflict tiles with similar names and was done programatically.
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
 openCanada.ca; High Resolution Digital Elevation Model (HRDEM) - CanElevation Series : Last accessed date
 ```
 
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+NA
+
 ![hrdem_small](https://user-images.githubusercontent.com/6677629/211083890-c202c65c-049b-42c7-a376-f2a64539a220.gif)
 
-#### Earth Engine Snippet : Sample
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var dsm = ee.ImageCollection("projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/HRDEM_1M_DSM");
@@ -34,15 +46,31 @@ var dtm = ee.ImageCollection("projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/
 var footprint = ee.FeatureCollection("projects/sat-io/open-datasets/OPEN-CANADA/CAN_ELV/dataset_footprints");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/OPEN-CANADA-HRDEM
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/OPEN-CANADA-HRDEM)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 This work is licensed under a Open Government Licence - Canada.
 
-Created by: CanElevation Series, Gov of Canada
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+digital terrain model, digital surface model, bare-earth, terrain, remote sensing, lidar,dsm,dtm
 
-keywords: digital terrain model, digital surface model, bare-earth, terrain, remote sensing, lidar,dsm,dtm
+## Date Created
 
-Last updated in GEE: 2022-12-27
+2022-12-27
+
+## Changelog
+
+NA
+
+## Provider
+
+CanElevation Series, Gov of Canada
+
+## Curated in GEE by
+Samapriya Roy

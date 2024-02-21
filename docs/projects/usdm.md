@@ -1,4 +1,7 @@
+
 # United States Drought Monitor
+
+## Description:
 
 The U.S. Drought Monitor is a map released every Thursday, showing parts of the U.S. that are in drought. The map uses five classifications: abnormally dry (D0), showing areas that may be going into or are coming out of drought, and four levels of drought: moderate (D1), severe (D2), extreme (D3) and exceptional (D4).
 
@@ -11,21 +14,40 @@ Unlike most of the weather maps people see in the news, the U.S. Drought Monitor
 #### Preprocessing
 Drought Monitor GIS Data is [available as shapefiles](https://droughtmonitor.unl.edu/Data/GISData.aspx). To create a consistent data structure, the shapefiles are ingested for all years starting from 2000 and with a weekly cadence. These have 5 different drought classes/categories and are converted into a raster with the DM(Drought Monitor class/category values) as raster property. This makes using it as collection and analysis of the data much easier. Start and end dates are added with the release week date as the end date and a week ago as a start date. **For now the goal is to keep this collection updated so that this dataset is consistently synced with the source dataset.**
 
-#### Earth Engine Snippet
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var usdm = ee.ImageCollection("projects/sat-io/open-datasets/us-drought-monitor");
 ```
 
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/UNITED-STATES-DROUGHT-MONITOR)
+
 #### Drought Categories
 
 ![drought_categories](https://user-images.githubusercontent.com/6677629/115967546-ccd09b00-a4f8-11eb-9ca9-e969f58f0085.png)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/UNITED-STATES-DROUGHT-MONITOR
+### Sample Application
 
 Earth Engine App: https://sat-io.earthengine.app/view/usdm-explorer
 
-#### License
+## License
+
 The work is licensed under an Open data license for use.
 
 ```
@@ -34,10 +56,20 @@ at the University of Nebraska-Lincoln, the United States Department of Agricultu
 and the National Oceanic and Atmospheric Administration. Map courtesy of NDMC.
 ```
 
-Produced by : National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration. Map courtesy of NDMC
+## Keywords
 
-Processed secondary/formatted & Curated by: Samapriya Roy
+National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM
 
-Keywords: "National Drought Mitigation Center, NDMC, Drought, University of Nebraska-Lincoln, United States Department of Agriculture, USDA, National Oceanic and Atmospheric Administration, NOAA, USDM"
+## Date Created
+2021-04-24
 
-Last updated: 2021-04-24
+## Changelog
+
+NA
+
+## Provider
+
+National Drought Mitigation Center at the University of Nebraska-Lincoln, the United States Department of Agriculture, and the National Oceanic and Atmospheric Administration. Map courtesy of NDMC
+
+## Curated in GEE by
+NA

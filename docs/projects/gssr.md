@@ -1,4 +1,7 @@
+
 # Global Storm Surge Reconstruction (GSSR) database
+
+## Description:
 
 The Global Storm Surge Reconstruction (GSSR) database includes daily maximum surge values for the past at 882 tide gauges distributed along the global coastline. The data-driven models employed for the surge reconstruction were developed by Tadesse et al. (2020). The authors use five different atmospheric reanalysis products with different spatial and temporal resolution to produce surge information for the periods covered by the different reanalyses. The reanalysis that leads to the best validation results is marked with "best reconstruction" (note that in some locations data is not available for all reanalyses as there is no overlap in the periods covered by the tide gauges and the reanalysis). You can read the [full paper here](https://rdcu.be/cjV3v) The full surge reconstruction for each reanalysis (comprised of 882 compressed individual .csv files for the different tide gauges) can be downloaded from the following links:
 
@@ -8,12 +11,6 @@ The Global Storm Surge Reconstruction (GSSR) database includes daily maximum sur
 * [MERAA-2 Reconstruction [1980 - 2019]](https://downgit.github.io/#/home?url=https://github.com/moinabyssinia/webmap/tree/gh-pages/merra)
 * [ERA-Five Reconstruction [1979 - 2019]](https://downgit.github.io/#/home?url=https://github.com/moinabyssinia/webmap/tree/gh-pages/erafive)
 
-#### Citation
-
-```
-Tadesse, M.G., Wahl, T. A database of global storm surge reconstructions. Sci Data 8, 125 (2021).
-https://doi.org/10.1038/s41597-021-00906-x
-```
 
 #### Data preprocessing
 
@@ -28,10 +25,29 @@ The combined merged download daily maximum surge values for individual tide gaug
 |ERA-Five Reconstruction [1979 - 2019]          |era-5_surge_reconstruction      |
 
 
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+Tadesse, M.G., Wahl, T. A database of global storm surge reconstructions. Sci Data 8, 125 (2021).
+https://doi.org/10.1038/s41597-021-00906-x
+```
+
+### Published Paper Citations
+
+NA
+
 ![gssr](https://user-images.githubusercontent.com/6677629/148161951-b57628b4-f683-4c0c-9c57-1cb632131659.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var surge_20_cr =  ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/20-CR_surge_reconstruction");
@@ -41,16 +57,31 @@ var surge_merra_2 =  ee.FeatureCollection("projects/sat-io/open-datasets/open-oc
 var surge_era_5 =  ee.FeatureCollection("projects/sat-io/open-datasets/open-ocean/global_storm_surge_reconstruction/era-5_surge_reconstruction");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-STORM-SURGE-RC
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLOBAL-STORM-SURGE-RC)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 This work is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0). Users are free to use, copy, distribute, transmit, and adapt the work for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.
 
-Created by: Tadesse, M.G., Wahl, T.
+## Keywords
 
-Curated by: Samapriya Roy
+20-CR, ERA-20C, ERA-Interim, MERAA-2, ERA-Five, reanalysis, storm-surge, surge-reconstruction, NCEP, extreme-sea-level
 
-Keywords: : 20-CR, ERA-20C, ERA-Interim, MERAA-2, ERA-Five, reanalysis, storm-surge, surge-reconstruction, NCEP, extreme-sea-level
+## Date Created
 
-Last updated: 2022-01-04
+2022-01-04
+
+## Changelog
+
+NA
+
+## Provider
+
+Tadesse, M.G., Wahl, T.
+
+## Curated in GEE by
+Samapriya Roy

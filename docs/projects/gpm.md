@@ -1,4 +1,7 @@
+
 # Global Precipitation Measurement (GPM)
+
+## Description:
 
 Global Precipitation Measurement (GPM) is an international satellite mission to provide next-generation observations of rain and snow worldwide every three hours. NASA and the Japanese Aerospace Exploration Agency (JAXA) launched the GPM Core Observatory satellite on February 27th, 2014, carrying advanced instruments that set a new standard for precipitation measurements from space. The data they provide is used to unify precipitation measurements made by an international network of partner satellites to quantify when, where, and how much it rains or snows around the world. Note: Additional bands (‘HQprecipitation’, ‘IRprecipitation’, ‘precipitationUncal’, ‘randomError’) are provided with [documentation provided here](https://gpm.nasa.gov/sites/default/files/document_files/IMERG_ATBD_V06.pdf). You can find [additional information here](https://www.nasa.gov/mission_pages/GPM/overview/index.html) and [climate engine org dataset page here](https://support.climateengine.org/article/65-gpm-daily).
 
@@ -23,7 +26,17 @@ This dataset is derived from the Earth Engine asset, NASA/GPM_L3/IMERG_V06, usin
 | Precipitation (Calibrated) - daily data is derived from 30-minute data ('precipitationCal') | - Units: Millimeters                    |
 |                           | - Scale factor: 1.0                    |
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Jackson, Gail & Berg, Wesley & Kidd, Chris & Kirschbaum, Dalia & Petersen, Walter & Huffman, George & Takayabu, Yukari. (2018). Global Precipitation Measurement (GPM): Unified Precipitation Estimation from Space. 10.1007/978-3-319-72583-3_7.
@@ -31,7 +44,9 @@ Jackson, Gail & Berg, Wesley & Kidd, Chris & Kirschbaum, Dalia & Petersen, Walte
 
 ![GPM](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/a6822d72-6d68-499c-a7fd-b4f584172987)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in Image Collections and get single image
@@ -46,14 +61,31 @@ var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225
 Map.addLayer(gpm_i.select('precipitationCal'), {min: 0, max: 200, palette: prec_palette}, 'precipitationCal')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-PRECIP-MEASUREMENT
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-PRECIP-MEASUREMENT)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 NASA promotes the full and open sharing of all data with research and applications communities, private industry, academia, and the general public.
 
-Keywords: precipitation, climate, NASA, JAXA, satellite, near real-time
+## Keywords
 
-Provided by: Climate Engine Org, NASA
+precipitation, climate, NASA, JAXA, satellite, near real-time
 
-Curated in GEE by: Climate Engine Org
+## Date Created
 
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+Climate Engine Org, NASA
+
+## Curated in GEE by
+Climate Engine Org

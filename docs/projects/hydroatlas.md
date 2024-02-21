@@ -1,4 +1,7 @@
+
 # HydroATLAS v1.0
+
+## Description:
 
 HydroATLAS offers a global compendium of hydro-environmental characteristics for all sub-basins of HydroBASINS, all river reaches of HydroRIVERS, and all lake polygons of HydroLAKES. The HydroATLAS database is divided into three distinct sub-datasets: BasinATLAS, RiverATLAS, and LakeATLAS which represent sub-basin delineations (polygons), the river network (lines), and lake shorelines (polygons), respectively. In total, HydroATLAS contains 1.0 million sub-basins, 8.5 million river reaches, and 1.4 million lakes.
 
@@ -11,7 +14,13 @@ For more information on HydroATLAS please refer to [hydrosheds page on hydroatla
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
-#### Citations
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 The development of BasinATLAS and RiverATLAS is fully described in Linke et al. (2019) and should be cited as:
 
@@ -28,15 +37,15 @@ Lehner, B., Messager, M.L., Korver, M.C., Linke, S. (2022). Global hydro-environ
 high spatial resolution. Scientific Data 9: 351. doi: https://doi.org/10.1038/s41597-022-01425-z
 ```
 
-#### License
-The HydroATLAS database is licensed under a Creative Commons Attribution (CC-BY) 4.0 International License. Please also refer to the HydroATLAS Technical Documentation for more details on the license and requested citations. By downloading and using the data the user agrees to the terms and conditions of this license.
+### Published Paper Citations
 
-
-ou can read the paper here : https://www.nature.com/articles/ncomms13603?origin=ppub
+NA
 
 ![hydroatlas](https://user-images.githubusercontent.com/6677629/182036911-8391d91c-17b2-4446-b302-851cb5d562d9.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var riveratlas = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/RiverAtlas_v10");
@@ -55,12 +64,33 @@ var basin_l10 = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/B
 var basin_l11 = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev11");
 var basin_l12 = ee.FeatureCollection("projects/sat-io/open-datasets/HydroAtlas/BasinAtlas/BasinATLAS_v10_lev12");
 ```
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROATLAS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HYDROATLAS)
 
-Created by: Linke et al and Lehner et al
+### Sample Application
 
-Curated by: Samapriya Roy
+NA
 
-Keywords: water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers
+## License
 
-Last updated: 2022-07-10
+The HydroATLAS database is licensed under a Creative Commons Attribution (CC-BY) 4.0 International License. Please also refer to the HydroATLAS Technical Documentation for more details on the license and requested citations. By downloading and using the data the user agrees to the terms and conditions of this license.
+
+
+ou can read the paper here : https://www.nature.com/articles/ncomms13603?origin=ppub
+## Keywords
+
+water,hydrology, lakes, global lake surface, discharge, depth, volume, area, hydrolakes, hydrobasins, hydrorivers
+
+## Date Created
+
+2022-07-10
+
+## Changelog
+
+NA
+
+## Provider
+
+Linke et al and Lehner et al
+
+## Curated in GEE by
+Samapriya Roy

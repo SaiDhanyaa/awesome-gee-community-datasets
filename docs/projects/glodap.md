@@ -1,4 +1,7 @@
+
 # Global Ocean Data Analysis Project (GLODAP) v2.2023
+
+## Description:
 
 The **Global Ocean Data Analysis Project (GLODAP) v2.2023** represents a significant advancement in the synthesis of ocean biogeochemical bottle data. With a primary focus on seawater inorganic carbon chemistry, this update builds upon GLODAPv2.2022, incorporating several key enhancements. Notably, 43 new cruises have been added to expand the dataset's coverage until 2020. The data quality control process involved the removal of entries with missing temperatures. Moreover, the inclusion of digital object identifiers (DOIs) for each cruise enhances data traceability. GLODAPv2.2022 also includes minor corrections for improved data accuracy.
 
@@ -73,7 +76,17 @@ Other variables in the compilation, such as isotopic tracers and discrete CO2 fu
 | Total dissolved nitrogen                           | tdn         | μmol L-1       | measured, data synthesis  | CTD, Niskin Bottles   | WOCE quality control flags are used        | GLODAP Group       |
 | Chlorophyll a                                     | chla        | ug L-1         | measured, data synthesis  | CTD, Niskin Bottles   | WOCE quality control flags are used        | GLODAP Group       |
 
-#### Citation
+
+#### Dataset preprocessing
+The matlab derived products add a G2 infront of all column names and they are left in place as is,with an additional column called system:time_start and datetime added to reflect epoch time and UTC datetime derived from the existing columns. Adding the system:time_start and datetime allow for easily filtering across the earth engine collection. While the merged collection is provided individual feature collections are still maintained to provide the user with the flexibility of loading a smaller subset of features for operations.
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 Whenever GLODAPv2 is used, the following citations must be included:
 
@@ -95,12 +108,15 @@ Dioxide Information Analysis Center, Oak Ridge National Laboratory, US Departmen
 NDP093_GLODAPv2
 ```
 
-#### Dataset preprocessing
-The matlab derived products add a G2 infront of all column names and they are left in place as is,with an additional column called system:time_start and datetime added to reflect epoch time and UTC datetime derived from the existing columns. Adding the system:time_start and datetime allow for easily filtering across the earth engine collection. While the merged collection is provided individual feature collections are still maintained to provide the user with the flexibility of loading a smaller subset of features for operations.
+### Published Paper Citations
+
+NA
 
 ![glodap](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/50f618ad-af4a-4866-b262-eca50d5f463e)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var merged = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_V2/GLODAPv2_2023_Merged_Master_File_formatted");
@@ -109,15 +125,31 @@ var atlantic_ocean = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_
 var indian_ocean = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_V2/GLODAPv2_2023_Indian_Ocean_formatted");
 var pacific_ocean = ee.FeatureCollection("projects/sat-io/open-datasets/GLODAP_V2/GLODAPv2_2023_Pacific_Ocean_formatted");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLODAP-V2_2023_MERGED)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/GLODAP-V2_2023_MERGED
+### Sample Application
 
-#### License
+NA
+
+## License
 
 The dataset is distributed under a public licese. Distribution liability: NOAA and NCEI make no warranty, expressed or implied, regarding these data, nor does the fact of distribution constitute such a warranty. NOAA and NCEI cannot assume liability for any damages caused by any errors or omissions in these data. If appropriate, NCEI can only certify that the data it distributes are an authentic copy of the records that were accepted for inclusion in the NCEI archives.
 
-Provided by: NCEI, NOAA, Olsen et al
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Ocean, data
 
-Last updated in GEE: 2023-10-25
+## Date Created
+
+2023-10-25
+
+## Changelog
+
+NA
+
+## Provider
+
+NCEI, NOAA, Olsen et al
+
+## Curated in GEE by
+Samapriya Roy

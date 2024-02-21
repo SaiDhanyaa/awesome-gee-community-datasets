@@ -1,22 +1,12 @@
+
 # Global Solar Atlas Datasets
+
+## Description:
 
 The current version of Global Solar Atlas is v 2.6 released in July 2021. The Global Solar Atlas version 2.0 is an enhancement of the online platform, originally published in 2016 in version 1.0, that offers access to data needed for preliminary assessment of solar energy projects and sites through use of GIS data layers and maps in Download section. This Technical report summarizes delivery of the GSA 2.0 version and compares version 2.0 with previous version 1.0 in terms of enhancement in methodology, data layers and Solargis approach to PV electricity simulation. GSA 2.0 provides an access to long-term averaged yearly (for selected parameters monthly) solar, air temperature, PV power potential data and map products for almost any site on Earth.
 
 The atlas provides an access to long-term averaged yearly (for selected parameters monthly) solar, air temperature,
 PV power potential data and map products for almost any site on Earth.
-
-#### Attribution and License
-If you get the data or use the dataset within the GSA app attribution below, the Works (datasets) themselves are under are licensed under the Creative Commons Attribution 4.0 International license, CC BY 4.0, except where expressly stated that another license applies.
-
-```
-[Data/information/map] obtained from the “Global Solar Atlas 2.0, a free, web-based application is developed and
-operated by the company Solargis s.r.o. on behalf of the World Bank Group, utilizing Solargis data, with funding
-provided by the Energy Sector Management Assistance Program (ESMAP).
-For additional information: https://globalsolaratlas.info
-```
-
-You can find the Global Solar Atlas [here](https://globalsolaratlas.info/) and you can interact and download the datasets [here](https://globalsolaratlas.info/download)
-
 
 #### Data Structure
 
@@ -40,11 +30,24 @@ in 9 arc-sec (nominally 250 m) resolution. Finally, auxiliary data layer of Opti
 |PVOUT_LTAy    |pvout_LTAy_AvgDailyTotals|Photovoltaic power potential Average daily     |Longterm yearly average of daily totals of potential photovoltaic electricity production |
 |TEMP          |temp_2m_agl              |Temperature at 2m above ground                 |Longterm yearly average of air temperature (1994-2018)                                   |
 
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+### Published Paper Citations
+
+NA
 
 ![gsa](https://user-images.githubusercontent.com/6677629/139536012-3a177130-3051-4113-b0fe-08f51240a280.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine Datasets
+### Sample Code
 
 ```js
 var dif = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/dif_LTAy_AvgDailyTotals');
@@ -58,12 +61,41 @@ var pvout_ltay = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/op
 var temp_agl = ee.Image('projects/earthengine-legacy/assets/projects/sat-io/open-datasets/global_solar_atlas/temp_2m_agl');
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-SOLAR-ATLAS)
+
+### Sample Application
+
+Optional
+[hyperlink]()
+
+## License
+
+If you get the data or use the dataset within the GSA app attribution below, the Works (datasets) themselves are under are licensed under the Creative Commons Attribution 4.0 International license, CC BY 4.0, except where expressly stated that another license applies.
+
+```
+[Data/information/map] obtained from the “Global Solar Atlas 2.0, a free, web-based application is developed and
+operated by the company Solargis s.r.o. on behalf of the World Bank Group, utilizing Solargis data, with funding
+provided by the Energy Sector Management Assistance Program (ESMAP).
+For additional information: https://globalsolaratlas.info
+```
+
+You can find the Global Solar Atlas [here](https://globalsolaratlas.info/) and you can interact and download the datasets [here](https://globalsolaratlas.info/download)
+
+## Keywords
+
+ Solar, energy, photovoltaic capacity, irradiation, optimally tilted surface, Photovoltaic power potential
+
+## Date Created
+
+2021-10-30
+
+## Changelog
+
+NA
+
+## Provider
 
 Produced and maintained by the [Global Solar Atlas](https://globalsolaratlas.info), ESMAP, Solargis and the World Bank Group (consisting of The World Bank and the International Finance Corporation, or IFC)
 
-Processed secondary/formatted & Curated by: Samapriya Roy
-
-Keywords: : Solar, energy, photovoltaic capacity, irradiation, optimally tilted surface, Photovoltaic power potential
-
-Last updated: 2021-10-30
+## Curated in GEE by
+Samapriya Roy

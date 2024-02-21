@@ -1,4 +1,7 @@
+
 # Native Land (Indigenous Land Maps)
+
+## Description:
 
 Land acknowledgements are a way that people insert an awareness of Indigenous presence and land rights in everyday life. This is often done at the beginning of ceremonies, lectures, or, in this case, education guides. It can be an explicit yet limited way to recognize the history of colonialism and first nations as well as a need for change in settler-colonial societies. In this context, we’re looking to acknowledge the existence of Indigenous bodies in geography and how they occupy land. You can visit the actual map here https://native-land.ca/
 
@@ -12,15 +15,22 @@ This map does not represent or intend to represent official or legal boundaries 
 * Native Land is aimed at settlers to engage them with Indigenous history in a fun, interactive, and subtle way
 * The datasets are always in flux and the latest datasets can be downloaded [using their API](https://native-land.ca/resources/api-docs/)
 
+## Citations:
 
-#### Suggested Citation
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 (dataset) Native Land Territories map. (2021). Native Land CA. https://native-land.ca/. Accessed 2021-09-19.
 
+### Published Paper Citations
+NA
+
+## Earth Engine Snippet:
 ![native](https://user-images.githubusercontent.com/6677629/133938352-7c4d09a1-99b2-490f-acdd-14627c1e53bb.gif)
-
-
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var territories = ee.FeatureCollection("projects/sat-io/open-datasets/native-land/indigenousTerritories");
@@ -28,17 +38,30 @@ var languages = ee.FeatureCollection("projects/sat-io/open-datasets/native-land/
 var treaties = ee.FeatureCollection("projects/sat-io/open-datasets/native-land/indigenousTreaties");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/INDIGENOUS-LAND-MAPS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/INDIGENOUS-LAND-MAPS)
 
+### Sample Application
 
-#### License
+NA
+## License
 
 The Native Land Maps are under a Creative Commons International Attribution License and the datasets are publicly available resource.
 
-Created by: Native Land CA
+## Keywords
 
-Curated by: Samapriya Roy
+ native lands, indigenousTreaties, indigenousLanguages, indigenousTerritories, Indigenous, land rights
 
-Keywords: native lands, indigenousTreaties, indigenousLanguages, indigenousTerritories, Indigenous, land rights
+## Date Created
 
-Last updated: 2023-12-14
+2023-12-14
+
+## Changelog
+
+NA
+
+## Provider
+
+Native Land CA
+
+## Curated in GEE by
+Samapriya Roy

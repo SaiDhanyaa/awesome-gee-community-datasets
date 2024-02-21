@@ -1,4 +1,7 @@
+
 # Harmonized Global Critical infrastructure & Index (CISI)
+
+## Description:
 
 Critical infrastructure (CI) is fundamental for the functioning of a society and forms the backbone for socio-economic development. Natural and human-made threats, however, pose a major risk to CI. Therefore, geospatial data on the location of CI are fundamental for in-depth risk analyses, which are required to inform policy decisions aiming to reduce risk. We present a first-of-its-kind globally harmonized spatial dataset for the representation of CI.
 
@@ -6,15 +9,13 @@ In this study the users generated: (1) a harmonized detailed geospatial data of 
 
 Disclaimer: Whole or parts of the dataset description was provided by the author(s) or their works.
 
-#### Paper citation
+## Citations:
 
-```
-Nirandjan, S., Koks, E.E., Ward, P.J. et al. A spatially-explicit harmonized global dataset of critical infrastructure. Sci Data 9, 150 (2022).
-https://doi.org/10.1038/s41597-022-01218-4
-```
+### Publication DOI
 
+NA
 
-#### Dataset citation
+### Dataset DOI
 
 ```
 Nirandjan, Sadhana, Koks, Elco E., Ward, Philip J., & Aerts, Jeroen C.J.H. (2021). A spatially-explicit harmonized global dataset of critical infrastructure (v1.0.0.)
@@ -23,24 +24,49 @@ Nirandjan, Sadhana, Koks, Elco E., Ward, Philip J., & Aerts, Jeroen C.J.H. (2021
 
 ![cisi](https://user-images.githubusercontent.com/6677629/168509625-651d2582-0518-41bf-897e-e1468af52c95.gif)
 
+### Published Paper Citations
 
-#### Earth Engine Snippet
+```
+Nirandjan, S., Koks, E.E., Ward, P.J. et al. A spatially-explicit harmonized global dataset of critical infrastructure. Sci Data 9, 150 (2022).
+https://doi.org/10.1038/s41597-022-01218-4
+```
+
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var global_CISI = ee.Image("projects/sat-io/open-datasets/CISI/global_CISI");
 var infrastructure = ee.ImageCollection("projects/sat-io/open-datasets/CISI/amount_infrastructure");
 ```
 
-Sample Code: [https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/CRITICAL-INF-SPATIAL-INDEX(CISI)](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/CRITICAL-INF-SPATIAL-INDEX(CISI))
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/CRITICAL-INF-SPATIAL-INDEX(CISI))
 
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 This work is licensed under a Creative Commons Attribution 4.0 International license.
 
-Produced by : Nirandjan, S., Koks, E.E., Ward, P.J. et al
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Development indicator, global spatial data, gridded data, critical infrastructure, spatial index
 
-Keywords: : Development indicator, global spatial data, gridded data, critical infrastructure, spatial index
+## Date Created
 
-Last updated on GEE: 2022-05-12
+2022-05-12
+
+## Changelog
+
+NA
+
+## Provider
+
+Nirandjan, S., Koks, E.E., Ward, P.J. et al
+
+## Curated in GEE by
+Samapriya Roy

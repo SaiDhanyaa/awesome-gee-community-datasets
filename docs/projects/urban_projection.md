@@ -1,4 +1,7 @@
+
 # Global urban projections under SSPs (2020-2100)
+
+## Description:
 
 These datasets include two separate global projections of future urban land under shared socioeconomic pathways (SSPs), one from Chen et al. (2020) and the other from Gao & O'Neill (2020). The Chen et al. dataset provides a binary classification of urban and non-urban land (pixel value of 2 for urban; 1 otherwise) at 1 km resolution for every 10th year from 2020 to 2100 (inclusive). On the other hand, the Gao & O'Neill (2020) dataset provides continuous values representing the probability of full urbanization of each 1/8 degree grid for the same years.
 
@@ -16,7 +19,17 @@ Also noting that these projections are all over the place. See the figure below 
 
 ![SSPs_compare_Asia](https://user-images.githubusercontent.com/30564889/197263701-a357d3f3-736c-4e5d-9fad-732a856dc4f1.png)
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Chen, G., Li, X., Liu, X. et al. Global projections of future urban land expansion under shared socioeconomic pathways. Nat Commun 11, 537 (2020).
@@ -30,24 +43,41 @@ Gao, J., O’Neill, B.C. Mapping global urban land for the 21st century with dat
 
 ![urban_scenarios](https://user-images.githubusercontent.com/6677629/197396105-9d87e4be-fb9b-4a31-8ff8-c0c4bb77c6bb.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine snippet
+### Sample Code
 
 ```js
 var chenSSP = ee.ImageCollection("projects/sat-io/open-datasets/FUTURE-URBAN-LAND/CHEN_2020_2100");
 var gaoSSP = ee.ImageCollection("projects/sat-io/open-datasets/FUTURE-URBAN-LAND/GAO_2020_2100");
 ```
 
-https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-SCENARIO-PROJECTIONS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-URBAN-SCENARIO-PROJECTIONS)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 This work is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) for Gao et al 2022 and under [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/) for Chen et al 2020.
 
-Created by: Gao, et al. 2022 and Chen, et al. 2022
 
-Curated in GEE by : [TC Chakraborty](mailto:tc.chakraborty25@gmail.com) and Samapriya Roy
+## Keywords
 
-Keywords: urban, SSPs, urban projection, temporal models
+urban, SSPs, urban projection, temporal models
 
-Last updated on GEE: 2022-10-23
+## Date Created
+
+2022-10-23
+
+## Changelog
+
+NA
+
+## Provider
+
+Gao, et al. 2022 and Chen, et al. 2022
+
+## Curated in GEE by
+[TC Chakraborty](mailto:tc.chakraborty25@gmail.com) and Samapriya Roy

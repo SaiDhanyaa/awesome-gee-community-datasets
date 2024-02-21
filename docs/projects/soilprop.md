@@ -1,10 +1,11 @@
+
 # Soil Properties 800m
+
+## Description:
 
 The data shown here were obtained by aggregating current USDA-NCSS soil survey data (SSURGO back-filled with STATSGO where SSURGO is not available) within 800m² grid cells. This data aggregation technique results in maps that may not match the original data at any given point, and is intended to depict regional trends in soil properties at the statewide scale.
 
 This app was developed by the California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service. Please use the following citation for this website and gridded data products:
-
-#### Citation
 
 ```
 Walkinshaw, Mike, A.T. O'Geen, D.E. Beaudette. "Soil Properties." California Soil Resource Lab, 1 Oct. 2020,
@@ -83,7 +84,25 @@ For layers with depth profiles a _profile collection is created with a min_depth
 
 You can [download the data layers here](https://casoilresource.lawr.ucdavis.edu/soil-properties/download.php) along with lookup tables for layers that are categorical instead of continuous. Also mode pyramding policy is applied to all categorical layers and you can find the lookup table for all categorical variable in the download page.
 
-#### Earth Engine Snippet
+
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 
 ```js
@@ -128,7 +147,7 @@ var  soil_color = ee.ImageCollection('projects/earthengine-legacy/assets/project
 
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/CRSL-SOIL-PROPERTIES-800)
 
 
 #### Soil Texture Palette
@@ -201,16 +220,31 @@ Palettes have been created for variable types and a palette for Soil Texture is 
 </center>
 
 
-Sample Code with Soil Texture Class:https://code.earthengine.google.com/bb16ef5adbd5711d9fcb77ce7705618e
+**Link for sample code:** [Sample Code with Soil Texture Class]:https://code.earthengine.google.com/bb16ef5adbd5711d9fcb77ce7705618e
 
+### Sample Application
 
-#### Shared License
+NA
+
+## License
+
 This work is licensed under a Creative Commons Attribution 4.0 International and is an open license unless otherwise indicated. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Created by : California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse
 
-Keywords: Soil grid, USDA, CSRL, UCANR,USDA, Soil, Coarse
+## Date Created
 
-Last updated: 2021-07-22
+2021-07-22
+
+## Changelog
+
+NA
+
+## Provider
+
+California Soil Resource Lab at UC Davis and UC-ANR in collaboration with the USDA Natural Resources Conservation Service
+
+## Curated in GEE by
+Samapriya Roy

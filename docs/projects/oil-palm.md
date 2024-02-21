@@ -1,4 +1,7 @@
+
 # Oil Palm Plantation Layers
+
+## Description:
 
 ### 1) **Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017**
 
@@ -11,42 +14,25 @@ The data set is publicly accessible for download from the permanent DARE reposit
 
 ![oil_palm](https://user-images.githubusercontent.com/6677629/121999942-acdc8b80-cd73-11eb-84be-b1e6457803cb.gif)
 
-Use the following credit when these datasets or paper is cited:
+
+### 2) **High resolution global industrial and smallholder oil palm map for 2019**
+
+The dataset contains 634 100x100 km tiles, covering areas where oil palm plantations were detected. The classified images (‘oil_palm_map’ folder, in geotiff format) are the output of the convolutional neural network based on Sentinel-1 and Sentinel-2 half-year composites. The images have a spatial resolution of 10 meters and contain three classes: [1] Industrial closed-canopy oil palm plantations, [2] Smallholder closed-canopy oil palm plantations, and [3] other land covers/uses that are not closed canopy oil palm.
+
+
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Danylo, O., Pirker, J., Lemoine, G. et al. A map of the extent and year of detection of oil palm plantations in Indonesia
 Malaysia and Thailand. Sci Data 8, 96 (2021). https://doi.org/10.1038/s41597-021-00867-1
 ```
-
-#### Earth Engine Snippet
-
-Since the dataset was categorical the no data value was use for masking and a Mode pyramiding policy was applied for ingestion into Google Earth Engine.
-
-```js
-var oil_palm = ee.ImageCollection("projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017");
-```
-
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/OIL-PALM-PLANTATION-LAYERS
-
-App Website: [App link here](https://olhadanylo.users.earthengine.app/view/oilpalmseasia)
-
-Source Code to App: https://code.earthengine.google.com/b569003eec6dc5d60dd6a187a9213f06
-
-#### Shared License
-This work is licensed under a Creative Commons Attribution 3.0. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-
-Created by : Olga Danylo, et al, International Institute for Applied Systems Analysis
-
-Curated in GEE by: Samapriya Roy
-
-Keywords: Oil palm plantations, Indonesia, Malaysia, Thailand, Landsat, Sentinel-1
-
-Last updated: 2021-06-19
-
-
-### 2) **High resolution global industrial and smallholder oil palm map for 2019**
-
-The dataset contains 634 100x100 km tiles, covering areas where oil palm plantations were detected. The classified images (‘oil_palm_map’ folder, in geotiff format) are the output of the convolutional neural network based on Sentinel-1 and Sentinel-2 half-year composites. The images have a spatial resolution of 10 meters and contain three classes: [1] Industrial closed-canopy oil palm plantations, [2] Smallholder closed-canopy oil palm plantations, and [3] other land covers/uses that are not closed canopy oil palm.
 
 You can find the [paper here](https://essd.copernicus.org/articles/13/1211/2021/essd-13-1211-2021.pdf) and download the [datasets here](https://zenodo.org/record/4473715)
 
@@ -58,9 +44,6 @@ Descals, Adrià, Serge Wich, Erik Meijaard, David LA Gaveau, Stephen Peedell, an
 Earth System Science Data 13, no. 3 (2021): 1211-1231.
 ```
 
-![oil_palm_2019](https://user-images.githubusercontent.com/6677629/125210739-51fd5d80-e267-11eb-9987-03db697959c0.gif)
-
-
 Cite the Data using
 
 ```
@@ -69,23 +52,60 @@ High resolution global industrial and smallholder oil palm map for 2019 (Version
 Zenodo. http://doi.org/10.5281/zenodo.4473715
 ```
 
-#### Earth Engine Snippet
 
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+![oil_palm_2019](https://user-images.githubusercontent.com/6677629/125210739-51fd5d80-e267-11eb-9987-03db697959c0.gif)
+### Sample Code
+
+**1) Oil Palm Plantation (Indonesia, Malaysia, Thailand) 1984-2017**
+
+Since the dataset was categorical the no data value was use for masking and a Mode pyramiding policy was applied for ingestion into Google Earth Engine.
+
+```js
+var oil_palm = ee.ImageCollection("projects/sat-io/open-datasets/landcover/oil-palm-plantation-1984_2017");
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/OIL-PALM-PLANTATION-LAYERS)
+
+**2) High resolution global industrial and smallholder oil palm map for 2019**
 Since the dataset was categorical the no data value was use for masking and a Mode pyramiding policy was applied for ingestion into Google Earth Engine.
 
 ```js
 var oil_palm = ee.ImageCollection("projects/sat-io/open-datasets/landcover/oil_palm_industrial_smallholder_2019");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/GLOBAL-INDUSTRIAL-SMALLHOLDER-OIL-PALM)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/GLOBAL-INDUSTRIAL-SMALLHOLDER-OIL-PALM
+### Sample Application
 
-#### Shared License
-This work is licensed under a Creative Commons Attribution 4.0 International. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+App Website: [App link here](https://olhadanylo.users.earthengine.app/view/oilpalmseasia)
 
-Created by : Adrià Descals et al 2021
+Source Code to App: https://code.earthengine.google.com/b569003eec6dc5d60dd6a187a9213f06
 
-Curated in GEE by: Samapriya Roy
+## License
 
-Keywords: industrial, smallholder, oil palm, deep learning, global, remote sensing, Sentinel-1, Sentinel-2, convolutional neural network
+This work is licensed under a Creative Commons Attribution 3.0. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Last updated: 2021-06-19
+## Keywords
+
+Oil palm plantations, Indonesia, Malaysia, Thailand, Landsat, Sentinel-1
+industrial, smallholder, oil palm, deep learning, global, remote sensing, Sentinel-1, Sentinel-2, convolutional neural network
+
+## Date Created
+
+2021-06-19
+
+## Changelog
+
+NA
+
+## Provider
+
+Olga Danylo, et al, International Institute for Applied Systems Analysis
+Adrià Descals et al 2021
+
+## Curated in GEE by
+Samapriya Roy

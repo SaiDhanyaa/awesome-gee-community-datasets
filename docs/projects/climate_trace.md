@@ -1,4 +1,7 @@
 # Climate Trace Global Emissions Data
+
+## Description:
+
 Climate TRACE is a non-profit coalition that has unveiled an open emissions database containing more than 352 million assets. The database provides a comprehensive accounting of greenhouse gas (GHG) emissions based primarily on direct, independent observation. It includes every country and territory in the world and covers various emitting activities such as energy production, industrial processes, and land use. The data are derived from satellites, remote sensing, and other public and commercial sources, making it the most comprehensive and granular dataset of recent GHG emissions ever created. The inventory allows for transparent assessment of each country's progress toward emission reduction goals.
 
 For more detailed information, you can visit the Climate TRACE website at [climatetrace.org](https://climatetrace.org).
@@ -7,7 +10,13 @@ For more detailed information, you can visit the Climate TRACE website at [clima
 
 The downloaded datasets were processed to get system:time_start and system:time_end in epoch time and these were added to the data column in GEE. Each sector and their associated emissions dataset sources were processed providing 38,731,650 total features. Not all sectors had emissions locations and some were provided only at a country level.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Climate TRACE - Tracking Realtime Atmospheric Carbon Emissions (2022), Climate TRACE Emissions Inventory,
@@ -72,8 +81,13 @@ For individual sectors refer to citation information from the downloads page.
 
 ![carbon_trace](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/a1adee01-d0a4-435a-8fcc-c923ae7e853c)
 
+### Published Paper Citations
 
-#### Earth Engine Snippet
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var aluminum = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/aluminum_emissions-sources");
@@ -115,16 +129,31 @@ var waterReservoirs = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMAT
 var wetlandFires = ee.FeatureCollection("projects/sat-io/open-datasets/CLIMATE-TRACE/EMISSIONS/wetland-fires_emissions-sources");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CLIMATE-TRACE-EMISSIONS)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 All Climate TRACE data is freely available under the Creative Commons Attribution 4.0 International Public License, unless otherwise noted below
 
-Created by: Climate Trace
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste
 
-Keywords: Climate Trace, Emissions, Sectors, Agriculture, Buildings, Fossil Fuel Operations, Forestry And Land Use, Manufacturing, Mineral Extraction, Power, Transportation, Waste
+## Date Created
 
-Last updated: 2024-01-17
+2024-01-17
+
+## Changelog
+
+NA
+
+## Provider
+
+Climate Trace
+
+## Curated in GEE by
+Samapriya Roy

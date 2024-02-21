@@ -1,4 +1,7 @@
+
 # ANUSPLIN Gridded Climate Dataset
+
+## Description:
 
 The ANUSPLIN Gridded Climate Dataset for Canada is a station based interpolated dataset produced using the [Australian National University Spline (ANUSPLIN) model](https://support.climateengine.org/article/48-anusplin). It is produced by Agriculture and Agri-Food Canada and covers all of Canada. The dataset is available from 1950-2015 at daily and monthly timesteps for maximum temperature, minimum temperature, and total precipitation at 10km (0.1 degree) resolution. The ANUSPLIN Gridded Climate Dataset for Canada is a comprehensive and station-based interpolated dataset that has been meticulously produced using the [Australian National University Spline (ANUSPLIN) model](https://support.climateengine.org/article/48-anusplin). Created by Agriculture and Agri-Food Canada, this dataset encompasses the entire geographical expanse of Canada and offers a valuable resource for researchers and climate enthusiasts alike.
 
@@ -8,7 +11,7 @@ Researchers and users interested in accessing the dataset can find it through th
 
 It provides a detailed view of climate conditions with data available from 1950 to 2015, offering insights into daily and monthly variations in maximum temperature, minimum temperature, and total precipitation. This dataset offers a valuable resource for climate research, environmental studies, and various applications that require historical climate data for Canada and parts of the United States. Researchers can explore climate trends, assess climate change impacts, and derive valuable insights into the region's climate patterns using this comprehensive dataset.
 
-#### Dataset description
+#### **Dataset description**
 
 **Spatial Information**
 
@@ -31,7 +34,17 @@ It provides a detailed view of climate conditions with data available from 1950 
 | Precipitation ('pcp')    | - Units: Millimeters                 |
 |                           | - Scale factor: 1.0                  |
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 - Hutchinson, M. F., McKenney, D.W., Lawrence, K., Pedlar, J.H., Hopkinson, R.F., Milewska, E., Papadopol, P. (2009).
@@ -44,7 +57,9 @@ American Meteorological Society(April): 725-741.
 
 ![anusplin_grid](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/ab19fbdd-9a26-4cb5-96ef-e3f2c2feacc8)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in daily and monthly Image Collections and get single image from each collection
@@ -69,14 +84,32 @@ Map.addLayer(anuspline_d_i.select('mint'), {min: -30, max: 30, palette: temp_pal
 Map.addLayer(anuspline_d_i.select('maxt'), {min: -30, max: 30, palette: temp_palette}, 'maxt, daily')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/ANUSPLIN-GRID
 
-#### License
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/ANUSPLIN-GRID)
+
+### Sample Application
+
+NA
+
+## License
 
 Data are subject to the Government of Canada Open Data Licence Agreement: https://open.canada.ca/en/open-government-licence-canada. The terms of this Agreement govern your use and reproduction of the data instead of the copyright reproduction statements found in Important Notices on the Agriculture and Agri-Food Canada website.
 
-Keywords : climate, precipitation, temperature, AAFC, daily, monthly, reanalysis
+## Keywords
 
-Provider: Agriculture and Agri-Food Canada
+climate, precipitation, temperature, AAFC, daily, monthly, reanalysis
 
-Curator: ClimateEngine.org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+Agriculture and Agri-Food Canada
+
+## Curated in GEE by
+ClimateEngine.org

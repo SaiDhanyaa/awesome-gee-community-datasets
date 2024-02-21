@@ -1,20 +1,15 @@
+
 # UrbanWatch 1m Land Cover & Land Use
+
+## Description:
 
 Very-high-resolution (VHR) land cover and land use (LCLU) is an essential baseline data for understanding fine-scale interactions between humans and the heterogeneous landscapes of urban environments. In this study, we developed a **Fine-resolution, Large-area Urban Thematic information Extraction (FLUTE)** framework to address multiple challenges facing large-area, high-resolution urban mapping, including the view angle effect, high intraclass and low interclass variation, and multiscale land cover types. FLUTE builds upon a teacher-student deep learning architecture and includes two new feature extraction modules – Scale-aware Parsing Module
 (SPM) and View-aware Embedding Module (VEM).
 
 Our model was trained with a new benchmark database containing 52.43 million labeled pixels (from 2014 to 2017 NAIP airborne Imagery) to capture diverse LCLU types and spatial patterns. We assessed the credibility of FLUTE by producing a 1-meter resolution database named UrbanWatch for 22 major cities across the conterminous United States. UrbanWatch contains nine LCLU classes – building, road, parking lot, tree canopy, grass/shrub, water, agriculture, barren, and others, with an overall accuracy of 91.52%. You can read the entire paper [UrbanWatch: A 1-meter resolution land cover and land use database for 22 major cities in the United States here](https://www.sciencedirect.com/science/article/abs/pii/S0034425722002206)
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description were provided by the author(s) or their works.
 
-
-#### Citation
-
-```
-Zhang, Yindan, Gang Chen, Soe W. Myint, Yuyu Zhou, Geoffrey J. Hay, Jelena Vukomanovic, and Ross K. Meentemeyer. "UrbanWatch: A 1-
-meter resolution land cover and land use database for 22 major cities in the United States."
-Remote Sensing of Environment 278 (2022): 113106.
-```
 
 #### Preprocessing
 
@@ -73,25 +68,60 @@ I added additional metadata to the images, including city names and abbreviation
 
 </center>
 
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+```
+Zhang, Yindan, Gang Chen, Soe W. Myint, Yuyu Zhou, Geoffrey J. Hay, Jelena Vukomanovic, and Ross K. Meentemeyer. "UrbanWatch: A 1-
+meter resolution land cover and land use database for 22 major cities in the United States."
+Remote Sensing of Environment 278 (2022): 113106.
+```
+
 ![urban_watch](https://user-images.githubusercontent.com/6677629/173255159-ef2fbdee-e8b6-4421-b331-4106ee801faf.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var urban_watch = ee.ImageCollection("projects/sat-io/open-datasets/HRLC/urban-watch-cities");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/URBAN-WATCH-CITIES
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/URBAN-WATCH-CITIES)
 
+### Sample Application
 
-#### License
+NA
+
+## License
 
 As per the authors, the urban watch data is freely accessible to support urban-related research, urban planning and management, and community outreach efforts. Therefore, the 1-m maps can be freely used for noncommercial purposes and cited; the assumed license is CC-BY-NC-4.0.
 
-Produced by: Laboratory for Remote Sensing and Environmental Change (LRSEC) at the University of North Carolina
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, FLUTE
 
-Keywords: Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, FLUTE
+## Date Created
 
-Last updated on GEE: 2022-06-12
+2022-06-12
+
+## Changelog
+
+NA
+
+## Provider
+
+Laboratory for Remote Sensing and Environmental Change (LRSEC) at the University of North Carolina
+
+## Curated in GEE by
+Samapriya Roy

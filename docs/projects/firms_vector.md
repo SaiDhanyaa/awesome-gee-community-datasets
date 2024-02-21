@@ -1,4 +1,7 @@
+
 # Archival NRT FIRMS Global VIIRS and MODIS vector data
+
+## Description:
 
 The Visible Infrared Imaging Radiometer Suite (VIIRS) 375 m thermal anomalies / active fire product provides data from the VIIRS sensor aboard the joint NASA/NOAA Suomi National Polar-orbiting Partnership (Suomi NPP) and NOAA-20 satellites. The 375 m data complements Moderate Resolution Imaging Spectroradiometer (MODIS) fire detection; they both show good agreement in hotspot detection but the improved spatial resolution of the 375 m data provides a greater response over fires of relatively small areas and provides improved mapping of large fire perimeters. The 375 m data also has improved nighttime performance. Consequently, these data are well suited for use in support of fire management (e.g., near real-time alert systems), as well as other science applications requiring improved fire mapping fidelity.
 
@@ -15,25 +18,6 @@ Archival data was downloaded for each year and ingested as shapefiles. You can [
 
 
 You can read more about the [MODIS product here](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/mcd14dl) and the [VIIRS product here](https://earthdata.nasa.gov/earth-observation-data/near-real-time/firms/viirs-i-band-active-fire-data)
-
-
-#### Citations
-
-```
-NRT VIIRS 375 m Active Fire product VJ114IMGTDL_NRT distributed from NASA FIRMS. Available on-line [https://earthdata.nasa.gov/firms]. doi: 10.5067/FIRMS/VIIRS/VJ114IMGT_NRT.002
-```
-
-```
-NRT VIIRS 375 m Active Fire product VNP14IMGT distributed from NASA FIRMS. Available on-line [https://earthdata.nasa.gov/firms].  doi:10.5067/FIRMS/VIIRS/VNP14IMGT_NRT.002
-```
-
-```
-MODIS Collection 61 NRT Hotspot / Active Fire Detections MCD14DL distributed from NASA FIRMS.Available on-line [https://earthdata.nasa.gov/firms]. 10.5067/FIRMS/MODIS/MCD14DL.NRT.0061
-```
-
-```
-MODIS Collection 6 Hotspot / Active Fire Detections MCD14ML distributed from NASA FIRMS. Available on-line [https://earthdata.nasa.gov/firms]. doi: 10.5067/FIRMS/MODIS/MCD14ML
-```
 
 #### Attribute fields for NRT VIIRS 375 m active fire data distributed by FIRMS
 
@@ -72,9 +56,6 @@ MODIS Collection 6 Hotspot / Active Fire Detections MCD14ML distributed from NAS
 |Type*     |Inferred hot spot type         |0 = presumed vegetation fire,1 = active volcano, 2 = other static land source, 3 = offshore                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |DayNight  |Day or Night                   |D= Daytime fire, N= Nighttime fire                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
-
-![viirs_fire](https://user-images.githubusercontent.com/6677629/165755907-63396aff-10c6-4071-9453-14823a478727.gif)
-
 #### Dataset structure
 The MODIS and VIIRS yearly exports were ingested and names based on their years (MODIS 2000-2020) and (VIIRS 2012-2021)
 
@@ -84,7 +65,39 @@ Example Path: projects/sat-io/open-datasets/MODIS_MCD14DL/MCD14DL_2000
 VIIRS Path: projects/sat-io/open-datasets/VIIRS/VNP14IMGTDL_NRT_YYYY
 Example Path: projects/sat-io/open-datasets/VIIRS/VNP14IMGTDL_NRT_2012
 
-#### Earth Engine Snippet
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+NRT VIIRS 375 m Active Fire product VJ114IMGTDL_NRT distributed from NASA FIRMS. Available on-line [https://earthdata.nasa.gov/firms]. doi: 10.5067/FIRMS/VIIRS/VJ114IMGT_NRT.002
+```
+
+```
+NRT VIIRS 375 m Active Fire product VNP14IMGT distributed from NASA FIRMS. Available on-line [https://earthdata.nasa.gov/firms].  doi:10.5067/FIRMS/VIIRS/VNP14IMGT_NRT.002
+```
+
+```
+MODIS Collection 61 NRT Hotspot / Active Fire Detections MCD14DL distributed from NASA FIRMS.Available on-line [https://earthdata.nasa.gov/firms]. 10.5067/FIRMS/MODIS/MCD14DL.NRT.0061
+```
+
+```
+MODIS Collection 6 Hotspot / Active Fire Detections MCD14ML distributed from NASA FIRMS. Available on-line [https://earthdata.nasa.gov/firms]. doi: 10.5067/FIRMS/MODIS/MCD14ML
+```
+
+### Published Paper Citations
+
+NA
+
+![viirs_fire](https://user-images.githubusercontent.com/6677629/165755907-63396aff-10c6-4071-9453-14823a478727.gif)
+## Earth Engine Snippet:
+
+### Sample Code
 
 Sample paths are provided for two years only change the year to get different years
 
@@ -92,22 +105,34 @@ Sample paths are provided for two years only change the year to get different ye
 var viirs_2012 = ee.FeatureCollection("projects/sat-io/open-datasets/VIIRS/VNP14IMGTDL_NRT_2012");
 var modis_2012 = ee.FeatureCollection("projects/sat-io/open-datasets/MODIS_MCD14DL/MCD14DL_2012");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/ARCHIVAL-NRT-FIRMS-VIIRS-DATA)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/ARCHIVAL-NRT-FIRMS-VIIRS-DATA
+### Sample Application
 
+NA
 
-#### License
+## License
+
 The FIRMS data is distributed under a license similar to Public domain license and distributed by Land, Atmosphere Near real-time Capability for EOS (LANCE) for Fire Information for Resource Management System (FIRMS)
 
 #### Acknowledgements
 We acknowledge the use of data and/or imagery from NASA's Fire Information for Resource Management System (FIRMS) (https://earthdata.nasa.gov/firms), part of NASA's Earth Observing System Data and Information System (EOSDIS).
 
-Created by: Land, Atmosphere Near real-time Capability for EOS (LANCE) for Fire Information for Resource Management System (FIRMS), NASA
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Archival fire, MODIS, VIIRS, Daytime, Nigh time, Thermal anomalies, FIRMS, LANCE, NASA, vector
 
-Keywords: Archival fire, MODIS, VIIRS, Daytime, Nigh time, Thermal anomalies, FIRMS, LANCE, NASA, vector
+## Date Created
 
-Last updated: 2022-04-28
+2022-04-28
 
-Last updated on GEE: 2022-04-28
+## Changelog
+
+NA
+
+## Provider
+
+Land, Atmosphere Near real-time Capability for EOS (LANCE) for Fire Information for Resource Management System (FIRMS), NASA
+
+## Curated in GEE by
+Samapriya Roy

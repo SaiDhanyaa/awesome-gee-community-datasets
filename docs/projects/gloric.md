@@ -1,4 +1,7 @@
+
 # Global River Classification (GloRiC)
+
+## Description:
 
 The Global River Classification (GloRiC) provides river types and sub-classifications for all river reaches contained in the HydroRIVERS database. GloRiC has been developed by utilizing the river network delineation of HydroRIVERS combined with the hydro-enviromental characteristics from the HydroATLAS database and auxiliary information.
 
@@ -13,7 +16,17 @@ Besides the global version of GloRiC, there is also a regional version for Canad
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Ouellet Dallaire, C., Lehner, B., Sayre, R., Thieme, M. (2019). A multidisciplinary framework to derive global river reach classifications at high
@@ -25,7 +38,10 @@ of freshwater systems. Canadian Journal of Fisheries and Aquatic Sciences, 77(2)
 
 ![gloric_rivers](https://user-images.githubusercontent.com/6677629/182002515-97d08269-968b-487d-b6f5-9ecabfcd1f95.gif)
 
-#### Earth Engine Snippet
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var gloric = ee.FeatureCollection("projects/sat-io/open-datasets/GloRiC/GloRiC_v10");
@@ -50,16 +66,31 @@ var gloric_canada = ee.FeatureCollection("projects/sat-io/open-datasets/GloRiC/G
 |Reach_type|Combined river reach type (4 classes)                                                                                                                                                                                                      |
 |Kmeans_30 |Classes of k-means statistical clustering (30 classes)                                                                                                                                                                                     |
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-CLASSIFICATION(GLORIC)
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-CLASSIFICATION(GLORIC))
 
+### Sample Application
 
-#### License
+NA
+
+## License
+
 The data is licensed under a Creative Commons Attribution 4.0 International License (see section 4). By downloading and using the data the user agrees to the terms and conditions of this license.
 
-Created by: Ouellet Dallaire, C., Lehner, B., Sayre, R., Thieme, M. & Schmitt, O
+## Keywords
 
-Curated by: Samapriya Roy
+water,hydrology, rivers, discharge, depth, volume, area, gloric
 
-Keywords: water,hydrology, rivers, discharge, depth, volume, area, gloric
+## Date Created
 
-Last updated: 2022-07-09
+2022-07-09
+
+## Changelog
+
+NA
+
+## Provider
+
+Ouellet Dallaire, C., Lehner, B., Sayre, R., Thieme, M. & Schmitt, O
+
+## Curated in GEE by
+Samapriya Roy

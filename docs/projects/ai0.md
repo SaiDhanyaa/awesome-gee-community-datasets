@@ -1,17 +1,29 @@
+
 # Global Aridity Index
+
+## Description:
 
 The Global Aridity Index (Global-Aridity_ET0) and Global Reference Evapotranspiration (Global-ET0) Version 3 dataset provides high-resolution (30 arc-seconds) global raster climate data for the 1970-2000 period, related to evapotranspiration processes and rainfall deficit for potential vegetative growth, based upon the implementation of a Penman Monteith Evapotranspiration equation for reference crop. The dataset follows the development and is based upon the [WorldClim 2.1](https://www.worldclim.org/data/worldclim21.html) at 30 arc seconds or ~ 1km at the equator. You can read the [paper here](https://www.nature.com/articles/s41597-022-01493-1)
 
 Aridity Index represent the ratio between precipitation and ET0, thus rainfall over vegetation water demand (aggregated on annual basis). Under this formulation, Aridity Index values increase for more humid conditions, and decrease with more arid conditions. The Aridity Index values reported within the Global Aridity Index_ET0 geodataset have been multiplied by a factor of 10,000 to derive and distribute the data as integers (with 4 decimal accuracy). This multiplier has been used to increase the precision of the variable values without using decimals.
 
-#### Data citation
+**Data Website:** You can download the [data and description here](https://figshare.com/articles/dataset/Global_Aridity_Index_and_Potential_Evapotranspiration_ET0_Climate_Database_v2/7504448/6)
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Zomer, Robert; Trabucco, Antonio (2019): Global Aridity Index and Potential Evapotranspiration (ET0) Database: Version 3.
-figshare. Dataset. https://doi.org/10.6084/m9.figshare.7504448.v6
+figshare. Dataset. 
 ```
+https://doi.org/10.6084/m9.figshare.7504448.v6
 
-#### Paper citation
+### Published Paper Citations
 
 ```
 Zomer, R.J.; Xu, J.;  Trabuco, A. 2022. Version 3 of the Global Aridity Index and Potential Evapotranspiration Database.
@@ -22,14 +34,16 @@ Scientific Data 9, 409. https://www.nature.com/articles/s41597-022-01493-1
 
 Global-AI grid layers are available as monthly averages (12 data layers, i.e. one layer for each month) or as an annual average (1 data layer) for the 1970-2000 period.
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var aridity_index_yearly = ee.Image("projects/sat-io/open-datasets/global_ai/global_ai_yearly");
 var aridity_index_monthly = ee.Image("projects/sat-io/open-datasets/global_ai/global_ai_monthly")
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ARIDITY-INDEX
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-ARIDITY-INDEX)
 
 <center>
 
@@ -43,14 +57,29 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 
 </center>
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 The Global-Aridity_ET0 and Global-ET0 datasets are provided for non-commercial use under the CC BY 4.0 Attribution 4.0 International license.
 
-Data Website: You can download the [data and description here](https://figshare.com/articles/dataset/Global_Aridity_Index_and_Potential_Evapotranspiration_ET0_Climate_Database_v2/7504448/6)
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+aridity index, evapotranspiration, geospatial modeling
 
-Keywords: aridity index, evapotranspiration, geospatial modeling
+## Date Created
 
-Last updated: 2022-09-02
+NA
+
+## Changelog
+
+2022-09-02
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

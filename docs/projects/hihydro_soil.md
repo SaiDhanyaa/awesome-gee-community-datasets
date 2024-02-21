@@ -1,4 +1,7 @@
-#  HiHydroSoil v2.0 layers
+
+# HiHydroSoil v2.0 layers
+
+## Description:
 
 **In May 2020, ISRIC has released the latest version (v2.0) of its Soilgrids250m product. This release has made it possible for [FutureWater](https://www.futurewater.eu) to update its HiHydroSoil v1.2 database with newer, more precise and with a higher resolution soil data, which resulted in the development and release of HiHydroSoil v2.0.**
 
@@ -14,13 +17,6 @@ Soil information is the basis for all environmental studies. Since local soil ma
 * Hydrologic Soil Group (USDA)
 
 The Hydrologic Soil Group (HSG) determines the Runoff Curve Number which is often used in hydrological modelling to estimate the direct runoff from rainfall. Four hydrologic soil groups and three dual hydrologic soil groups. The data layers originally consisting of float data type were multiplied by a factor of 10,000 and subsequently converted to integer type. It is therefore required to translate the data to the proper units by multiplying with 0.0001.
-
-#### Citation & Related Publications
-
-```
-Simons, G.W.H., R. Koster, P. Droogers. 2020. HiHydroSoil v2.0 - A high resolution soil map of global hydraulic properties.
-FutureWater Report 213.
-```
 
 You can [download the report here](https://www.futurewater.nl/wp-content/uploads/2020/10/HiHydroSoil-v2.0-High-Resolution-Soil-Maps-of-Global-Hydraulic-Properties.pdf)
 
@@ -44,14 +40,6 @@ You can [download the report here](https://www.futurewater.nl/wp-content/uploads
 |Hydrologic Soil Group                                                                     |A (low runoff potential), A/D, B (moderately low runoff potential), B/D, C (moderately high runoff potential), C/D, D (high runoff potential)|Along with land use, land management practices and soil hydrologic conditions the Hydrologic Soil Group (HSG) determines the Runoff Curve Number which is often used in hydrological modelling to estimate the direct runoff from rainfall. Four hydrologic soil groups and three dual hydrologic soil groups are described by the USDA (2009)|                      |[hydrologic-soil-group](https://code.earthengine.google.com/?asset=projects/sat-io/open-datasets/HiHydroSoilv2_0/Hydrologic_Soil_Group_250m) |
 
 
-#### Earth Engine Snippet: HiHydro Layers (Hydrologic_Soil_Group_250m)
-
-```js
-var hydrologic_soil_group = ee.Image('projects/sat-io/open-datasets/HiHydroSoilv2_0/Hydrologic_Soil_Group_250m');
-```
-
-![soil_hydro_group](https://user-images.githubusercontent.com/6677629/117184621-87d12200-ad9e-11eb-9cdc-fb371b810d93.gif)
-
 #### Raster Value Map
 
 |ClassValue|Hydrologic Soil Group                                                                                              |
@@ -68,7 +56,36 @@ var hydrologic_soil_group = ee.Image('projects/sat-io/open-datasets/HiHydroSoilv
 Sample Code: https://code.earthengine.google.com/4da512c4c0785ef2767f159028579fc6
 
 
-#### Earth Engine Snippet: HiHydro Additional Layers
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+Simons, G.W.H., R. Koster, P. Droogers. 2020. HiHydroSoil v2.0 - A high resolution soil map of global hydraulic properties.
+FutureWater Report 213.
+```
+
+### Published Paper Citations
+
+NA
+
+![soil_hydro_group](https://user-images.githubusercontent.com/6677629/117184621-87d12200-ad9e-11eb-9cdc-fb371b810d93.gif)
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+HiHydro Layers (Hydrologic_Soil_Group_250m)
+
+```js
+var hydrologic_soil_group = ee.Image('projects/sat-io/open-datasets/HiHydroSoilv2_0/Hydrologic_Soil_Group_250m');
+```
+
+HiHydro Additional Layers
 
 ```js
 var ksat = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/ksat");
@@ -89,14 +106,31 @@ var wcsat = ee.ImageCollection("projects/sat-io/open-datasets/HiHydroSoilv2_0/wc
 
 ![hihydro_layers](https://user-images.githubusercontent.com/6677629/117179637-ef846e80-ad98-11eb-967f-e169fe7d84ba.gif)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HiHYDRO-SOIL-LAYERS)
 
-#### License Information
+### Sample Application
+
+NA
+
+## License
+
 HiHydroSoil v2.0 can be used freely and redistributed with attribution. No additional information made available by authors.
 
-Curated by: William Ouellette and Samapriya Roy
+## Keywords
 
-Keywords: Global Hydrologic Soil Group, Hydrology, Hydrological, Soil, Hydraulic, Conductivity, Runoff, Run-off, Water, Water Cycle
+Global Hydrologic Soil Group, Hydrology, Hydrological, Soil, Hydraulic, Conductivity, Runoff, Run-off, Water, Water Cycle
 
-Last updated dataset: October 2020
-Last curated: 2021-05-05
+## Date Created
+
+2021-05-05
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+William Ouellette and Samapriya Roy

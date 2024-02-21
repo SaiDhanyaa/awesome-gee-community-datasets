@@ -1,10 +1,11 @@
+
 # EOG Annual VIIRS Night Time Light
+
+## Description:
 
 <div class="result" markdown>
 
-???+ note
-
-    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+    This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)
 
 </div>
 
@@ -19,7 +20,17 @@ Disclaimer: Whole or parts of the dataset description were provided by the autho
 #### Data preprocessing
 Datasets were preprocessed and metadata was added to each image in collection. The year 2012 had two datasets for a varying period and as such was excluded from the collection for now and maybe added later.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Elvidge, C.D, Zhizhin, M., Ghosh T., Hsu FC, Taneja J. Annual time series of global VIIRS nighttime lights derived from monthly averages:2012 to
@@ -28,7 +39,9 @@ Elvidge, C.D, Zhizhin, M., Ghosh T., Hsu FC, Taneja J. Annual time series of glo
 
 ![eog_viirs](https://user-images.githubusercontent.com/6677629/215304379-2cbf6e19-1c66-4dd5-b974-5db99ba719f6.gif)
 
-#### Code Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var average = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V21/average");
@@ -39,9 +52,14 @@ var average_masked = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V
 var median_masked = ee.ImageCollection("projects/sat-io/open-datasets/EOG_VNL_V21/median_masked");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/EOG-VNL-V21
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/EOG-VNL-V21)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 Public domain license with properitary license language.
 
 ```
@@ -50,10 +68,21 @@ restrictions on their subsequent use by the public. Once obtained, they may be p
 is being provided without restriction on use and distribution.
 ```
 
-Provided by: Colorado School of Mines, Elvidge et al. 2019
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Nighttime lights, VIIRS, Annual time series, Earth Observation Group , EOG, Colorado School of Mines
 
-keywords: Nighttime lights, VIIRS, Annual time series, Earth Observation Group , EOG, Colorado School of Mines
+## Date Created
 
-Last updated on GEE: 2023-01-28
+2023-01-28
+
+## Changelog
+
+NA
+
+## Provider
+
+Colorado School of Mines, Elvidge et al. 2019
+
+## Curated in GEE by
+Samapriya Roy

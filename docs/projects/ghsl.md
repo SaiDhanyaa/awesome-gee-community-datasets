@@ -1,4 +1,7 @@
+
 # Global Human Settlement Layer 2023
+
+## Description:
 
 The Global Human Settlement Layer (GHSL) project is a comprehensive initiative that generates global spatial data and evidence-based analytics, offering insights into the distribution and characteristics of human presence on Earth. The project follows an open and unrestricted data and methods access policy. The knowledge derived from GHSL plays a crucial role in shaping European policies, fostering public discussions, and facilitating the implementation of international frameworks like the 2030 Development Agenda. This release offers enhanced built-up area information, including surface, volume, and height measurements, along with population data. Moreover, it introduces a new settlement model and a classification system for administrative and territorial units based on the "Degree of Urbanisation" framework. The GHSL Data Package 2023 consists of multitemporal products, that offers an insight into the human presence in the past (epochs from 1975 through 2020, 5 years interval) and the future (2025 and 2030). The datasets included can be found below along with descriptors and dataset citations. Methodological citations and additional details on the products themselves [can be found here](https://ghsl.jrc.ec.europa.eu/documents/GHSL_Data_Package_2023.pdf).
 
@@ -11,7 +14,13 @@ The Global Human Settlement Layer (GHSL) project is a comprehensive initiative t
 * GHS-POP R2023A - GHS population grid multitemporal (1975-2030, 5 years interval)
 * GHS-SMOD R2023A - GHS settlement layers, application of the Degree of Urbanisation methodology (stage I) to GHS-POP R2023A and GHS-BUILT-S R2023A, multitemporal (1975-2030, 5 years interval)
 
-#### Dataset citations
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Pesaresi, Martino; Politis, Panagiotis (2023): GHS-BUILT-S R2023A - GHS built-up surface grid, derived from
@@ -46,9 +55,16 @@ multitemporal (1975-2030). European Commission, Joint Research Centre (JRC) [Dat
 
 ```
 
+### Published Paper Citations
+
+NA
+
 ![ghs-urban](https://github.com/digitalearthafrica/deafrica-sandbox-notebooks/assets/6677629/ca86af79-2f62-4983-93aa-2de4a7d842c3)
 
-#### Earth Engine Snippet
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var GHS_BUILT_S_2018 = ee.ImageCollection("projects/sat-io/open-datasets/GHS/GHS_BUILT_S_E2018_GLOBE_R2023A_54009_10_V1_0");
@@ -60,17 +76,31 @@ var GHS_POP_1975_2030 = ee.ImageCollection("projects/sat-io/open-datasets/GHS/GH
 var GHS_SMOD_1975_2030 = ee.ImageCollection("projects/sat-io/open-datasets/GHS/GHS_SMOD")
 ```
 
-Sample Script: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/JRC-GHSL-2023
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/JRC-GHSL-2023)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 The GHSL has been produced by the EC JRC as open and free data. Reuse is authorised, provided the source is acknowledged. For more information, please read the use conditions [European Commission Reuse and Copyright Notice](https://commission.europa.eu/legal-notice_en).
 
-Created by: ESA & JRC
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Global Population, Population count, Urban structure, Built up area, Built up volume, Building height
 
-keywords: Global Population, Population count, Urban structure, Built up area, Built up volume, Building height
+## Date Created
 
-Last modified: 2022-01-20
+2023-09-06
 
-Last updated on GEE: 2023-09-06
+## Changelog
+
+NA
+
+## Provider
+
+ESA & JRC
+
+## Curated in GEE by
+Samapriya Roy

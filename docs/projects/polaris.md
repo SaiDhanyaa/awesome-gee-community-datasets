@@ -1,4 +1,8 @@
+
 # Polaris 30m Probabilistic Soil Properties US
+
+## Description:
+
 Probabilistic Remapping of SSURGO (POLARIS) soil properties—a database of 30-m probabilistic soil property maps over the contiguous United States (CONUS). The mapped variables over CONUS include soil texture, organic matter, pH, saturated hydraulic conductivity, Brooks-Corey and Van Genuchten water retention curve parameters, bulk density, and saturated water content.
 
 |Variable|Description                                                                  |Units       |
@@ -17,7 +21,6 @@ Probabilistic Remapping of SSURGO (POLARIS) soil properties—a database of 30-m
 |n       | measure of the pore size distribution (van genuchten)                       |N/A         |
 |alpha   | scale parameter inversely proportional to mean pore diameter (van genuchten)|log10(kPa-1)|
 
-#### Citation & Related Publications
 
 [Read the original paper here](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2018WR022797) and cite the work using
 
@@ -54,7 +57,27 @@ Overall datasets include processing approximately 80,000 files which have been c
 
 * 06/02/2019 - The variables hb and alpha were originally reported to have the units of log10(cm) and log10(cm-1) respectively. This was a typo. The correct units are log10(kPa) and log10(kPa-1) respectively.
 
-#### Earth Engine Snippet: HiHydro Additional Layers
+You can download the datasets here: http://hydrology.cee.duke.edu/POLARIS/
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+HiHydro Additional Layers
 
 ```js
 var bd_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/bd_mean');
@@ -74,17 +97,31 @@ var alpha_mean = ee.ImageCollection('projects/sat-io/open-datasets/polaris/alpha
 
 ![polaris_layers](https://user-images.githubusercontent.com/6677629/119921913-7231c100-bf34-11eb-9efc-fede2f162272.gif)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/POLARIS-PROBABILISTIC-SOIL-PROPERTIES-30)
 
-You can download the datasets here: http://hydrology.cee.duke.edu/POLARIS/
+### Sample Application
 
-#### License
+NA
+
+## License
+
 POLARIS is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
 
-Curated by: Samapriya Roy
+## Keywords
 
-Keywords: Digital soil mapping, Soil, Environmental modeling, High performance computing
+Digital soil mapping, Soil, Environmental modeling, High performance computing
 
-Last updated dataset: 2019-05-04
+## Date Created
 
-Last curated: 2022-03-05
+ 2019-05-04
+
+## Changelog
+
+2022-03-05
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

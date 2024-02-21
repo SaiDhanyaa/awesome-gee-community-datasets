@@ -1,4 +1,7 @@
+
 # Global NPP-VIIRS-like nighttime light (2000-2022)
+
+## Description:
 
 The nighttime light (NTL) satellite data have been widely used to investigate the urbanization process. The Defense Meteorological Satellite Program Operational Linescan System (DMSP-OLS) stable nighttime light data and Suomi National Polar-orbiting Partnership Visible Infrared Imaging Radiometer Suite (NPP-VIIRS) nighttime light data are two widely used NTL datasets. However, the difference in their spatial resolutions and sensor design requires a cross-sensor calibration of these two datasets for analyzing a long-term urbanization process.
 
@@ -6,32 +9,56 @@ The extended data NPP-VIIRS-like NTL data (2000–2022) have an excellent spatia
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
+## Citations:
 
-#### Citation
+### Publication DOI
 
 ```
 Chen, Z., Yu, B., Yang, C., Zhou, Y., Yao, S., Qian, X., Wang, C., Wu, B., and Wu, J.: An extended time series (2000–2018) of global NPP-VIIRS-like nighttime
 light data from a cross-sensor calibration, Earth Syst. Sci. Data, 13, 889–906, https://doi.org/10.5194/essd-13-889-2021, 2021.
 ```
 
-![ntl_viirs](https://user-images.githubusercontent.com/6677629/185727107-e76dcc00-4194-4f30-92f3-9aa851f671ae.gif)
+### Dataset DOI
 
-#### Earth Engine Snippet
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+![ntl_viirs](https://user-images.githubusercontent.com/6677629/185727107-e76dcc00-4194-4f30-92f3-9aa851f671ae.gif)
+### Sample Code
 
 ```js
 var viirs_ntl = ee.ImageCollection("projects/sat-io/open-datasets/npp-viirs-ntl");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-NPP-VIIRS-LIKE-NTL
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-NPP-VIIRS-LIKE-NTL)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 These datasets are made available under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See Other Information below.
 
-Created by: Chen, Zuoqi et al
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Nighttime light, VIIRS, NTL, NPP-VIIRS
 
-keywords: Nighttime light, VIIRS, NTL, NPP-VIIRS
+## Date Created
 
-Last updated on GEE: 2023-08-13
+2023-08-13
+
+## Changelog
+
+NA
+
+## Provider
+
+Chen, Zuoqi et al
+
+## Curated in GEE by
+Samapriya Roy

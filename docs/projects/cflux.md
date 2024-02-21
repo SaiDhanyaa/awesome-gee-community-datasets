@@ -1,4 +1,7 @@
+
 # Global Forest Carbon Fluxes (2001-2022)
+
+## Description:
 
 Net forest carbon flux represents the net exchange of carbon between forests and the atmosphere between 2001 and 2022, calculated as the balance between carbon emitted by forests and removed by (or sequestered by) forests during the model period (megagrams CO2 emissions/ha). Net carbon flux is calculated by subtracting average annual gross removals from average annual gross emissions in each modeled pixel; negative values are where forests were net sinks of carbon and positive values are where forests were net sources of carbon between 2001 and 2022. Net fluxes are calculated following IPCC Guidelines for national greenhouse gas inventories in each pixel where forests existed in 2000 or were established between 2000 and 2012 according to the Global Forest Change tree cover change data of Hansen et al. (2013). This layer reflects the cumulative net flux during the model period (2001-2022) and must be divided by 22 to obtain average annual net flux; net flux values cannot be assigned to individual years of the model.
 
@@ -8,12 +11,23 @@ Forest carbon emissions represent the greenhouse gas emissions arising from stan
 
 All three layers are part of the forest carbon flux model described in [Harris et al. (2021)](https://www.nature.com/articles/s41558-020-00976-6). This paper introduces a geospatial monitoring framework for estimating global forest carbon fluxes which can assist governments and non-government actors with tracking greenhouse gas fluxes from forests and decreasing emissions or increasing removals by forests. All input layers were resampled to a common resolution of 0.00025 x 0.00025 degrees each to match Hansen et al. (2013). Please also find the dataset on [Global Forest Watch](https://gfw.global/3jLklJ9)
 
-Disclaimer: Parts or all of the dataset description is borrowed from existing description provided by authors.
+**Disclaimer:** Parts or all of the dataset description is borrowed from existing description provided by authors.
 
 #### Dataset preprocessing
 The tiled imagery for the three layers emissions, removals and net flux were combined into individual GEE image objects using GDAL before ingested. LZW compression and tiling was applied during mosaic operation.
 
-#### Citation
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Harris, N.L., Gibbs, D.A., Baccini, A. et al. Global maps of twenty-first century forest carbon fluxes. Nat. Clim. Chang. 11, 234–240 (2021).
@@ -22,28 +36,41 @@ https://doi.org/10.1038/s41558-020-00976-6
 
 ![flux_compressed](https://user-images.githubusercontent.com/6677629/167321603-e46c580c-9ba9-438e-a373-6d420ede7d54.gif)
 
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```
 var emissions = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_emissions");
 var removals = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/gross_removals");
 var net_flux = ee.Image("projects/sat-io/open-datasets/forest_carbon_fluxes/net_flux");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CARBON-FLUXES)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-FOREST-CARBON-FLUXES
+### Sample Application
 
-#### License
+NA
+
+## License
 
 The Global Forest Carbon Fluxes (2001-2022) products are provided free of charge, without restriction of use. For the full license information see the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/) publications, models and data products that make use of these datasets must include proper acknowledgement, including citing the datasets and the journal article as in the following citation.
 
-Created by: Harris, N.L., Gibbs, D.A., Baccini, A. et al
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Carbon emissions, forest change, climate, carbon
 
-Keywords: Carbon emissions, forest change, climate, carbon
+## Date Created
 
-Last updated on GEE: 2023-10-05
+2023-10-05
 
-#### Changelog
+## Changelog
 
 * Updated to year 2022
 * Images were converted to Image Collections
+
+## Provider
+
+Harris, N.L., Gibbs, D.A., Baccini, A. et al
+
+## Curated in GEE by
+Samapriya Roy

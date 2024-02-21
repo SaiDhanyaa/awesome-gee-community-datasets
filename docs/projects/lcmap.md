@@ -1,4 +1,7 @@
+
 # Land Change Monitoring, Assessment, and Projection (LCMAP) v1.3
+
+## Description:
 
 Land Change Monitoring, Assessment, and Projection (LCMAP) represents a new generation of land cover mapping and change monitoring from the U.S. Geological Survey’s Earth Resources Observation and Science (EROS) Center. LCMAP answers a need for higher quality results at greater frequency with additional land cover and change variables than previous efforts. LCMAP Collection 1.3 products were released in August 2022, including LCMAP products for 1985-2021
 
@@ -67,8 +70,10 @@ For classification of thematic land cover, LCMAP implements a Level 1 classifica
 |Wetland         |Lands where water saturation is the determining factor in soil characteristics, vegetation types, and animal communities. Wetlands are composed of mosaics of water, bare soil, and herbaceous or wooded vegetated cover.                                                                                                                                                                                                                                  |
 |Ice/Snow        |Land where accumulated snow and ice does not completely melt during the summer period (i.e., perennial ice/snow).                                                                                                                                                                                                                                                                                                                                          |
 |Barren          |Land comprised of natural occurrences of soils, sand, or rocks where less than 10% of the area is vegetated.                                                                                                                                                                                                                                                                                                                                               |
+## Citations:
 
-#### Citation
+### Publication DOI
+
 There are no restrictions on the use of the LCMAP Reference Data Products. It is not a requirement of data use, but the following citation may be used in publication or presentation materials to acknowledge the USGS as a data source and to credit the original research.
 
 LCMAP Reference Data products courtesy of the U.S. Geological Survey Earth Resources Observation and Science Center.
@@ -76,16 +81,27 @@ LCMAP Reference Data products courtesy of the U.S. Geological Survey Earth Resou
 ```
 Brown, J.F., Tollerud, H.J., Barber, C.P., Zhou, Q., Dwyer, J.L., Vogelmann, J.E., Loveland, T.R., Woodcock, C.E., Stehman, S.V., Zhu, Z.,
 Pengra, B.W., Smith, K., Horton, J.A., Xian, G., Auch, R.F., Sohl, T.L., Sayler, K.L., Gallant, A.L., Zelenak, D., Reker, R.R., and Rover, J.,
-2020 Lessons learned implementing an operational continuous United States national land change monitoring capability—The Land Change Monitoring,
-Assessment, and Projection (LCMAP) approach: Remote Sensing of Environment, v. 238, article 111356, at https://doi.org/10.1016/j.rse.2019.111356.
+2020 Lessons learned implementing an operational continuous United States national land change monitoring capability—The Land Change Monitoring, Assessment, and Projection (LCMAP) approach: Remote Sensing of Environment, v. 238, article 111356, at https://doi.org/10.1016/j.rse.2019.111356.
 
-Zhu, Z., and Woodcock, C.E., 2014, Continuous change detection and classification of land cover using all available Landsat data: Remote Sensing
-of Environment, v. 144, p. 152–171, at https://doi.org/10.1016/j.rse.2014.01.011.
+Zhu, Z., and Woodcock, C.E., 2014, Continuous change detection and classification of land cover using all available Landsat data: Remote Sensing of Environment, v. 144, p. 152–171, at https://doi.org/10.1016/j.rse.2014.01.011.
 ```
+#### Reference Publications: [Find additional publications here](https://www.usgs.gov/core-science-systems/eros/lcmap/publications)
 
+* Brown, Jesslyn F., Heather J. Tollerud, Christopher P. Barber, Qiang Zhou, John L. Dwyer, James E. Vogelmann, Thomas R. Loveland et al. "Lessons learned implementing an operational continuous United States national land change monitoring capability: The Land Change Monitoring, Assessment, and Projection (LCMAP) approach." Remote Sensing of Environment 238 (2020): 111356.
+* Zhu, Zhe, and Curtis E. Woodcock. "Continuous change detection and classification of land cover using all available Landsat data." Remote sensing of Environment 144 (2014): 152-171.
+* Zhou, Qiang, Heather Tollerud, Christopher Barber, Kelcy Smith, and Daniel Zelenak. "Training data selection for annual land cover classification for the land change monitoring, assessment, and projection (LCMAP) initiative." Remote Sensing 12, no. 4 (2020): 699.
+* Stehman, Stephen V., Bruce W. Pengra, Josephine A. Horton, and Danika F. Wellington. "Validation of the US Geological Survey's Land Change Monitoring, Assessment and Projection (LCMAP) Collection 1.0 annual land cover products 1985–2017." Remote Sensing of Environment 265 (2021): 112646.
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+NA
+
+## Earth Engine Snippet:
 ![lcmap](https://user-images.githubusercontent.com/6677629/132149114-1fc74475-6991-4336-b2e6-1f7c3df4e5fc.gif)
-
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var lcachg = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/LCACHG");
@@ -100,39 +116,35 @@ var scstab = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCSTAB");
 var sctime = ee.ImageCollection("projects/sat-io/open-datasets/LCMAP/SCTIME");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP)
 
 **I have also added the reference dataset to be used with the other 10 LCMAP products, which is about 25000 plot level datasets.**
 
 ```js
 var reference = ee.FeatureCollection("projects/sat-io/open-datasets/LCMAP/LCMAP_CU_20200414_V01_REF");
 ```
-
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP-REFERENCE
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/LCMAP-REFERENCE)
 
 ![reference_points](https://user-images.githubusercontent.com/6677629/132157362-a921f5bd-50b9-4cca-8746-7e8004eafb67.PNG)
 
-#### Reference Publications: [Find additional publications here](https://www.usgs.gov/core-science-systems/eros/lcmap/publications)
 
-* Brown, Jesslyn F., Heather J. Tollerud, Christopher P. Barber, Qiang Zhou, John L. Dwyer, James E. Vogelmann, Thomas R. Loveland et al. "Lessons learned implementing an operational continuous United States national land change monitoring capability: The Land Change Monitoring, Assessment, and Projection (LCMAP) approach." Remote Sensing of Environment 238 (2020): 111356.
-* Zhu, Zhe, and Curtis E. Woodcock. "Continuous change detection and classification of land cover using all available Landsat data." Remote sensing of Environment 144 (2014): 152-171.
-* Zhou, Qiang, Heather Tollerud, Christopher Barber, Kelcy Smith, and Daniel Zelenak. "Training data selection for annual land cover classification for the land change monitoring, assessment, and projection (LCMAP) initiative." Remote Sensing 12, no. 4 (2020): 699.
-* Stehman, Stephen V., Bruce W. Pengra, Josephine A. Horton, and Danika F. Wellington. "Validation of the US Geological Survey's Land Change Monitoring, Assessment and Projection (LCMAP) Collection 1.0 annual land cover products 1985–2017." Remote Sensing of Environment 265 (2021): 112646.
+### Sample Application
 
+NA
 
-#### License
+## License
 
 LCMAP data are freely available to the public (similar to a CC0 license) and are generated by leveraging other national programs including the Landsat satellite program
 
-Created by: U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)
+## Keywords
 
-Curated by: Samapriya Roy
+Landsat, ARD, Land Cover, Spectral Change, USGS, EROS
 
-Keywords: Landsat, ARD, Land Cover, Spectral Change, USGS, EROS
+## Date Created
 
-Last updated: 2023-04-04
+2023-04-04
 
-#### Changelog
+## Changelog
 
 Updated v1.3
 
@@ -155,3 +167,10 @@ States (CONUS) Collection 1.2 products are available on EarthExplorer, the LCMAP
 are encouraged to use the most recent release. LCMAP Hawaii (HI) Collection 1.0 products are also available on EarthExplorer, the LCMAP Web Viewer,
 and the LCMAP Mosaic Download website as of January 2022. HI Collection 1.0 includes LCMAP products for 2000-2020.
 ```
+
+## Provider
+
+U.S. Geological Survey Center for Earth Resources Observation and Science (EROS)
+
+## Curated in GEE by
+Samapriya Roy

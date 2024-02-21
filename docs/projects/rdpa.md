@@ -1,4 +1,7 @@
+
 # Regional Deterministic Precipitation Analysis (RDPA)
+
+## Description:
 
 The Regional Deterministic Precipitation Analysis (RDPA) based on the Canadian Precipitation Analysis (CaPA) system is on a domain that corresponds
 to that of the operational regional model, i.e. the Regional Deterministic Prediction System (RDPS-LAM3D) except for areas over the Pacific Ocean
@@ -19,8 +22,13 @@ weather.gc.ca/grib/grib2_RDPA_ps10km_e.html ) apart from the [climate engine org
 |-----------------|----------------|------------------|
 | Precipitation ('precip') | Millimeters | 1.0              |
 
+## Citations:
 
-#### Citation
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 [Canadian Precipitation Analysis (CaPA)](https://collaboration.cmc.ec.gc.ca/cmc/cmoi/product_guide/docs/lib/capa_information_leaflet_20141118_en.pdf) Methodology system
@@ -32,7 +40,13 @@ Environment and Climate Change Canada. (2023). Regional Deterministic Precipitat
 
 ![rdpa](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/15a00ae6-3fd6-45b4-866d-5821dfecd290)
 
-### Earth Engine Snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in Image Collections and get single image
@@ -47,13 +61,31 @@ var prec_palette = ["#ffffcc", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225
 Map.addLayer(rdpa_i.select('precip'), {min: 0, max: 200, palette: prec_palette}, 'precip')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/CE-RDPA-DATASETS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/CE-RDPA-DATASETS)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 Data are subject to the Government of Canada Open Data Licence Agreement: https://open.canada.ca/en/open-government-licence-canada. The terms of this Agreement govern your use and reproduction of the data instead of the copyright reproduction statements found in Important Notices on the Agriculture and Agri-Food Canada website.
 
-Keywords: climate, precipitation, Canada, United States, daily
+## Keywords
 
-Provided by: Environment and Climate Change Canada
+climate, precipitation, Canada, United States, daily
 
-Curated in GEE by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+Environment and Climate Change Canada
+
+## Curated in GEE by
+SClimate Engine Org

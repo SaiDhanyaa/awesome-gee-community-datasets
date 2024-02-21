@@ -1,4 +1,7 @@
+
 # Global Fire WEather Database (GFWED)
+
+## Description:
 
 The Global Fire WEather Database (GFWED) integrates different weather factors influencing the likelihood of a vegetation fire starting and spreading at daily temporal resolution and a ~50-km (0.5-deg x 0.625-deg) spatial resolution from 1980-present. It is based on the Fire Weather Index (FWI) System, the most widely used fire weather system in the world. The FWI System was developed in Canada, and is composed of three moisture codes and three fire behavior indices. The moisture codes capture the moisture content of three generalized fuel classes and the behavior indices reflect the spread rate, fuel consumption and intensity of a fire if it were to start. Details on the development and testing of GFWED can be found in Field et al. (2015) and the evaluation of GFWED products in Field (2020a). Applications of the FWI System can be found in Taylor and Alexander (2006) and technical descriptions are provided by van Wagner (1987) and Dowdy et al. (2009). Additional information about this dataset can [be found here](https://gmao.gsfc.nasa.gov/reanalysis/MERRA-2/) and [here](Global Fire WEather Database (GFWED)). You can also find this dataset [at the climate engine org page here](https://support.climateengine.org/article/71-merra2-fwi).
 
@@ -18,7 +21,17 @@ The Global Fire WEather Database (GFWED) integrates different weather factors in
 
 </center>
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Field, R.D., A.C. Spessa, N.A. Aziz, A. Camia, A. Cantin, R. Carr, W.J. de Groot, A.J. Dowdy, M.D. Flannigan, K. Manomaiphiboon, F. Pappenberger, V.
@@ -31,7 +44,9 @@ doi: 10.1175/JCLI-D-16-0758.1
 
 ![gfwed](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/bb51e157-d453-4dd7-b63e-90f18bca3f47)
 
-### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in Image Collection and get first image
@@ -46,18 +61,31 @@ var fwi_palette = ["#b2182b", "#ef8a62", "#fddbc7", "#f7f7f7", "#d1e5f0", "#67a9
 Map.addLayer(merra2_i.select('FWI'), {min: 0, max: 100, palette: fwi_palette}, 'FWI')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-WEATHER-DB
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-WEATHER-DB)
 
-Sample Script:
+### Sample Application
 
-#### License
+NA
+
+## License
+
 NASA Earth science data are made freely available to the public to the fullest extent possible, consistent with applicable laws and regulations. NASA Earth science data are not subject to copyright.
 
-Keywords: climate, fire, wildfire, NASA, MERRA2, daily, global, GFWED
+## Keywords
 
-Provided by : GFWED development is supported by the NASA Precipitation Measurement Missions Science Team and the NASA Group on Earth Observations Work Program
+climate, fire, wildfire, NASA, MERRA2, daily, global, GFWED
 
-Curated in GEE by: Climate Engine Org
+## Date Created
 
+NA
 
+## Changelog
 
+NA
+
+## Provider
+
+GFWED development is supported by the NASA Precipitation Measurement Missions Science Team and the NASA Group on Earth Observations Work Program
+
+## Curated in GEE by
+Climate Engine Org

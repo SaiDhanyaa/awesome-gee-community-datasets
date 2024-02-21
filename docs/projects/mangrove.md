@@ -1,4 +1,7 @@
+
 # Global Mangrove Watch
+
+## Description:
 
 This study has used L-band Synthetic Aperture Radar (SAR) global mosaic datasets from the Japan Aerospace Exploration Agency (JAXA) for 11 epochs from 1996 to 2020 to develop a long-term time-series of global mangrove extent and change. The study used a map-to-image approach to change detection where the baseline map (GMW v2.5) was updated using thresholding and a contextual mangrove change mask. This approach was applied between all image-date pairs producing 10 maps for each epoch, which were summarised to produce the global mangrove time-series. The resulting mangrove extent maps had an estimated accuracy of 87.4 % (95th conf. int.: 86.2 - 88.6 %), although the accuracies of the individual gain and loss change classes were lower at 58.1 % (52.4 - 63.9 %) and 60.6 % (56.1 - 64.8 %), respectively.
 
@@ -6,20 +9,22 @@ Sources of error included a mis-registration in the SAR mosaic datasets, which c
 
 You can [download the dataset here](https://zenodo.org/record/6894273#.YyMn4tXMKdw) and [read the paper here](https://www.mdpi.com/2072-4292/14/15/3657)
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description were provided by the author(s) or their works.
 
 #### Preprocessing
 
 Raster tiles were mosaiced so that all extents and allied rasters can fit into single collections. Date ranges were added later to the raster and the vector layers.
 
-#### Citation:
+## Citations:
+
+### Publication DOI
 
 ```
 Bunting, P.; Rosenqvist, A.; Hilarides, L.; Lucas, R.M.; Thomas, T.; Tadono, T.; Worthington, T.A.; Spalding, M.; Murray, N.J.; Rebelo, L-M. Global
 Mangrove Extent Change 1996 – 2020: Global Mangrove Watch Version 3.0. Remote Sensing. 2022
 ```
 
-#### Dataset citation
+### Dataset DOI
 
 ```
 Bunting, Pete, Rosenqvist, Ake, Hilarides, Lammert, Lucas, Richard, Thomas, Nathan, Tadono , Takeo, Worthington, Thomas, Spalding , Mark, Murray,
@@ -27,7 +32,12 @@ Nicholas, & Rebelo, Lisa-Maria. (2022). Global Mangrove Watch (1996 - 2020) Vers
 zenodo.6894273
 ```
 
+### Published Paper Citations
+NA
+
+## Earth Engine Snippet:
 ![gmw_small](https://user-images.githubusercontent.com/6677629/190841060-d939cc7d-f3ce-499f-8411-623806936bc8.gif)
+### Sample Code
 
 #### Earth Engine Snippet: Extent
 
@@ -86,15 +96,33 @@ Vector layer with the 1x1 degree tiles used for the analysis
 var tiles = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/GMW/gmw_v3_tiles");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH
-
 Resolution: approx 30m
 
-#### License & Usage
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-WATCH)
+
+### Sample Application
+
+NA
+
+## License
+
 Attribution 4.0 International [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
-Curated in GEE by: Samapriya Roy
+## Keywords
 
-Keywords: Global, Mangrove, GMW, 1996, 2020
+Global, Mangrove, GMW, 1996, 2020
 
-Last updated: 2022-09-16
+## Date Created
+
+2022-09-16
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy.

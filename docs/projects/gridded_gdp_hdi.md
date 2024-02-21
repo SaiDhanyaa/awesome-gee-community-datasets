@@ -1,4 +1,7 @@
+
 # Gridded Global GDP and HDI (1990-2015)
+
+## Description:
 
 Two global key indicators of development are Gross Domestic Product (GDP) and Human Development Index (HDI). While ‘GDP measures the monetary value of final goods and services—that is, those that are bought by the final user—produced in a [given area] in a given period of time, HDI is a composite index of ‘average achievement in key dimensions of human development:
 
@@ -28,25 +31,30 @@ Disclaimer: Whole or parts of the dataset description was provided by the author
 
 * Pedigree HDI: Pedigree index numbers, coded as follows: 1-regional reported; 2-regional scaled; 4-national reported; 5-national interpolated; 6-national extrapolated; 7-no data, regional average used
 
-#### Paper citation
+## Citations:
 
-```
-Kummu, M., Taka, M. & Guillaume, J. Gridded global datasets for Gross Domestic Product and Human Development Index over 1990–2015. Sci Data 5, 180004 (2018).
-https://doi.org/10.1038/sdata.2018.4
-```
+### Publication DOI
 
+NA
 
-#### Dataset citation
+### Dataset DOI
 
 ```
 Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A. (2020), Data from: Gridded global datasets for Gross Domestic Product and Human Development Index over 1990-2015,
 Dryad, Dataset, https://doi.org/10.5061/dryad.dk1j0
 ```
 
+### Published Paper Citations
+
+```
+Kummu, M., Taka, M. & Guillaume, J. Gridded global datasets for Gross Domestic Product and Human Development Index over 1990–2015. Sci Data 5, 180004 (2018).
+https://doi.org/10.1038/sdata.2018.4
+```
 ![gdp_hdi](https://user-images.githubusercontent.com/6677629/168412311-8e1de844-298e-4c4f-8ffc-2ce38963f70c.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var gdp_ppp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/GDP_PPP_1990_2015_5arcmin_v2");
@@ -58,16 +66,31 @@ var pedigree_gdp = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedig
 var pedigree_hdi = ee.Image("projects/sat-io/open-datasets/GRIDDED_HDI_GDP/pedigree_HDI_1990_2015_v2");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-GDP-HDI
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/GLOBAL-GDP-HDI)
 
+### Sample Application
 
-#### License
+NA
+
+## License
+
 This work is licensed under a CC0 1.0 Universal (CC0 1.0) Public Domain Dedication license.
 
-Produced by : Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)
 
-Keywords: : Development indicator, global spatial data, gridded data, Gross Domestic Product (GDP), Human Development Index (HDI), Purchasing Power Parity (PPP)
+## Date Created
 
-Last updated on GEE: 2022-04-30
+2022-04-30
+
+## Changelog
+
+NA
+
+## Provider
+
+Kummu, Matti; Taka, Maija; Guillaume, Joseph H. A.
+
+## Curated in GEE by
+Samapriya Roy

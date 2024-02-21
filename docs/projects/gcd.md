@@ -1,21 +1,10 @@
 # Global Database of Cement Production Assets
 
+## Description:
+
 The Global Database of Cement Production Assets provides information on global cement production plants that are operational today. The database contains 3,117 cement plants with exact geolocation and provides information about ownership, production type, plant type, capacity and production start year where available.
 
 The process consists of three steps: the mixing of limestone with other materials; the heating of the limestone mixture to produce clinker and the grinding of clinker with different ingredients to produce cement. The grinding process can happen in integrated facilities where the clinker is also produced or in independent grinding facilities closer to its end market. While the bulk of greenhouse gas emissions associated with cement production stem from clinker production and integrated facilities, the database covers both integrated as well as independent grinding facilities.
-
-#### Citation
-
-```
-McCarten, M., Bayaraa, M., Caldecott, B., Christiaen, C., Foster, P., Hickey, C., Kampmann, D.,
-Layman, C., Rossi, C., Scott, K., Tang, K., Tkachenko, N., and Yoken, D. 2021.
-Global Database of Cement Production Assets. Spatial Finance Initiative
-```
-
-Additional Information about the [Spatial Finance Initiative can be found here](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project)
-
-![cement_database](https://user-images.githubusercontent.com/6677629/126024364-5d5e8299-3a48-445c-a480-345f8cb84a8f.gif)
-
 
 |SNo|Field                  |Field_Description                                                                                                                                                                                              |GEE_Field   |
 |---|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
@@ -52,25 +41,60 @@ Additional Information about the [Spatial Finance Initiative can be found here](
 |31 |uid                    |Unique identifier for the cement plant                                                                                                                                                                         |uid         |
 |32 |year                   |Year the plant started production                                                                                                                                                                              |year        |
 
-#### Earth Engine Snippet
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+Data download page: [Download Request Form](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/geoasset-databases/)
+
+### Published Paper Citations
+
+```
+McCarten, M., Bayaraa, M., Caldecott, B., Christiaen, C., Foster, P., Hickey, C., Kampmann, D.,
+Layman, C., Rossi, C., Scott, K., Tang, K., Tkachenko, N., and Yoken, D. 2021.
+Global Database of Cement Production Assets. Spatial Finance Initiative
+```
+
+Additional Information about the [Spatial Finance Initiative can be found here](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project)
+
+![cement_database](https://user-images.githubusercontent.com/6677629/126024364-5d5e8299-3a48-445c-a480-345f8cb84a8f.gif)
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var global_cement = ee.FeatureCollection("projects/sat-io/open-datasets/SFI/global_cement_database_20210701")
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-CEMENT-PRODUCTION-ASSETS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-CEMENT-PRODUCTION-ASSETS)
 
-#### Acknowledgements
+### Sample Application
+
+NA
+
+## License
+
+The Global Database of Cement Production Assets can be used by others and is available under a CC BY 4.0 license
+
+## Keywords
+
+GeoAsset Project, Oxford Sustainable Finance Programme, Satellite Applications Catapult, Alan Turing Institute, McCarten et al , cement , Global database
+
+## Date Created
+
+2021-07-16
+
+## Changelog
+
+NA
+
+## Provider
 
 Both databases have been developed by the Oxford Sustainable Finance Programme, Satellite Applications Catapult, and The Alan Turing Institute as part of the Spatial Finance Initiative ‘s GeoAsset Project. Project [FAQ's can be found here](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/)
 
-#### License
-The Global Database of Cement Production Assets can be used by others and is available under a CC BY 4.0 license
-
-Data download page: [Download Request Form](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/geoasset-databases/)
-
-Curated in GEE by: Samapriya Roy
-
-Keywords: : GeoAsset Project, Oxford Sustainable Finance Programme, Satellite Applications Catapult, Alan Turing Institute, McCarten et al , cement , Global database
-
-Last updated: 2021-07-16
+## Curated in GEE by
+Samapriya Roy

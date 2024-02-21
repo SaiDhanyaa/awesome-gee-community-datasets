@@ -1,4 +1,7 @@
+
 # Brazilian Daily Weather Gridded Data(BR-DWGD) 1961-2020
+
+## Description:
 
 The Comprehensive Brazilian Meteorological Gridded Dataset represents a significant advancement in meteorological research, addressing the growing demand for precise and extensive meteorological data. This dataset builds upon its predecessor by enhancing spatial resolution to 0.1° x 0.1° and expanding temporal coverage from January 1961 to July 2020. Incorporating elevation and temperature lapse rates, the dataset improves gridded interpolations for minimum and maximum temperatures, while also encompassing other crucial variables such as precipitation, solar radiation, wind speed, and relative humidity.
 
@@ -19,7 +22,13 @@ The datasets were provided as multiband netcdf files with each representing a si
 |RS      |Solar radiation    |MJ/m2     |0     |0.157086614|
 |U2      |Wind speed         |m/s       |0     |0.059055118|
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Xavier, A. C., Scanlon, B. R., King, C. W., & Alves, A. I. (2022). New improved Brazilian daily weather gridded data (1961–2020).
@@ -28,7 +37,13 @@ International Journal of Climatology, 42( 16), 8390– 8404. https://doi.org/10.
 
 ![brazil_gridded_small](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/42738402-874c-47e5-bd6d-61af2ae6011e)
 
-#### Earth Engine Snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var ET = ee.ImageCollection("projects/sat-io/open-datasets/BR-DWGD/ET");
@@ -42,14 +57,31 @@ var RAIN_GAUGES = ee.FeatureCollection("projects/sat-io/open-datasets/BR-DWGD/RA
 var WEATHER_STATIONS = ee.FeatureCollection("projects/sat-io/open-datasets/BR-DWGD/WEATHER_STATIONS");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/BR-DWDG-EXAMPLE)
 
+### Sample Application
 
-#### License
+NA
+
+## License
+
 The datasets are provided under a Attribution 4.0 International (CC BY 4.0) license.
 
-Provided by: Xavier, A. C. et al
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration
 
-Keywords: Brazil, maximum temperature, minimum temperature, precipitation, solar radiation, wind speed, relative humidity, evapotranspiration
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+Xavier, A. C. et al
+
+## Curated in GEE by
+Samapriya Roy

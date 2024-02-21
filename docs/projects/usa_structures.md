@@ -1,4 +1,7 @@
+
 # USA Structures
+
+## Description:
 
 DHS, FIMA, FEMA’s Response Geospatial Office, Oak Ridge National Laboratory, and the U.S. Geological Survey collaborated to build and maintain the nation’s first comprehensive inventory of all structures larger than 450 square feet for use in Flood Insurance Mitigation, Emergency Preparedness and Response. To create the building outline inventory, FEMA, in conjunction with DHS Science and Technology, partnered with the Oak Ridge National Laboratory (ORNL) to extract the outlines via commercially available satellite imagery. You can download [the datasets here](https://gis-fema.hub.arcgis.com/pages/usa-structures) or explore them [using this link](https://fema.maps.arcgis.com/home/item.html?id=0ec8512ad21e4bb987d7e848d14e7e24#overview)
 
@@ -12,7 +15,18 @@ In addition to the occupancy type and geometry, each polygon includes an Univers
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or providers of the dataset and their works.
 
-#### Citation
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Oak Ridge National Laboratory (ORNL); Federal Emergency Management Agency (FEMA) Geospatial Response Office USA Structures : Last accessed date
@@ -20,7 +34,9 @@ Oak Ridge National Laboratory (ORNL); Federal Emergency Management Agency (FEMA)
 
 ![usa_str](https://user-images.githubusercontent.com/6677629/204973611-40616859-f006-4a61-9aca-4f1440360313.gif)
 
-#### Earth Engine Snippet : Sample
+## Earth Engine Snippet:
+
+### Sample Code
 
 All datasets are in the format
 
@@ -41,16 +57,31 @@ var dc = ee.FeatureCollection('projects/sat-io/open-datasets/ORNL/USA-STRUCTURES
 var arizona = ee.FeatureCollection('projects/sat-io/open-datasets/ORNL/USA-STRUCTURES/USA_ST_AZ')
 
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/ORNL-US-STRUCTURES
+### Sample Application
 
-#### License
+NA
+
+## License
+
 This work is licensed under a Creative Commons by Attribution (CC BY 4.0) license.
 
-Created by: DHS, FEMA, ORNL
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial
 
-keywords: homeland security, homeland defense, emergency response, structures, building outlines, USA structures, buildings, FEMA, Federal Emergency Management Agency, ORNL, Oak Ridge National Laboratory, federal, industrial, education, assembly, residential, commercial
+## Date Created
 
-Last updated in GEE: 2022-12-01
+2022-12-01
+
+## Changelog
+
+NA
+
+## Provider
+
+DHS, FEMA, ORNL
+
+## Curated in GEE by
+Samapriya Roy

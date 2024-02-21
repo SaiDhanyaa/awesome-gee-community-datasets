@@ -1,4 +1,7 @@
+
 # Canopy height: forested ecosystems of Canada
+
+## Description:
 
 This dataset contains two canopy height maps from forested ecosystems of Canada at 250m spatial resolution — one using information from the spaceborne LiDAR GEDI, and the other from ICESat-2. GEDI and ICESat-2 are particular in acquiring canopy height information in Canada — the former providing more accurate information of vegetation, yet not reaching full coverage in Canada, whilst the latter is not specifically designed to provide vegetation information but has a global coverage. We created wall-to-wall maps using ATL08 LiDAR product from the ICESat-2 satellite, and GEDI L2A from GEDI.
 
@@ -8,47 +11,69 @@ You can read the [complete paper here](https://www.mdpi.com/2072-4292/14/20/5158
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
-#### Citation
+## Citations:
 
-```
-Sothe, Camile, Alemu Gonsamo, Ricardo B. Lourenço, Werner A. Kurz, and James Snider. "Spatially Continuous Mapping of Forest Canopy Height in Canada
-by Combining GEDI and ICESat-2 with PALSAR and Sentinel." Remote Sensing 14, no. 20 (2022): 5158.
-```
+### Publication DOI
 
-#### Data Citation
+NA
+
+### Dataset DOI
 
 ```
 Sothe, Camile; Gonsamo, Alemu; Snider, James; Lourenço, Ricardo B.; Kurz, Werner A. (2022): Spatially continuous canopy height maps of forested
 ecosystems of Canada. 4TU.ResearchData. Dataset. https://doi.org/10.4121/21363081.v1
 ```
 
+### Published Paper Citations
+
+```
+Sothe, Camile, Alemu Gonsamo, Ricardo B. Lourenço, Werner A. Kurz, and James Snider. "Spatially Continuous Mapping of Forest Canopy Height in Canada
+by Combining GEDI and ICESat-2 with PALSAR and Sentinel." Remote Sensing 14, no. 20 (2022): 5158.
+```
+
 ![tree_canopy _small](https://user-images.githubusercontent.com/6677629/197342366-149bd4cf-feb3-4602-804f-2065468f3214.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet: Canopy Height GEDI
+### Sample Code
+
+**1. Canopy Height GEDI**
 
 ```js
 var gedi_fc_ht = ee.Image("projects/sat-io/open-datasets/CA_FOREST/GEDI_forest_canopy_height_250m_v1");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-TREE-CANOPY-HEIGHT-GEDI)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-TREE-CANOPY-HEIGHT-GEDI
-
-#### Earth Engine Snippet: ICESat2
+**2.ICESat2**
 
 ```js
 var icesat_fc_ht = ee.Image("projects/sat-io/open-datasets/CA_FOREST/ICESat2_forest_canopy_height_250m_v1");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-TREE-CANOPY-HEIGHT-ICESAT)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-TREE-CANOPY-HEIGHT-ICESAT
+### Sample Application
 
+NA
 
-#### License
-This dataset is available under a Creative Commons BY-4.0 license
+## License
 
-Created by: Sothe,Camile, et al. 2022
+Creative Commons BY-4.0 license
 
-Curated in GEE by : Samapriya Roy
+## Keywords
 
-Keywords: LiDAR analysis, ICESat-2, GEDI, canopy height distribution, Carbon storage and distribution
+LiDAR analysis, ICESat-2, GEDI, canopy height distribution, Carbon storage and distribution
 
-Last updated on GEE: 2022-10-20
+## Date Created
+
+2022-10-20
+
+## Changelog
+
+NA
+
+## Provider
+
+Sothe,Camile, et al. 2022
+
+## Curated in GEE by
+Samapriya Roy

@@ -1,4 +1,7 @@
+
 #  NOAA Evaporative Stress Index (ESI)
+
+## Description:
 
 The Evaporative Stress Index (ESI) is produced by the NOAA Center for Satellite Applications and Research (STAR) and USDA-ARS Hydrology and Remote Sensing Laboratory. The Evaporative Stress Index (ESI) is a thermal indicator of anomalous ET conditions that can be used for drought monitoring. The Evaporative Stress Index (ESI) describes temporal anomalies in evapotranspiration (ET), highlighting areas with anomalously high or low rates of water use across the land surface. Here, ET is retrieved via energy balance using remotely sensed land-surface temperature (LST) time-change signals. LST is a fast- response variable, providing proxy information regarding rapidly evolving surface soil moisture and crop stress conditions at relatively high spatial resolution. The ESI also demonstrates capability for capturing early signals of “flash drought”, brought on by extended periods of hot, dry and windy conditions leading to rapid soil moisture depletion. You can get additional information on this [dataset here](https://www.drought.gov/data-maps-tools/evaporative-stress-index-esi) and [climate engine org data page here](https://support.climateengine.org/article/60-esi).
 
@@ -21,8 +24,9 @@ The Evaporative Stress Index (ESI) is produced by the NOAA Center for Satellite 
 | 12-week Evaporative Stress Index (‘ESI_12wk’) | - Units: Unitless                     |
 |                                  | - Scale factor: 1.0                    |
 
+## Citations:
 
-#### Citation
+### Publication DOI
 
 ```
 - Anderson, M. C., J. M. Norman, G. R. Diak, W. P. Kustas, and J. R. Mecikalski, 1997: A two-source time-integrated model for estimating surface
@@ -51,9 +55,19 @@ directional radiometric surface temperature. Agric. For. Met., 77, 263-293.
 - Svoboda, M., and Coauthors, 2002: The Drought Monitor. Bull. Amer. Meteorol. Soc., 83, 1181-1190.
 ```
 
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
 ![esi](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/4c4d36bd-1eb6-4f15-a109-06b1d7dfb2ad)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in Image Collection and get first image
@@ -72,14 +86,31 @@ Map.addLayer(esi_4wk_i.select('ESI'), {min: -2.5, max: 2.5, palette: esi_palette
 Map.addLayer(esi_12wk_i.select('ESI'), {min: -2.5, max: 2.5, palette: esi_palette}, 'ESI_12wk')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-ESI-10KM
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-ESI-10KM)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 NOAA data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no restrictions on their subsequent use by the public. Once obtained, they may be put to any lawful use. The forgoing data is in the public domain and is being provided without restriction on use and distribution. For more information visit the NWS disclaimer site.
 
-Keywords: Drought, vegetation, remote sensing, climate, USDA-ARS, NOAA, MODIS, LST, global, near real-time
+## Keywords
 
-Provided by NOAA,USDA-ARS
+Drought, vegetation, remote sensing, climate, USDA-ARS, NOAA, MODIS, LST, global, near real-time
 
-Curated in GEE by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+NOAA,USDA-ARS
+
+## Curated in GEE by
+Climate Engine Org

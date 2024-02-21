@@ -1,4 +1,7 @@
+
 # MAXAR Open Data Events: Multispectral
+
+## Description:
 
 Pre and post event high-resolution satellite imagery in support of emergency planning, risk assessment, monitoring of staging areas and emergency response, damage assessment, and recovery. These images are generated using the Maxar ARD pipeline, tiled on an organized grid in analysis-ready cloud-optimized formats. New data is released in response to activations. Older data may be migrated to the ARD format as needed. You can find [additional details and datasets here](https://www.maxar.com/open-data)
 
@@ -6,16 +9,24 @@ Pre and post event high-resolution satellite imagery in support of emergency pla
 
 The metadata tags were parsed from the existing metadata json files and available properties were parsed to confirm to property names for GEE. The datetime property was added as system:time_start for easy filtering of datasets. Not all datasets have been added and this will be continuously updated to include additional datasets/disasters
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
-Maxar Open Data Program was accessed on DATE from [url].
+Maxar Open Data Program was accessed on DATE from [url](https://www.maxar.com/open-data)
 ```
+### Dataset DOI
 
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
 ![maxar_opendata](https://user-images.githubusercontent.com/6677629/198897620-2714ab7d-89db-4885-95c2-0ede5602b3d5.gif)
-
-
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var afghanistan_earthquake_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/afghanistan_earthquake_2022");
@@ -29,16 +40,31 @@ var sudan_flooding_2022 = ee.ImageCollection("projects/sat-io/open-datasets/MAXA
 var turkey_earthquake_2023 = ee.ImageCollection("projects/sat-io/open-datasets/MAXAR-OPENDATA/earthquake_turkey_2023");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/MAXAR-OPENDATA-MS)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 This work is licensed under [Creative Commons Attribution Non Commercial 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
 
-Data provided by: MAXAR
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+disaster, maxar, high resolution, flooding, hurriance, earthquake
 
-Keywords: disaster, maxar, high resolution, flooding, hurriance, earthquake
+## Date Created
 
-Last updated on GEE: 2022-10-30
+2022-10-30
+
+## Changelog
+
+NA
+
+## Provider
+
+MAXAR
+
+## Curated in GEE by
+Samapriya Roy

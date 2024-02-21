@@ -1,4 +1,7 @@
+
 # Mismanaged Plastic Waste Dataset in Rivers
+
+## Description:
 
 This dataset shows the exposure of global rivers to mismanaged plastic waste (MPW) in 2015 and its projected impact in 2060 based on three scenarios. The different scenarios for 2060 are A: business as usual, B: improved plastic recycling, and C:improved plastic recycling and reduced plastic use projection.
 
@@ -60,22 +63,29 @@ _Values for FFPW datasets_
 * Code 200 - Good Connectivity River
 * Code 300 - Impacted River
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
 Nyberg, Björn, Peter T. Harris, Ian Kane, and Thomas Maes. "Leaving a plastic legacy: Current and future scenarios for mismanaged plastic waste in
 rivers." Science of the Total Environment 869 (2023): 161821.
 ```
 
-#### Dataset citation
+### Dataset DOI
 
 ```
 Nyberg, Bjorn. (2022). Legacy of MPW in Rivers (0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.6894684
 ```
 
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
 ![mpw](https://user-images.githubusercontent.com/6677629/223344445-652196f1-43e9-456c-bdcc-5e21a434980d.gif)
 
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var change = ee.Image('projects/sat-io/open-datasets/MPW/changeMap'); //River Change
@@ -84,13 +94,31 @@ var env = ee.Image('projects/sat-io/open-datasets/MPW/Plastics_Env'); //River Ty
 var mpw = ee.Image('projects/sat-io/open-datasets/MPW/MPW_data'); // Mismanaged plastic waste
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/MISMANAGED-PLASTIC-WASTE)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 The dataset is made available under the terms of the [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/legalcode)
 
-Curated by: Björn Nyberg
+## Keywords
 
-Keywords: Rivers, Plastic, Mismanaged plastic waste
+Rivers, Plastic, Mismanaged plastic waste
 
-Last updated: July 24th 2022
+## Date Created
+
+July 24th 2022
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Björn Nyberg

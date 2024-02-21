@@ -1,10 +1,12 @@
+
 # Microsoft Bing Global Mined Roads
+
+## Description:
 
 <div class="result" markdown>
 
-???+ note
 
-    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+    This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
 
 </div>
 
@@ -31,15 +33,25 @@ Disclaimer: Whole or parts of the dataset description was provided by the author
 #### Data preprocessing
 To get the datasets ready the TSV files were converted to GeoJSON format and then to shapefile splitting up large GeoJSON that would exceed the 4 GB limit for shapefiles. To allow for consistency checks checks were performed to exclude the point datasets that were part of the US data extract but encoded as line strings.The larger datasets like Europe and US were then merged back, flattened and exported into a single GEE asset for ease of use.
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
 Microsoft Road Detection - Mined Roads : Last accessed date
 ```
 
-![msroads_small](https://user-images.githubusercontent.com/6677629/211210802-76ccff90-3b0e-4ed1-bbde-e6a035d752a9.gif)
+### Dataset DOI
 
-#### Earth Engine Snippet : Sample
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+![msroads_small](https://user-images.githubusercontent.com/6677629/211210802-76ccff90-3b0e-4ed1-bbde-e6a035d752a9.gif)
+### Sample Code
 
 ```js
 var africa_center = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/Africa/AfricaCenter");
@@ -61,17 +73,31 @@ var south_america = ee.FeatureCollection("projects/earthengine-legacy/assets/pro
 var united_states = ee.FeatureCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/MSRoads/US");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/MS-GLOBAL-ROADS)
 
+### Sample Application
 
-#### License
+NA
+
+## License
 
 The datasets are released under the [Open Data Commons Open Database License](https://spdx.org/licenses/ODbL-1.0.html).
 
-Created by: Microsoft
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM
 
-Keywords: Mined Roads, Machine Learning, Classification, linestring, Global roads, OSM
+## Date Created
 
-Last updated in GEE: 2022-12-30
+2022-12-30
+
+## Changelog
+
+NA
+
+## Provider
+
+Microsoft
+
+## Curated in GEE by
+Samapriya Roy

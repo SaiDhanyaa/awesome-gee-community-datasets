@@ -1,17 +1,25 @@
+
 # Harmonised global datasets of wind and solar farm locations and power
+
+## Description:
 
 Energy systems need decarbonisation in order to limit global warming to within safe limits. While global land planners are promising more of the planet’s limited space to wind and solar photovoltaic, there is little information on where current infrastructure is located. The majority of recent studies use land suitability for wind and solar, coupled with technical and socioeconomic constraints, as a proxy for actual location data. Here, we address this shortcoming. Using readily accessible OpenStreetMap data we present, to our knowledge, the first global, open-access, harmonised spatial datasets of wind and solar installations. We also include user friendly code to enable users to easily create newer versions of the dataset. Finally, we include first order estimates of power capacities of installations. We anticipate these data will be of widespread interest within global studies of the future potential and trade-offs associated with the global decarbonisation of energy systems.
 
 Data is available for download from [figshare here](https://figshare.com/articles/dataset/Harmonised_global_datasets_of_wind_and_solar_farm_locations_and_power/11310269)
 
+## Citations:
 
-#### Data Citation
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Dunnett, S. Harmonised global datasets of wind and solar farm locations and power. figshare. Dataset. https://doi.org/10.6084/m9.figshare.11310269 (2020)
 ```
 
-#### Paper Citation
+### Published Paper Citations
 
 ```
 Dunnett, S., Sorichetta, A., Taylor, G. et al. Harmonised global datasets of wind and solar farm locations and power. Sci Data 7, 130 (2020). https://doi.org/10.1038/s41597-020-0469-8
@@ -19,14 +27,17 @@ Dunnett, S., Sorichetta, A., Taylor, G. et al. Harmonised global datasets of win
 
 ![solar_wind](https://user-images.githubusercontent.com/25802584/131460423-f5acebf1-d53b-48e7-a97a-9abab4ca8207.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var wind_farms = ee.FeatureCollection("projects/sat-io/open-datasets/global_wind_farms_2020");
 var solar_farms = ee.FeatureCollection("projects/sat-io/open-datasets/global_solar_farms_2020");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-WIND-SOLAR-FARMS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/HARMONIZED-WIND-SOLAR-FARMS)
+
 
 #### Property Mapping
 
@@ -45,13 +56,30 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 |power             |estimated power capacity in MW|
 
 
-#### License
+
+### Sample Application
+
+NA
+
+## License
+
 Data adapted or built on OpenStreetMap data are required to be distributed under the same licence. These data are therefore made available under the Open Data Commons Open Database License (ODbL). Personal figshare accounts cannot currently present data under this licence so the data are currently (incorrectly) presented under a CC0 licence as a stopgap until this changes.
 
-Created by: Dunnett et al.
+## Keywords
 
-Curated by: Samapriya Roy
+ solar, wind, energy, renewable
 
-Keywords:  solar, wind, energy, renewable
+## Date Created
 
-Last updated: 2021-08-31
+2021-08-31
+
+## Changelog
+
+NA
+
+## Provider
+
+Dunnett et al.
+
+## Curated in GEE by
+Samapriya Roy

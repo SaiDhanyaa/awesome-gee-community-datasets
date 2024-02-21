@@ -1,4 +1,7 @@
+
 # Rasterized building footprint dataset for the US
+
+## Description:
 
 The Bing Maps team at Microsoft released a U.S.-wide vector building dataset in 2018, which includes over 125 million building footprints for all 50 states in GeoJSON format. This dataset is extracted from aerial images using deep learning object classification methods. Large-extent modelling (e.g., urban morphological analysis or ecosystem assessment models) or accuracy assessment with vector layers is highly challenging in practice. Although vector layers provide accurate geometries, their use in large-extent geospatial analysis comes at a high computational cost.
 
@@ -18,14 +21,20 @@ This Project is funded by NASA’s Biological Diversity and Ecological Forecasti
 
 You can [download the datasets here](https://www.sciencebase.gov/catalog/item/5d27a8dfe4b0941bde650fc7)
 
-#### Data Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Heris, M.P., Foks, N., Bagstad, K., and Troy, A., 2020, A national dataset of rasterized building
 footprints for the U.S.: U.S. Geological Survey data release, https://doi.org/10.5066/P9J2Y1WG.
 ```
 
-#### Paper Citation
+### Published Paper Citations
 
 ```
 Heris, M.P., Foks, N.L., Bagstad, K.J. et al. A rasterized building footprint dataset for the
@@ -34,8 +43,9 @@ United States. Sci Data 7, 207 (2020). https://doi.org/10.1038/s41597-020-0542-3
 
 ![urban_raster](https://user-images.githubusercontent.com/6677629/143531807-17b3ed14-a4bc-415e-b0f0-f0a8599018b2.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var avg_area = ee.Image("projects/sat-io/open-datasets/us_building_raster/building_avg_area");
@@ -46,16 +56,31 @@ var building_count = ee.Image("projects/sat-io/open-datasets/us_building_raster/
 var centroid_count = ee.Image("projects/sat-io/open-datasets/us_building_raster/building_centroid_count");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RASTERIZED-BUILDING-FOOTPRINT-US
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/RASTERIZED-BUILDING-FOOTPRINT-US)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 Datasets are freely available to the public under the Creative Commons Public Domain Dedication waiver http://creativecommons.org/publicdomain/zero/1.0/.
 
-Created by: Heris et al, NASA, USGS
+## Keywords
 
-Curated by: Samapriya Roy
+Building Footprint, Built Environment Density, Land cover, Land use
 
-Keywords: : Building Footprint, Built Environment Density, Land cover, Land use
+## Date Created
 
-Last updated: 2021-11-26
+2021-11-26
+
+## Changelog
+
+NA
+
+## Provider
+
+Heris et al, NASA, USGS
+
+## Curated in GEE by
+Samapriya Roy

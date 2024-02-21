@@ -1,10 +1,23 @@
+
 # Vegetation dryness for western USA
+
+## Description:
 
 This dataset shows how dry or wet the vegetation is in western US. The dataset is available at 15-day temporal resolution and 250 m spatial resolution. It spans April 2016 to present.
 
 The variable contained in the maps is live fuel moisture content. It is defined as the mass of water per unit mass of live biomass (expressed as a percentage quantity). For e.g., if a pixel value = 150, it means that the vegetation in that pixel has 1.5 Kg of water for every 1 Kg of live biomass. Live fuel moisture content was estimated from a deep learning model trained using Sentinel-1 C-band backscatter, Landsat-8 optical reflectance, and various other land surface characteristics like canopy height, soil texture, etc.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Rao, K., Williams, A.P., Flefil, J.F. & Konings, A.G. (2020). SAR-enhanced mapping
@@ -18,7 +31,9 @@ Read the [paper here](https://www.sciencedirect.com/science/article/pii/S0034425
   <img width="360" src="https://github.com/kkraoj/lfmc_from_sar/blob/master/figures/lfmc_2_panels_projected_annotated.gif?raw=true" alt="Seasonal variation of live fuel moisture content estimated by our deep learning model.">
 </p>
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 **Asset Link**
 
@@ -49,6 +64,7 @@ Map.addLayer(image, {min: [50], max: [200], palette: palette_lfmc, opacity: 0.95
 Map.setCenter(-113.03, 38, 5);
 
 ```
+### Sample Application
 
 **Earth Engine App** https://kkraoj.users.earthengine.app/view/live-fuel-moisture
 
@@ -56,12 +72,25 @@ Map.setCenter(-113.03, 38, 5);
 
 The scripts supporting the analysis can be found at https://github.com/kkraoj/lfmc_from_sar
 
-#### License Information
+## License
 
 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) Under which you can copy and redistribute the material in any medium or format.
 
-Created and Curated by: KrishnaRao, A. ParkWilliams, Jacqueline Fortin Flefil, Alexandra G.Konings
+## Keywords
 
-Keywords: vegetation, dryness, drought, wildfire, USA, live fuel moisture content
+vegetation, dryness, drought, wildfire, USA, live fuel moisture content
 
-Last updated: 2021-06-29
+## Date Created
+
+2021-06-29
+
+## Changelog
+
+NA
+
+## Provider
+
+KrishnaRao, A. ParkWilliams, Jacqueline Fortin Flefil, Alexandra G.Konings
+
+## Curated in GEE by
+KrishnaRao, A. ParkWilliams, Jacqueline Fortin Flefil, Alexandra G.Konings

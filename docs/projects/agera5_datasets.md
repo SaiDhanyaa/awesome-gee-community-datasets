@@ -1,4 +1,7 @@
-# AgERA5 (ECMWF) dataset
+
+# AgERA5 (ECMWF)
+
+## Description:
 
 Daily surface meteorological data for the period from 1979 to present as input for agriculture and agro-ecological studies. This dataset is based on
 the hourly ECMWF ERA5 data at surface level and is referred to as AgERA5. Acquisition and pre-processing of the original ERA5 data is a complex and
@@ -9,7 +12,7 @@ aggregated to daily time steps at the local time zone and corrected towards a fi
 trained on ECMWF's operational high-resolution atmospheric model (HRES) at a 0.1° resolution. This way the data are tuned to the finer topography,
 finer land use pattern, and finer land-sea delineation of the ECMWF HRES model. You can find [additional information here](https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-agrometeorological-indicators?tab=overview) and [in the climate engine org dataset page here](https://support.climateengine.org/article/58-era5-ag)
 
-#### Dataset Description
+#### **Dataset Description:**
 
 **Spatial Information**
 
@@ -64,7 +67,17 @@ finer land use pattern, and finer land-sea delineation of the ECMWF HRES model. 
 | Relative humidity, 2m 15h ('Relative_Humidity_2m_15h') | - Units: Percent        |
 |                           | - Scale factor: 1.0                |
 
-#### Citation
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+NA
+
+### Published Paper Citations
 
 ```
 Copernicus Climate Change Service (C3S) (2017): ERA5 Ag: Agrometeorological indicators from 1979 to present derived from reanalysis. Copernicus
@@ -74,7 +87,9 @@ https://cds.climate.copernicus.eu/cdsapp#!/dataset/sis-agrometeorological-indica
 
 ![agera5](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/c93b3918-ff1e-4f0b-a3c3-18b12435f1e1)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in Image Collection and get first image
@@ -96,13 +111,30 @@ Map.addLayer(agera5_i.select('Snow_Thickness_Mean'), {min: 0, max: 100, palette:
 Map.addLayer(agera5_i.select('Snow_Thickness_LWE_Mean'), {min: 0, max: 20, palette: prec_palette}, 'Snow_Thickness_LWE_Mean')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/AGERA5-DATASETS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/weather-climate/AGERA5-DATASETS)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 Data are subject to the License to Use Copernicus Products:[ https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf](https://cds.climate.copernicus.eu/api/v2/terms/static/licence-to-use-copernicus-products.pdf)
 
-Keywords: climate, reanalysis, near real-time, ECMWF, precipitation, temperature
+## Keywords
 
-Dataset provider: Copernicus
+climate, reanalysis, near real-time, ECMWF, precipitation, temperature
 
-Dataset curated in GEE by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+Copernicus
+
+## Curated in GEE by
+Samapriya Roy

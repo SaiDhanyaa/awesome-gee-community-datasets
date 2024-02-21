@@ -1,4 +1,7 @@
+
 # Canada Landsat Derived Forest harvest disturbance 1985-2020
+
+## Description:
 
 The annual forest change data included in this product is national in scope (entire forested ecosystem) and represents the wall-to-wall
 characterization of harvest in Canada at a 30-m spatial resolution. The information outcomes represent 36 years of harvest change over Canada’s
@@ -16,7 +19,17 @@ data, image processing, and time series change detection methods applied, as wel
 
 Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
 
-#### Dataset citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Hermosilla, T., Wulder, M.A., White, J.C., Coops, N.C., Hobart, G.W., Campbell, L.B., 2016. Mass data processing of time series Landsat imagery:
@@ -25,21 +38,38 @@ pixels to data products for forest monitoring. International Journal of Digital 
 
 ![ca_forest_harvest_small](https://user-images.githubusercontent.com/6677629/215292086-0b98bb65-e49a-479e-9fd4-4422d49e426e.gif)
 
-#### Code Snippet
+## Earth Engine Snippet:
 
+### Sample Code
 ```js
 var ca_forest_harvest = ee.Image("projects/sat-io/open-datasets/CA_FOREST/CA_Forest_Harvest_1985-2020");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-HARVEST-1985-2020
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/CA-FOREST-HARVEST-1985-2020)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 This work is licensed under and freely available to the public Open Government Licence - Canada.
 
-Created by: Hermosilla et al. 2016
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Forest Harvest, Forest inventory, Land cover, Landsat, Machine learning
 
-keywords: Forest Harvest, Forest inventory, Land cover, Landsat, Machine learning
+## Date Created
 
-Last updated on GEE: 2023-01-28
+2023-01-28
+
+## Changelog
+
+NA
+
+## Provider
+
+Hermosilla et al. 2016
+
+## Curated in GEE by
+Samapriya Roy

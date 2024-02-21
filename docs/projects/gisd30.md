@@ -1,4 +1,7 @@
+
 # Global 30m Impervious-Surface Dynamic Dataset (GISD30)
+
+## Description:
 
 The Global 30 m Impervious-Surface Dynamic Dataset (GISD30) offers an invaluable resource for understanding the ever-changing landscape of impervious surfaces across the globe from 1985 to 2020. This dataset holds profound scientific significance and practical applications in the realms of urban sustainable development, anthropogenic carbon emissions assessment, and global ecological-environment modeling. The GISD30 was meticulously created through an innovative and automated methodology that capitalizes on the strengths of spectral-generalization and automatic-sample-extraction strategies. Leveraging time-series Landsat imagery on the Google Earth Engine cloud computing platform, the dataset provides comprehensive insights into impervious-surface dynamics.
 
@@ -21,7 +24,9 @@ The global dynamic dataset was used to label the expansion information in a sing
 
 </center>
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
 Zhang, X., Liu, L., Zhao, T., Gao, Y., Chen, X., and Mi, J.: GISD30: global 30 m impervious-surface dynamic dataset from 1985 to 2020 using
@@ -29,16 +34,22 @@ time-series Landsat imagery on the Google Earth Engine platform, Earth Syst. Sci
 https://doi.org/10.5194/essd-14-1831-2022, 2022
 ```
 
-#### Dataset citation
+### Dataset DOI
 
 ```
 Liangyun,Liu; Xiao,Zhang; Tingting,Zhao; Yuan,Gao; Xidong,Chen; Jun,Mi. (2021). GISD30: global 30-m impervious surface dynamic dataset from 1985 to
 2020 using time-series Landsat imagery on the Google Earth Engine platform [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5220816
 ```
 
+### Published Paper Citations
+
+NA
+
 ![gisd_optimized_img](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/44e6bef1-3e60-4ca5-8380-f9654cefb329)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var gisd30 = ee.Image("projects/sat-io/open-datasets/GISD30_1985_2020");
@@ -54,17 +65,31 @@ snazzy.addStyle("https://snazzymaps.com/style/132/light-gray", "Grayscale");
 Map.addLayer(gisd30,{min:1,max:8,palette:palette},'GISD 30')
 
 ```
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-landuse-landcover/GLOBAL-IMPERVIOUS-30-GISD)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:/global-landuse-landcover/GLOBAL-IMPERVIOUS-30-GISD
+### Sample Application
 
-#### License
+NA
+
+## License
 
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Created by : Zhang, X., Liu, L., Zhao, T., Gao, Y., Chen, X., and Mi, J.
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Landsat, Urban, Google Earth Engine, Impervious area, Urban expansion, global dataset
 
-Keywords: Landsat, Urban, Google Earth Engine, Impervious area, Urban expansion, global dataset
+## Date Created
 
-Last updated in GEE: 2023-09-12
+2023-09-12
+
+## Changelog
+
+NA
+
+## Provider
+
+Zhang, X., Liu, L., Zhao, T., Gao, Y., Chen, X., and Mi, J.
+
+## Curated in GEE by
+Samapriya Roy

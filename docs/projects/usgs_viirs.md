@@ -1,4 +1,8 @@
+
 # USGS VIIRS Evapotranspiration
+
+## Description:
+
 The VIIRS Evapotranspiration (ET) dataset, based on Version 6 of the global ET product, is derived from remote sensing utilizing VIIRS thermal imagery and global weather datasets. It employs the SSEBop (Simplified Surface Energy Balance operational version) methodology, initially proposed by Senay et al. in 2007, with specialized parameterization tailored for operational applications using satellite psychrometry principles, as introduced by Senay in 2018. In SSEBop Version 6, the novel Forcing And Normalizing Operation (FANO) algorithm, as outlined by Senay et al. in 2023, is employed to establish the wet-bulb boundary condition, enabling robust modeling of spatiotemporal dynamics of ETa (actual evapotranspiration) across various landscapes and seasons, irrespective of vegetation cover density.
 
 Notably, recent assessments of the global ETa product indicate its promising performance for drought monitoring through ETa Anomaly analysis. However, for studies involving water budget analysis necessitating absolute magnitudes, a local or region-specific bias correction procedure, as detailed by Senay et al. in 2020, may be required. The dataset's creation involves the integration of VIIRS-based land surface temperature, maximum air temperature from WorldClim, and reference ET obtained from gridded weather datasets such as TerraClimate by Abatzoglou et al. (2018) for global coverage and Chiew et al. (2002) for Australia.
@@ -34,7 +38,17 @@ You can find additional information on these datasets in the links below
 - https://earlywarning.usgs.gov/fews/product/460
 - https://earlywarning.usgs.gov/fews/product/458
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Senay, G.B., Parrish, G.E., Schauer, M., Friedrichs, M., Khand, K., Boiko, O., Kagone, S., Dittmeier, R., Arab, S. and Ji, L., 2023. Improving the Operational Simplified Surface Energy Balance Evapotranspiration Model Using the Forcing and Normalizing Operation. Remote Sensing,15(1), p.260. https://doi.org/10.3390/rs15010260
@@ -54,7 +68,9 @@ Chiew, F, Q.J. Wang, F. McConachy, R. James, W. Wright, and G. deHoedt, (2002). 
 
 ![viirs_et_img](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/7e799a2e-ab35-4657-b470-6712ca9e3a1b)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in dekadal, monthly, and annual Image Collections and get single image from each
@@ -76,15 +92,31 @@ Map.addLayer(viirs_et_d_i.select('et'), {min: 0, max: 10, palette: et_palette}, 
 Map.addLayer(viirs_et_m_i.select('et'), {min: 0, max: 30, palette: et_palette}, 'et, monthly')
 Map.addLayer(viirs_et_a_i.select('et'), {min: 0, max: 1000, palette: et_palette}, 'et, annual')
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USGS-VIIRS-ET)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USGS-VIIRS-ET
+### Sample Application
 
-#### License
+NA
+
+## License
+
 USGS-authored or produced data and information are considered to be in the U.S. Public Domain.
 
-#### Keywords
+## Keywords
+
 VIIRS, remote sensing, satellite, evapotranspiration, monthly, yearly, dekadal, USGS, global
 
-Created & provided by: USGS
+## Date Created
 
-Curated by: USGS & Climate Engine Org
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+USGS
+
+## Curated in GEE by
+USGS & Climate Engine Org

@@ -1,21 +1,10 @@
+
 # High-spatial-resolution Thermal-stress Indices over South and East Asia (HiTiSAE)
+
+## Description:
 
 This newly developed dataset is a high-spatial-resolution (0.1°×0.1°) gridded product that contains the daily values of the indoor, outdoor shaded and outdoor unshaded UTCI, the MRT and eight other widely adopted human thermal-stress indices (ESI, HI, Humidex, WBGT, WBT, WCT, AT, NET), derived from the newly available ECMWF ERA5-Land and ERA5 reanalysis products, over South and East Asia from Jan 3, 1981 to Dec 31, 2019. You can [read the complete article here](https://www.nature.com/articles/s41597-021-01010-w.pdf). This high-spatial-resolution database of human thermal stress indices over South and East Asia (HiTiSEA), which contains the daily mean, maximum, and minimum values of UTCI, MRT, and eight other widely adopted indices, is suitable for both indoor and outdoor applications and allows researchers and practitioners to investigate the spatial and temporal evolution of human thermal stress and its impacts on densely populated regions over South and East Asia at a fner scale. The dataset is available for download via a Figshare collection which [can be found here](https://springernature.figshare.com/collections/A_High-spatial-resolution_Dataset_of_Human_Thermal_Stress_Indices_over_South_and_East_Asia/5196296)
 
-
-#### Paper Citation
-
-```
-Yan, Yechao, Yangyang Xu, and Shuping Yue. "A high-spatial-resolution dataset of human thermal stress indices over South and East Asia."
-Scientific Data 8, no. 1 (2021): 1-14.
-```
-
-#### Dataset Citation
-
-```
-Yan, Yechao; Xu, Yangyang; Yue, Shuping (2021): A High-spatial-resolution Dataset of Human Thermal Stress Indices over South and East Asia.
-figshare. Collection. https://doi.org/10.6084/m9.figshare.c.5196296
-```
 
 #### Data Preprocessing for GEE
 The dataset contains 14242 daily NetCDF files which are archived by month and compressed into tar.gz files with a total volume of 450 GB. The netcdf files for each subvariable was converted into Geotifs with Minimum, Mean and Maximum value for each parameter. To reduce the overall index size, a band order was constructed with b1, b2,b3 for each variable corresponding to Min, Mean and Maximum value for the same parameter.
@@ -40,10 +29,32 @@ Included indices, names and GEE Variable are included in the table below
 |NET                  | net effective temperature          |NET         |Min,Mean, Max |
 
 
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+Yan, Yechao; Xu, Yangyang; Yue, Shuping (2021): A High-spatial-resolution Dataset of Human Thermal Stress Indices over South and East Asia.
+figshare. Collection. https://doi.org/10.6084/m9.figshare.c.5196296
+```
+
+### Published Paper Citations
+
+```
+Yan, Yechao, Yangyang Xu, and Shuping Yue. "A high-spatial-resolution dataset of human thermal stress indices over South and East Asia."
+Scientific Data 8, no. 1 (2021): 1-14.
+```
+
 ![HiTiSAE](https://user-images.githubusercontent.com/6677629/140878970-6164d58d-1c60-4e81-b119-b88ed454dda0.gif)
 
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var AT = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/AT");
@@ -60,18 +71,31 @@ var WCT = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/WCT");
 var NET = ee.ImageCollection("projects/sat-io/open-datasets/HITISEA/NET");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HIGHRES-THERMAL-STRESS-INDICES)
 
+### Sample Application
 
-#### License
+NA
+
+## License
+
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Created by: Yechao Yan; Yangyang Xu; Shuping Yue
+## Keywords
 
-Preprocessed and Curated in GEE by : Samapriya Roy
+thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature
 
-Keywords: thermal-stress indices, south and southeast asia, heat index, humidity index, wind chill, apparent temperature
+## Date Created
 
-Last updated: 2021-05-20
+2021-11-08
 
-Last updated on GEE: 2021-11-08
+## Changelog
+
+NA
+
+## Provider
+
+Yechao Yan; Yangyang Xu; Shuping Yue
+
+## Curated in GEE by
+Samapriya Roy

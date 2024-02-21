@@ -1,8 +1,24 @@
+
 # Global Freshwater Variables
+
+## Description:
 
 The dataset consists of near-global, spatially continuous, and freshwater-specific environmental variables in a standardized 1km grid. We delineated the sub-catchment for each grid cell along the HydroSHEDS river network and summarized the upstream environment (climate, topography, land cover, surface geology and soil) to each grid cell using various metrics (average, minimum, maximum, range, sum, inverse distance-weighted average and sum). All variables were subsequently averaged across single lakes and reservoirs of the Global lakes and Wetlands Database that are connected to the river network. Monthly climate variables were summarized into 19 long-term climatic variables following the “bioclim” framework.
 
-#### Paper citation
+## Citations:
+
+### Publication DOI
+
+Project Website: http://www.earthenv.org/streams
+
+### Dataset DOI
+
+```
+Domisch, S., Amatulli, G., and Jetz, W. (2015) Near-global freshwater-specific environmental variables for biodiversity analyses in 1 km resolution.
+Scientific Data 2:150073 doi: 10.1038/sdata.2015.73. Data available online at http://www.earthenv.org/.
+```
+
+### Published Paper Citations
 
 ```
 Domisch, S., Amatulli, G., and Jetz, W. (2015) Near-global freshwater-specific environmental variables for biodiversity analyses in 1 km resolution.
@@ -11,9 +27,9 @@ Scientific Data 2:150073 doi:10.1038/sdata.2015.73
 
 ![fresh_water_earthenv](https://user-images.githubusercontent.com/6677629/117553926-f0780300-b019-11eb-8139-d68cafbd1ff3.gif)
 
+## Earth Engine Snippet:
 
-
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var annual_air_temperature_range_avg = ee.Image("projects/sat-io/open-datasets/global_freshwater_variables/annual_air_temperature_range_avg");
@@ -42,26 +58,31 @@ var stream_length_sum = ee.Image("projects/sat-io/open-datasets/global_freshwate
 var urban_builtup_avg = ee.Image("projects/sat-io/open-datasets/global_freshwater_variables/urban_builtup_avg");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-FRESHWATER-VARIABLES)
 
-
-#### License
-EarthEnv Near-global environmental information for freshwater ecosystems in 1km resolution Version 1 by Domisch et al. is licensed under a “Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License”. Permissions beyond the scope of this license may be available at http://www.earthenv.org/.
-
-#### Dataset citation
-
-```
-Domisch, S., Amatulli, G., and Jetz, W. (2015) Near-global freshwater-specific environmental variables for biodiversity analyses in 1 km resolution.
-Scientific Data 2:150073 doi: 10.1038/sdata.2015.73. Data available online at http://www.earthenv.org/.
-```
-
-
-Project Website: http://www.earthenv.org/streams
+### Sample Application
 
 App Website: [App link here](https://earthenv-dot-map-of-life.appspot.com/2/-24.961/-21.453?collections=streams&layers=Precipitation_seasonality_(avg))
 
-Curated by: Samapriya Roy
+## License
 
-Keywords: Earthenv, stream length, urban builtup, slope, shrubs, precambrian surface lithology, barren_lands, precipitation seasonality, herbaceous vegetation
+EarthEnv Near-global environmental information for freshwater ecosystems in 1km resolution Version 1 by Domisch et al. is licensed under a “Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License”. Permissions beyond the scope of this license may be available at http://www.earthenv.org/.
 
-Last updated: 2021-05-09
+## Keywords
+
+Earthenv, stream length, urban builtup, slope, shrubs, precambrian surface lithology, barren_lands, precipitation seasonality, herbaceous vegetation
+
+## Date Created
+
+2021-05-09
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

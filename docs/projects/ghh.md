@@ -1,8 +1,25 @@
+
 # Global Habitat Heterogeneity
+
+## Description:
 
 The datasets contain 14 metrics quantifying spatial heterogeneity of global habitat at multiple resolutions based on the textural features of Enhanced Vegetation Index (EVI) imagery acquired by the Moderate Resolution Imaging Spectroradiometer (MODIS). For additional information about the metrics and the evaluations of their utility for biodiversity modeling. The dataset is generated at 1km, 5km and 25km resolution and only the 1km assets are listed here, simply replace _1km by _5km and _25km as needed.
 
-#### Paper Citation
+## Citations:
+
+### Publication DOI
+
+Project Website: http://www.earthenv.org/texture
+
+### Dataset DOI
+
+```
+Tuanmu, M.-N. and W. Jetz. (2015) A global, remote sensing-based characterization of terrestrial habitat heterogeneity
+for biodiversity and ecosystem modeling. Global Ecology and Biogeography. DOI: 10.1111/geb.12365.
+```
+
+
+### Published Paper Citations
 
 ```
 Tuanmu, M.-N. and W. Jetz. (2015) A global, remote sensing-based characterization of terrestrial habitat heterogeneity
@@ -11,7 +28,9 @@ for biodiversity and ecosystem modeling. Global Ecology and Biogeography. DOI: 1
 
 ![ghh](https://user-images.githubusercontent.com/6677629/117577332-fcfa6b00-b0ae-11eb-9fd3-1f235aebb114.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var cov = ee.Image("projects/sat-io/open-datasets/global_habitat_heterogeneity/coefficient_of_variation_1km");
@@ -31,26 +50,32 @@ var uniformity = ee.Image("projects/sat-io/open-datasets/global_habitat_heteroge
 var variance = ee.Image("projects/sat-io/open-datasets/global_habitat_heterogeneity/variance_1km");
 ```
 
-Sample Script: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:earthenv-bd-ecosystems-clim-layers/GLOBAL-HABITAT-HETEROGENEITY)
 
-
-#### License
-Global Habitat Heterogeneity Metrics Version 1 by Tuanmu & Jetz is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
-Permissions beyond the scope of this license may be available at http://www.earthenv.org/texture.html.
-
-### Dataset Citation
-
-```
-Tuanmu, M.-N. and W. Jetz. (2015) A global, remote sensing-based characterization of terrestrial habitat heterogeneity
-for biodiversity and ecosystem modeling. Global Ecology and Biogeography. DOI: 10.1111/geb.12365.
-```
-
-Project Website: http://www.earthenv.org/texture
+### Sample Application
 
 App Website: [App link here](https://earthenv-dot-map-of-life.appspot.com/3/-36.607/39.842?collections=texture&layers=range1km)
 
-Curated by: Samapriya Roy
+## License
 
-Keywords: Earthenv, habitat heterogeneity, shannon, simpson, pielou, dissimilarity, homogeneity, variance, contrast
+Global Habitat Heterogeneity Metrics Version 1 by Tuanmu & Jetz is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.
+Permissions beyond the scope of this license may be available at http://www.earthenv.org/texture.html.
 
-Last updated: 2021-05-09
+## Keywords
+
+Earthenv, habitat heterogeneity, shannon, simpson, pielou, dissimilarity, homogeneity, variance, contrast
+
+## Date Created
+
+2021-05-09
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

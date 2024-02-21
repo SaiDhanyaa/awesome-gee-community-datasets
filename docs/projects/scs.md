@@ -1,4 +1,7 @@
+
 # Soil carbon storage in terrestrial ecosystems of Canada
+
+## Description:
 
 This collection contains datasets with the spatial distribution of carbon stock in soil and plants of Canada and canopy heights. It is being made public to act as supplementary data for the publication 'Large soil carbon storage in terrestrial ecosystems of Canada', currently under review.
 The maps were produced in the Remote Sensing Lab, McMaster University, between January and December 2020. This research project was made possible by a grant from the World Wildlife Fund (WWF)- Canada. This project aimed to produce the first wall-to-wall estimate of carbon stocks in plants and soils of Canada at 250 m spatial resolution using multisource satellite, climate and topographic data and a machine-learning algorithm.
@@ -10,7 +13,7 @@ You can read the [paper here](https://doi.org/10.1029/2021GB007213) and download
 - Soil carbon stock and uncertainty maps (https://doi.org/10.4121/16686154.v3)
 
 
-#### Dataset descriptors
+### Dataset descriptors
 
 **Canopy Height Map**
 The canopy height maps were built to be included as covariates in the model to predict AGB (and carbon stock) in forest areas of Canada. We created wall-to-wall height metrics using ATL08 LiDAR products from the ICESat-2 satellite. The data was download for one-year period (October 2018 to October 2019). Points were filtered regarding solar background noise and atmospheric scattering, totaling 49,959 points distributed over the entire Canada. These points were associated with 10 ancillary variables primarily corresponding to structure information, such as seasonal Sentinel-1 VV and VH polarization, annual PALSAR-2 HH and HV polarization, annual clumping index, and also the MODIS NDVI summer season. Afterwards, the random forest algorithm was used to extrapolate ATL08 parameters and develop regression models with the abovementioned spatially continuous variables.
@@ -31,8 +34,13 @@ To generate the soil carbon stock map, we used 6,490 ground samples of soil orga
 |projects/sat-io/open-datasets/carbon_stocks_ca/sc |Soil Carbon Stock        |
 |projects/sat-io/open-datasets/carbon_stocks_ca/scc|Soil Carbon Concentration|
 
+## Citations:
 
-#### Data Citation
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Sothe, C., Gonsamo, A., Arabian, J., Kurz, W. A., Finkelstein, S. A., & Snider, J. (2022). Large soil carbon storage in terrestrial ecosystems of Canada. Global Biogeochemical Cycles, 36, e2021GB007213. https://doi.org/10.1029/2021GB007213
@@ -41,7 +49,13 @@ Sothe, C., Gonsamo, A., Arabian, J., Kurz, W. A., Finkelstein, S. A., & Snider, 
 ![ca_carbon](https://user-images.githubusercontent.com/6677629/141673532-bfd657f7-941a-4687-948e-fab97102908b.gif)
 
 
-#### Earth Engine Snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var ch = ee.ImageCollection("projects/sat-io/open-datasets/carbon_stocks_ca/ch");
@@ -49,17 +63,30 @@ var fc = ee.ImageCollection("projects/sat-io/open-datasets/carbon_stocks_ca/fc")
 var sc = ee.ImageCollection("projects/sat-io/open-datasets/carbon_stocks_ca/sc");
 var scc = ee.ImageCollection("projects/sat-io/open-datasets/carbon_stocks_ca/scc");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-CARBON-STOCKS-CANADA)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/SOIL-CARBON-STOCKS-CANADA
+### Sample Application
 
+NA
+## License
 
-#### License
 This work is licensed under and freely available to the public (similar to a CC0 license).
 
-Created by: Sothe et al 2022
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+soil carbon density, soil carbon stock estimate, soil carbon storage, terrestrial ecosystem models, machine Learning Methods Enabled Predictive Modeling
 
-keywords: soil carbon density, soil carbon stock estimate, soil carbon storage, terrestrial ecosystem models, machine Learning Methods Enabled Predictive Modeling
+## Date Created
 
-Last updated on GEE: 2021-11-14
+2021-11-14
+
+## Changelog
+
+NA
+
+## Provider
+
+Sothe et al 2022
+
+## Curated in GEE by
+Samapriya Roy

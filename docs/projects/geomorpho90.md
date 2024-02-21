@@ -1,4 +1,7 @@
+
 # Geomorpho90m Geomorphometric Layers
+
+## Description:
 
 Topographical relief comprises the vertical and horizontal variations of the Earth’s terrain and drives processes in geomorphology, biogeography, climatology, hydrology and ecology. Its characterisation and assessment, through geomorphometry and feature extraction, is fundamental to numerous environmental modelling and simulation analyses. We, therefore, developed the Geomorpho90m global dataset comprising of different geomorphometric features derived from the MERIT-Digital Elevation Model (DEM) - the best global, high-resolution DEM available. The fully-standardised 26 geomorphometric variables consist of layers that describe the (i) rate of change across the elevation gradient, using first and second derivatives, (ii) ruggedness, and (iii) geomorphological forms. The Geomorpho90m variables are available at 3 (~90 m) and 7.5 arc-second (~250 m) resolutions under the WGS84 geodetic datum, and 100 m spatial resolution under the Equi7 projection. They are useful for modelling applications in fields such as geomorphology, geology, hydrology, ecology and biogeography.
 
@@ -6,7 +9,13 @@ Geomorpho90m is a set of geomorphometric variables derived from MERIT-DEM. The a
 
 Read about the [methodology here](https://www.nature.com/articles/s41597-020-0479-6)
 
-![geomorph90](https://user-images.githubusercontent.com/6677629/113523325-deafc580-956c-11eb-8dfd-1bf69ee7e216.gif)
+
+## Citations:
+
+### Publication DOI
+NA
+
+### Dataset DOI
 
 Use the following credit when these datasets are cited:
 
@@ -14,15 +23,21 @@ Use the following credit when these datasets are cited:
 Amatulli, Giuseppe, Daniel McInerney, Tushar Sethi, Peter Strobl, and Sami Domisch. "Geomorpho90m, empirical evaluation and accuracy assessment of global high-resolution geomorphometric layers." Scientific Data 7, no. 1 (2020): 1-18.
 ```
 
-#### Earth Engine Snippet
+### Published Paper Citations
 
-#### Geomorphological forms
+NA
+
+![geomorph90](https://user-images.githubusercontent.com/6677629/113523325-deafc580-956c-11eb-8dfd-1bf69ee7e216.gif)
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var geom = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/geom");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-GEOMORPHOLOGICAL-FORMS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-GEOMORPHOLOGICAL-FORMS)
 
 #### First order derivatives
 
@@ -40,7 +55,7 @@ var dx = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dx");
 var dy = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/dy");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-FIRST-ORDER-DERIVATIVE)
 
 #### Second order derivatives
 
@@ -52,7 +67,7 @@ var pcurv = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/pcurv
 var tcurv = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/tcurv");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-SECOND-ORDER-DERIVATIVE
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-SECOND-ORDER-DERIVATIVE)
 
 
 #### Ruggedeness
@@ -69,15 +84,31 @@ var rough_magnitude = ee.ImageCollection("projects/sat-io/open-datasets/Geomorph
 var rough_scale = ee.ImageCollection("projects/sat-io/open-datasets/Geomorpho90m/rough-scale");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:geophysical-biological-biogeochemical/GEOMORPHO90-RUGGEDENESS)
 
+### Sample Application
 
-#### License
+NA
+
+## License
 
 This work is licensed under a Creative Commons Attribution 4.0. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Curated by: Samapriya Roy
+## Keywords
 
-Keywords: Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope
+Geomorpho90m, geomorphometric layers, MERIT DEM, topographic index, terrain ruggedness index, slope
 
-Last updated: 2023-04-04
+## Date Created
+
+2023-04-04
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

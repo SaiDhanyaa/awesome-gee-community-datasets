@@ -1,7 +1,9 @@
+
 # International Satellite Cloud Climatology Project: HXG Cloud Cover
 
-The data consists of one variable 'cloud' from the  ISCCP HXG, dataset as retrieved from the  NCEI in September of 2021. Quoting from the ISCCP website (isccp.giss.nasa.gov) :
+## Description:
 
+The data consists of one variable 'cloud' from the  ISCCP HXG, dataset as retrieved from the  NCEI in September of 2021. Quoting from the **ISCCP website (isccp.giss.nasa.gov) :**
 The International Satellite Cloud Climatology Project (ISCCP) was established in 1982 as part of the World Climate Research Program (WCRP) to collect weather satellite radiance measurements and to analyze them to infer the global distribution of clouds, their properties, and their diurnal, seasonal and interannual variations. The resulting datasets and analysis products are being used to study the role of clouds in climate, both their effects on radiative energy exchanges and their role in the global water cycle.
 
 The "H" series of data products is a high spatial resolution (0.1 degree) version of the ISCCCP dataset which is documented at:
@@ -17,28 +19,58 @@ ISCCP H Series data The full ISCCP dataset consists of netCDF files containing v
 
 The values in the file are as follows: 0 (no cloud) 1 (cloud) and 255 (NoData)
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
 Rossow, WB., RA Schiffer, 1999: Advances in understanding clouds from ISCCP. BULLETIN OF THE AMERICAN
 METEOROLOGICAL SOCIETY, 80, 2261-2287.
 ```
 
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
 ![isccp_jan_dec](https://user-images.githubusercontent.com/6677629/136728573-d4368020-2b70-4e62-9f5e-992c9f9b1a66.gif)
 
-#### Earth Engine Snippet: HiHydro Additional Layers
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var isccp = ee.ImageCollection('projects/sat-io/open-datasets/isccp/hxg');
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HXG-CLOUD-COVER
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/HXG-CLOUD-COVER)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 Public Domain/No restrictions (CC0): Under the terms of this license you are free to use the material for any purpose without any restrictions.
 
-Preprocessed by: Michael Lefsky
+## Keywords
 
-Curated by: Samapriya Roy & Michael Lefsky
+ISCCP, Clouds,  International Satellite Cloud Climatology Project, WCRP, World Climate Research Program
 
-Keywords: ISCCP, Clouds,  International Satellite Cloud Climatology Project, WCRP, World Climate Research Program
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+Michael Lefsky
+
+## Curated in GEE by
+Samapriya Roy & Michael Lefsky

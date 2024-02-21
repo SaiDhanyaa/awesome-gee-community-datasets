@@ -1,4 +1,7 @@
+
 # Gridded Sex-Disaggregated School-Age Population (2020)
+
+## Descriptions:
 
 Following the IIEP-UNESCO methodology for reconstructing georeferenced school-age populations (ISCED 1 to 3) by year and sex, these datasets were produced by WorldPop (University of Southampton) by applying the Sprague Multipliers to 30-arcsecond (approximately 1km at the equator) gridded datasets depicting the estimated spatial distribution of sex-disaggregated 5-year age groups. These datasets include the sex disaggregated school age population for countries and Dependent territories in Africa only.
 
@@ -8,7 +11,17 @@ Following the IIEP-UNESCO methodology for reconstructing georeferenced school-ag
 * UNESCO Institute for Statistics Education database. Last accessed 17 Jan 2022 from http://data.uis.unesco.org
 * WorldPop (www.worldpop.org - School of Geography and Environmental Science, University of Southampton; Department of Geography and Geosciences, University of Louisville; Departement de Geographie, Universite de Namur) and Center for International Earth Science Information Network (CIESIN), Columbia University (2018). Global High Resolution Population Denominators Project - Funded by The Bill and Melinda Gates Foundation (OPP1134076). DOI:10.5258/SOTON/WP00646
 
-####  Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Bondarenko, M., Sorichetta, A., Vargas Mesa, G., Gagnon, A.A., Tatem, A.J. (2022). Gridded Sex Disaggregated School-Age Population Datasets for Countries
@@ -17,7 +30,9 @@ and Dependent Territories in Africa in 2020, doi:10.5258/SOTON/WP00732
 
 ![school_gridded](https://user-images.githubusercontent.com/6677629/153728335-5b8f51cd-2123-4909-846a-03b4995caff6.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var f_primary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_F_PRIMARY");
@@ -28,13 +43,31 @@ var fm_primary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/afri
 var fm_secondary = ee.ImageCollection("projects/sat-io/open-datasets/worldpop/africa_F_M_SECONDARY");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-GRIDDED-SCHOOL-AGE
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/WORLDPOP-GRIDDED-SCHOOL-AGE)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 WorldPop datasets are available under the Creative Commons Attribution 4.0 International License. This means that you are free to share (copy and redistribute the material in any medium or format) and adapt (remix, transform, and build upon the material) for any purpose, even commercially, provided attribution is included (appropriate credit and a link to the licence).
 
-Created by: WorldPop (University of Southampton)
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+gridded model, population data, school age, disaggregated, worldpop
 
-Keywords: gridded model, population data, school age, disaggregated, worldpop
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+WorldPop (University of Southampton)
+
+## Curated in GEE by
+Samapriya Roy

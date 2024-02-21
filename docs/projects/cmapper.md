@@ -1,8 +1,9 @@
+
 # Carbon Mapper Data Portal Methane Emissions
 
-<div class="result" markdown>
+## Description:
 
-???+ note
+<div class="result" markdown>
 
     **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
 
@@ -14,10 +15,25 @@ As per the portal, these systems have near-identical capabilities and serve as p
 
 You can use the download button too to download the curated zipped plume and geotiff data if you are inclined to use those. You can read [their FAQ here](https://carbonmapper.org/our-mission/faq/#data)
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description were provided by the author(s) or their works.
 
+#### Data preprocessing
+Based on the Plume extracts that were also available from the data portal certain assumptions and metadata fields were renamed. The campaign-id field was used a plume-id field for all of these observation. While there is a separate plume-id field in the original metadata it seems to be missing for some observations and as such the use of campaign id. This was also to keep alignment with the way in which the plume extracts were created by the data portal itself. Flux rate and Flux uncertainity were also renamed to emission and emission uncertainity.
 
-#### Citation
+The plume geotiffs were provided as RGB for rendering to a fixed hex code and color palette, so the metadata was attached to each of these raster geotiff in the collection. The portal also provided the RGB underlying imagery and that too was ingested in a separate collection with the same metadata for easy join. Finally the results were exported into a table, all downloaded for S3 URLs were automated using a custom script I wrote and included in the metadata.
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
 As per the portal the following papers were used to generate the portal and the user should use the appropriate ones as deemed fit
 
 ```
@@ -46,14 +62,11 @@ Duren, R., Thorpe, A., & McCubbin, I. (2020). The California Methane Survey Fina
 2020publications/CEC-500-2020-047/CEC-500-2020-047.pdf
 ```
 
-#### Data preprocessing
-Based on the Plume extracts that were also available from the data portal certain assumptions and metadata fields were renamed. The campaign-id field was used a plume-id field for all of these observation. While there is a separate plume-id field in the original metadata it seems to be missing for some observations and as such the use of campaign id. This was also to keep alignment with the way in which the plume extracts were created by the data portal itself. Flux rate and Flux uncertainity were also renamed to emission and emission uncertainity.
-
-The plume geotiffs were provided as RGB for rendering to a fixed hex code and color palette, so the metadata was attached to each of these raster geotiff in the collection. The portal also provided the RGB underlying imagery and that too was ingested in a separate collection with the same metadata for easy join. Finally the results were exported into a table, all downloaded for S3 URLs were automated using a custom script I wrote and included in the metadata.
-
 ![cmapper](https://user-images.githubusercontent.com/6677629/232347791-f9e6b7a6-2a91-4e36-bf7e-032fb9eaffed.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var plume_geotiffs = ee.ImageCollection("projects/sat-io/open-datasets/carbon-mapper/plume_geo");
@@ -61,16 +74,31 @@ var rgb_geotiffs = ee.ImageCollection("projects/sat-io/open-datasets/carbon-mapp
 var plume_features = ee.FeatureCollection("projects/sat-io/open-datasets/carbon-mapper/plume_feature");
 ```
 
-Sample Script: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CARBON-MAPPER-METHANE-EMISSIONS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/CARBON-MAPPER-METHANE-EMISSIONS)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 Carbon Mapper data is provided for non-commercial purposes subject to the [Modified Creative Commons Attribution ShareAlike 4.0 International Public License ("CC License")](https://carbonmapper.org/wp-content/uploads/2021/12/Carbon-Mapper-Modified-Creative-Commons-License-21-11-09.pdf). All third-party use of the data is subject to the CC license at all times. The license details includes terms for Non commercial use and share alike clauses and you can read through the modified terms.
 
-Provided by: Carbon Mapper, Inc.
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Methane Emissions, AVIRIS-NG, Global Airborne Observatory, Plume Emissions , Carbon Mapper Data Portal
 
-keywords: Methane Emissions, AVIRIS-NG, Global Airborne Observatory, Plume Emissions , Carbon Mapper Data Portal
+## Date Created
 
-Last updated on GEE: 2023-04-16
+2023-04-16
+
+## Changelog
+
+NA
+
+## Provider
+
+Carbon Mapper, Inc.
+
+## Curated in GEE by
+Samapriya Roy

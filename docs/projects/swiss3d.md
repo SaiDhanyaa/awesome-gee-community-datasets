@@ -1,10 +1,11 @@
+
 # swissSURFACE3D Raster (DSM)
+
+## Description:
 
 <div class="result" markdown>
 
-???+ note
-
-    **This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
+    This dataset is currently only available to those in the [insiders program](https://gee-community-catalog.org/insiders/)**
 
 </div>
 
@@ -23,7 +24,13 @@ Disclaimer: Whole or parts of the dataset description were provided by the autho
 #### Data preprocessing
 Datasets were preprocessed and distributed in multiple formats. The Cloud Optimized Geotiff files were made available and a program was written to go fetch all and current 31,321 tiles.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 swissSURFACE3D Raster digital surface model (DSM). Last accessed **date** original data from https://www.swisstopo.admin.ch/en/geodata/height/
@@ -32,15 +39,25 @@ surface3d-raster.html
 
 ![swiss_3d](https://i.imgur.com/UiGzQvA.gif)
 
-#### Code Snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var swiss3d = ee.ImageCollection("projects/sat-io/open-datasets/swissSURFACE3D");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/swiss3D-RASTER
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/swiss3D-RASTER)
 
-#### License & Terms of Use
+### Sample Application
+
+NA
+
+## License
 
 The free geodata and geoservices of swisstopo may be used, distributed and made accessible. Furthermore, they may be enriched and processed and also used commercially. A reference to the source is mandatory. In the case of digital or analogue representations and publications, as well as in the case of dissemination, one of the following source references must be attached in any case:
 
@@ -51,10 +68,21 @@ The free geodata and geoservices of swisstopo may be used, distributed and made 
 * Federal Office of Topography swisstopo
 * ©swisstopo
 
-Provided by: Federal Office of Topography swisstopo
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+ LIDAR, Digital Surface Model, DSM, Topography
 
-keywords: LIDAR, Digital Surface Model, DSM, Topography
+## Date Created
 
-Last updated on GEE: 2023-01-28
+2023-01-28
+
+## Changelog
+
+NA
+
+## Provider
+
+Federal Office of Topography swisstopo
+
+## Curated in GEE by
+Samapriya Roy

@@ -1,4 +1,7 @@
+
 # High-Res water body dataset for tundra and boreal forests North America
+
+## Description:
 
 This represents a water body dataset for the North American high latitudes (WBD-NAHL). Nearly 6.5 million water bodies were identified, with
 approximately 6 million (∼90 %) of them smaller than 0.1 km2. The dataset provides area and morphological attributes for every water body. During
@@ -9,27 +12,39 @@ dataset provided a more complete representation of the region than existing regi
 Lake (PeRL). The total accuracy of the detected water extent by the WBD-NAHL dataset was 96.36 % through comparison to interpreted data for
 locations randomly sampled across the region. The original data source is from the [National Tibetan Plateau/Third Pole Environment Data Center](https://doi.org/10.11888/Hydro.tpdc.271021).
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description were provided by the author(s) or their works.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Sui, Yijie, Min Feng, Chunling Wang, and Xin Li. "A high-resolution inland surface water body dataset for the tundra and boreal forests of North
 America." Earth System Science Data 14, no. 7 (2022): 3349-3363.
 ```
 
-![boreal_hydro_small](https://user-images.githubusercontent.com/6677629/221423389-90209fe3-d96d-40f7-8f4c-7d6f70cd2719.gif)
+### Published Paper Citations
+NA
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+![boreal_hydro_small](https://user-images.githubusercontent.com/6677629/221423389-90209fe3-d96d-40f7-8f4c-7d6f70cd2719.gif)
+### Sample Code
 
 ```js
 var wbd = ee.FeatureCollection("projects/sat-io/open-datasets/HYDRO/wbd_fixed_geoms");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HRES-INLAND-WB-NA)
 
-Sample Code : https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/HRES-INLAND-WB-NA
+### Sample Application
 
+NA
 
-#### License and Usage
+## License
+
 This dataset is shared under a [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) license](https://creativecommons.org/
 licenses/by-nc-sa/2.0/). To respect the intellectual property rights, protect the rights of data authors, expand services of the data center, and
 evaluate the application potential of data, data users should clearly indicate the source of the data and the author of the data in the research
@@ -38,10 +53,21 @@ results). For re-posting (second or multiple releases) data, the author must als
 
 Example of acknowledgement statement is included below: The data set is provided by National Tibetan Plateau Data Center [(http://data.tpdc.ac.cn)](http://data.tpdc.ac.cn/).
 
-Curated by: Ethan D. Kyzivat & Samapriya Roy
+## Keywords
 
-Keywords: Hydrology, Boreal , Tundra, water body
+Hydrology, Boreal , Tundra, water body
 
-Last updated: 2022-02-21
+## Date Created
 
-Last updated in GEE: 2023-02-22
+2022-02-21
+
+## Changelog
+
+2023-02-22
+
+## Provider
+
+NA
+
+## Curated in GEE by
+sat-io

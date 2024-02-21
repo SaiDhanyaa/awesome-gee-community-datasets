@@ -1,4 +1,7 @@
+
 # ESRI 2020 Global Land Use Land Cover from Sentinel-2
+
+## Description:
 
 This layer displays a global map of land use/land cover (LULC). The map is derived from ESA Sentinel-2 imagery at 10m resolution. It is a composite of LULC predictions for 10 classes throughout the year in order to generate a representative snapshot of 2020. This map was produced by a deep learning model trained using over 5 billion hand-labeled Sentinel-2 pixels, sampled from over 20,000 sites distributed across all major biomes of the world.
 
@@ -10,15 +13,6 @@ Sentinel-2 L2A/B data was accessed via Microsoft’s Planetary Computer and scal
 You can find more information here
 Kontgis, C. (2021, June 24). [Mapping the world in unprecedented detail](https://caitlin-kontgis.medium.com/mapping-the-world-in-unprecedented-detail-7c0513205b90)
 
-
-#### Citation
-
-```
-Karra, Kontgis, et al. “Global land use/land cover with Sentinel-2 and deep learning.”
-IGARSS 2021-2021 IEEE International Geoscience and Remote Sensing Symposium. IEEE, 2021.
-```
-
-![esri_lulc](https://user-images.githubusercontent.com/6677629/123455559-77237800-d5a7-11eb-8c05-5bea30d1a092.gif)
 
 
 #### Class definitions
@@ -73,14 +67,39 @@ For Accuracy Assessment information visit the [ESRI release page](https://www.ar
 </center>
 
 
-#### Earth Engine Snippet
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+Data download page: [Esri 2020 Land Cover Downloader](https://www.arcgis.com/home/item.html?id=fc92d38533d440078f17678ebc20e8e2)
+
+### Published Paper Citations
+
+```
+Karra, Kontgis, et al. “Global land use/land cover with Sentinel-2 and deep learning.”
+IGARSS 2021-2021 IEEE International Geoscience and Remote Sensing Symposium. IEEE, 2021.
+```
+
+![esri_lulc](https://user-images.githubusercontent.com/6677629/123455559-77237800-d5a7-11eb-8c05-5bea30d1a092.gif)
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var esri_lulc2020= ee.ImageCollection("projects/sat-io/open-datasets/landcover/ESRI_Global-LULC_10m")
 ```
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2020
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/ESRI-LULC-2020)
 
-#### Acknowledgements
+### Sample Application
+NA
+
+## License
 
 Training data for this project makes use of the National Geographic Society Dynamic World training dataset, produced for the Dynamic World Project by National Geographic Society in partnership with Google and the World Resources Institute.
 
@@ -88,15 +107,26 @@ Training data for this project makes use of the National Geographic Society Dyna
 
 This dataset was produced by Impact Observatory for Esri. © 2021 Esri. This dataset is available under a Creative Commons BY-4.0 license and any copy of or work based on this dataset requires the following attribution:
 
+
+
+## Keywords
+
+land, cover, land use, land cover, lulc, 10m, global, world, sentinel, sentinel-2, sentinel 2, impact observatory, impact, 2020, deep learning
+
+## Date Created
+
+2021-06-25
+
+## Changelog
+
+NA
+
+## Provider
+
 ```
 This dataset is based on the dataset produced for the Dynamic World Project
 by National Geographic Society in partnership with Google and the World Resources Institute.
 ```
 
-Data download page: [Esri 2020 Land Cover Downloader](https://www.arcgis.com/home/item.html?id=fc92d38533d440078f17678ebc20e8e2)
-
-Curated in GEE by: Samapriya Roy
-
-Keywords: : land, cover, land use, land cover, lulc, 10m, global, world, sentinel, sentinel-2, sentinel 2, impact observatory, impact, 2020, deep learning
-
-Last updated: 2021-06-25
+## Curated in GEE by
+Samapriya Roy

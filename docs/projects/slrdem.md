@@ -1,4 +1,7 @@
+
 # NOAA Sea-Level Rise Digital Elevation Models (DEMs)
+
+## Description:
 
 The NOAA Coastal Services Center has developed high-resolution digital elevation models (DEMs) for use in the Center's Sea Level Rise and Coastal Flooding Impacts internet mapping application. These DEMs serve as source datasets used to derive data to visualize the impacts of inundation resulting from sea level rise along the coastal United States and its territories.
 
@@ -6,28 +9,60 @@ These data were created as part of the National Oceanic and Atmospheric Administ
 
 URL(s) of [dataset description can be found here](https://coast.noaa.gov/digitalcoast/tools/slr.html) and the dataset can be [downloaded here](https://coast.noaa.gov/slrdata/)
 
-Disclaimer: Whole or parts of the dataset description was provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description was provided by the author(s) or their works.
 
 #### Preprocessing
 While the datasets were collected and made available from NOAA different collects do have varying nominal resolutions , different CRS and different no data values. While GEE collections will allow for variable values for all of those, the nominal resolution and native CRS was left intact was no data value was reprocessed to -9999 by simply using gdalwarp. I have added a function onto the example script which allows you to add the nominal scale as a property to the collection in case the user would like to split and apply different methods on top.
 
 ![slrdem](https://user-images.githubusercontent.com/6677629/155890474-b2fe6e10-58d7-4d67-b251-98e47100868b.gif)
 
-#### Earth Engine Snippet
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var slrdem = ee.ImageCollection("projects/sat-io/open-datasets/NOAA/SLR_DEM");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/NOAA-SLR-DEM
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/NOAA-SLR-DEM)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 The dataset is released under an assumed CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. There are no restrictions on the use of data received from the U.S. Geological Survey's Earth Resources Observation and Science (EROS) Center or NASA's Land Processes Distributed Active Archive Center (LP DAAC), unless expressly identified prior to or at the time of receipt. Depending on the product source, we request that the following statements be used when citing, copying, or reprinting data: Data available from the U.S. Geological Survey.
 
-Provider:  NOAA
+## Keywords
 
-Curated by: Samapriya Roy
+Elevation, topography, topobathymetric, bathymetry, SLR, DEM, sea level rise
 
-Keywords: Elevation, topography, topobathymetric, bathymetry, SLR, DEM, sea level rise
+## Date Created
 
-Last updated on GEE: 2022-02-27
+2022-02-27
+
+## Changelog
+
+NA
+
+## Provider
+
+NOAA
+
+## Curated in GEE by
+Samapriya Roy

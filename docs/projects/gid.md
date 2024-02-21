@@ -1,20 +1,11 @@
+
 # Global Database of Iron and Steel Production Assets
+
+## Description:
 
 The Global Database of Iron and Steel Production Assets provides information on global iron and steel production plants that are operational today. The database contains 1,598 production plants with exact geolocation and provides information about ownership, production type, plant type, capacity and production start year where available.
 
 Primary steel production processes (blast furnace, basic oxygen furnace or open-hearth furnaces), typically use coal as an energy source and take place in large integrated facilities. Whereas secondary steel production processes (electric arc furnaces) typically use electricity as an energy source and take place in so called ‘mini-mills’. The database captures a wide range of assets across the steel production process, including the procurement and processing of raw materials (in particular coking and pelletisation plants), the production of crude steel (integrated plants and mini-mills) and the production of finished steel products (downstream plants).
-
-#### Citation
-
-```
-McCarten, M., Bayaraa, M., Caldecott, B., Christiaen, C., Foster, P., Hickey, C., Kampmann, D.,
-Layman, C., Rossi, C., Scott, K., Tang, K., Tkachenko, N., and Yoken, D., 2021.
-Global Database of Iron and Steel Production Assets. Spatial Finance Initiative
-```
-
-Additional Information about the [Spatial Finance Initiative can be found here](https://spatialfinanceinitiative.com/geoasset-project/)
-
-![iron_steel_database](https://user-images.githubusercontent.com/6677629/126023801-04a02bf0-95ac-44a6-a068-5761a9644945.gif)
 
 
 |SNo|Field                  |Field_Description                                                                                                                                                                  |GEE_Field      |
@@ -55,25 +46,64 @@ Additional Information about the [Spatial Finance Initiative can be found here](
 |34 |parent_ticker_2        |The primary ticker for the 2nd ultimate parent, if the company is publicly traded                                                                                                  |pr_tkr2        |
 |35 |parent_exchange_2      |The primary exchange for the 2nd ultimate parent, if the company is publicly traded                                                                                                |pr_exc2        |
 
-#### Earth Engine Snippet
+
+## Citations:
+
+### Publication DOI
+
+```
+McCarten, M., Bayaraa, M., Caldecott, B., Christiaen, C., Foster, P., Hickey, C., Kampmann, D.,
+Layman, C., Rossi, C., Scott, K., Tang, K., Tkachenko, N., and Yoken, D., 2021.
+Global Database of Iron and Steel Production Assets. Spatial Finance Initiative
+```
+
+Additional Information about the [Spatial Finance Initiative can be found here](https://spatialfinanceinitiative.com/geoasset-project/)
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+![iron_steel_database](https://user-images.githubusercontent.com/6677629/126023801-04a02bf0-95ac-44a6-a068-5761a9644945.gif)
+
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var global_steel = ee.FeatureCollection("projects/sat-io/open-datasets/SFI/global_steel_database_20210701")
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-IRON-STEEL-PRODUCTION-ASSETS
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-IRON-STEEL-PRODUCTION-ASSETS)
 
-#### Acknowledgements
+### Sample Application
 
-Both databases have been developed by the Oxford Sustainable Finance Programme, Satellite Applications Catapult, and The Alan Turing Institute as part of the Spatial Finance Initiative ‘s GeoAsset Project. Project [FAQ's can be found here](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/iron-and-steel/)
+NA
 
-#### License
+## License
+
 The Global Database of Iron and Steel Production Assets can be used by others and is available under a CC BY 4.0 license
 
 Data download page: [Download Request Form](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/iron-and-steel/)
 
-Curated in GEE by: Samapriya Roy
+## Keywords
 
-Keywords: : GeoAsset Project, Oxford Sustainable Finance Programme, Satellite Applications Catapult, Alan Turing Institute, McCarten et al , Iron, Steel , Global database
+GeoAsset Project, Oxford Sustainable Finance Programme, Satellite Applications Catapult, Alan Turing Institute, McCarten et al , Iron, Steel , Global database
 
-Last updated: 2021-07-16
+## Date Created
+
+2021-07-16
+
+## Changelog
+
+NA
+
+## Provider
+
+Both databases have been developed by the Oxford Sustainable Finance Programme, Satellite Applications Catapult, and The Alan Turing Institute as part of the Spatial Finance Initiative ‘s GeoAsset Project. Project [FAQ's can be found here](https://www.cgfi.ac.uk/spatial-finance-initiative/geoasset-project/iron-and-steel/)
+
+## Curated in GEE by
+Samapriya Roy

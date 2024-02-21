@@ -1,4 +1,7 @@
+
 # Wildfire Risk to Communities (WRC)
+
+## Description:
 
 The Wildfire Risk to Communities dataset was created by the USDA Forest Service to provide a nationwide view of wildfire risk potential. The dataset includes spatial data on the following components of wildfire risk: wildfire likelihood, wildfire intensity, susceptibility, and exposure. The data is available at a 270-meter resolution and covers the entire United States. It is based on a variety of sources, including vegetation data, fuel models, historical fire data, and population data.
 
@@ -38,7 +41,13 @@ The Wildfire Risk to Communities dataset can be used to assess wildfire risk at 
 
 </center>
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Scott, Joe H.; Gilbertson-Day, Julie W.; Moran, Christopher; Dillon, Gregory K.; Short, Karen C.; Vogler, Kevin C. 2020. Wildfire Risk to
@@ -48,7 +57,13 @@ Archive. Updated 25 November 2020.
 
 ![wrc](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/c1509a48-ae97-48e4-ae6f-190eb1b0dd52)
 
-### Earth Engine Snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in Image Collection and mosaic to single image
@@ -72,13 +87,31 @@ Map.addLayer(wrc_i.select('RPS'), {min: 0, max: 1, palette: rps_palette}, 'RPS')
 Map.addLayer(wrc_i.select('WHP'), {min: 0, max: 2000, palette: whp_palette}, 'WHP')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/WILDFIRE-RISK-COMMUNITIES
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/WILDFIRE-RISK-COMMUNITIES)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
-Keywords: Wildfire, CONUS, United States, USDA, Forest Service, LANDFIRE
+## Keywords
 
-Provided by: USDA Forest Service
+Wildfire, CONUS, United States, USDA, Forest Service, LANDFIRE
 
-Curated in GEE by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+USDA Forest Service
+
+## Curated in GEE by
+Climate Engine Org

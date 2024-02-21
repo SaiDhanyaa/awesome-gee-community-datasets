@@ -1,4 +1,7 @@
+
 # USDA Crop Sequence Boundaries 2015-2022
+
+## Description:
 
 The **Crop Sequence Boundaries (CSB)**, developed in collaboration with the USDA's Economic Research Service, provides estimates of field boundaries, crop acreage, and crop rotations across the contiguous United States. This dataset utilizes satellite imagery along with other public data and is open source, enabling users to conduct area and statistical analysis of planted U.S. commodities. It offers valuable insights into farmer cropping decisions and practices.
 
@@ -6,7 +9,9 @@ NASS required a representative field dataset for predicting crop planting based 
 
 Crop Sequence Boundaries (CSB) represent geospatial algorithm-generated field polygons, originating from the NASS Cropland Data Layer (CDL). These polygonal entities cater to the demands of applications reliant on gridded datasets, necessitating analytical units for streamlined data aggregation. The primary objective of CSBs is to furnish comprehensive coverage spanning the contiguous 48 United States, ensuring precision and replicability across multiple years. These structures are forged by amalgamating historical CDLs within a specified time frame, while also integrating road and rail networks to accurately depict crop sequences within these simulated fields. The dataset is available for 2015 to 2022 growing seasons.
 
-#### Citations
+## Citations:
+
+### Publication DOI
 
 ```
 Hunt, Kevin A., Jonathon Abernethy, Peter Beeson, Maria Bowman, Steven Wallander, and Ryan Williams. "Crop Sequence Boundaries (CSB): Delineated
@@ -15,12 +20,20 @@ Fields Using Remotely Sensed Crop Rotations."
 Abernethy, Jonathon, Peter Beeson, Claire Boryan, Kevin Hunt, and Luca Sartore. "Preseason crop type prediction using crop sequence boundaries." Computers and Electronics in Agriculture 208 (2023): 107768.
 ```
 
+### Dataset DOI
+
 #### Dataset strucutre and preprocessing
 The datasets are made available as feature collections in Earth Engine for each state the 1522 reprents the year 2015-2022 growing season. The state names are part of the feature collection name. While it may not be necessary it is possible to merge them into a single collection and I created that for those would want to run some analysis on a combined feature collection.
 
 ![csb_app_opt](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/ab8c00fa-b701-4c70-bc74-2fc77d2620cf)
 
-#### Earth Engine Snippet: Source
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var csbal22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBAL1522");
@@ -78,16 +91,32 @@ var csbwy22 = ee.FeatureCollection("projects/nass-csb/assets/csb1522/CSBWY1522")
 ```js
 var combined_csb= ee.FeatureCollection('projects/sat-io/open-datasets/USDA/CSB_1522');
 ```
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USDA-CSB-APP
+### Sample Application
 
-App code: [You can find the app here](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/Viewer/index.php)
+**App code:** [You can find the app here](https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries/Viewer/index.php)
 
-#### License and Liability
+## License
+
 The USDA NASS Crop Sequence Boundaries and the data offered at https://www.nass.usda.gov/Research_and_Science/Crop-Sequence-Boundaries are provided to the public as is and are considered public domain and free to redistribute. Users of the Crop Sequence Boundaries (CSB) are solely responsible for interpretations made from these products. The CSB are provided 'as is' and the USDA NASS does not warrant results you may obtain using the data. Contact our staff at (SM.NASS.RDD.GIB@usda.gov) if technical questions arise.
 
-Created by: USDA NASS, USDA ERS
 
-Curated in GEE by : USDA NASS, USDA ERS, Samapriya Roy
+## Keywords
 
-keywords: agricultural lands, USDA, crop layer, CDL, crop sequence boundary
+agricultural lands, USDA, crop layer, CDL, crop sequence boundary
+
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+USDA NASS, USDA ERS
+
+## Curated in GEE by
+USDA NASS, USDA ERS, Samapriya Roy

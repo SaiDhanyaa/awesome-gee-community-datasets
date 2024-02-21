@@ -1,4 +1,7 @@
+
 # Digital Earth Africa Coastlines
+
+## Description:
 
 The Digital Earth Africa Coastlines is a continental dataset that includes annual shorelines and rates of coastal change along the entire African coastline. This is a provisional service that has been generated for 2000 to 2021 and we would like to improve and operationalize with users.
 
@@ -10,7 +13,17 @@ The ability to map shoreline positions for each year provides valuable insights 
 
 The Coastlines algorithms incorporated in this product are the work of Robbi-Bishop Taylor, Rachel Nanson, Stephen Sagar, and Leo Lymburner, Geoscience Australia. Digital Earth Africa acknowledges the work done by the Centre de Suivi Ecologique (CSE), Dakar, in assessing the accuracy of the service with the participation of West African WACA stakeholders. Acknowledgements also go to the Regional Center for Mapping Resources for Development (RCMRD) for stakeholder engagement and feedback. Digital Earth Africa thanks the Digital Earth Africa Product Development task team for the co-design, the co-development and early feedback on the Service.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Bishop-Taylor, R., Nanson, R., Sagar, S., Lymburner, L. 2021. Digital Earth Australia
@@ -18,6 +31,10 @@ Coastlines. Geoscience Australia, Canberra. https://doi.org/10.26186/116268
 ```
 
 ![deaf_coastlines](https://user-images.githubusercontent.com/6677629/227800600-609a2359-3234-4633-8a9d-aae8c37faa5f.gif)
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var shoreline_annual = ee.FeatureCollection("projects/sat-io/open-datasets/DEAF/COASTLINES/coastlines_v040_shorelines_annual");
@@ -27,15 +44,31 @@ var hotspot_zoom_3 = ee.FeatureCollection("projects/sat-io/open-datasets/DEAF/CO
 var rate_of_change = ee.FeatureCollection("projects/sat-io/open-datasets/DEAF/COASTLINES/coastlines_v040_rates_of_change");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEAF-Shorlines-V040
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:oceans-shorelines/DEAF-Shorlines-V040)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 These datasets are made available under the CC BY 4.0 Attribution 4.0 International license. This license allows users to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator.
 
-Created by: Digital Earth Africa
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction, subpixel waterlines, coastal change, DEAF CoastLines, coastline data, coastal erosion
 
-Keywords : Sea, ocean and coast, marine and coastal, coast, erosion, waterline extraction, subpixel waterlines, coastal change, DEAF CoastLines, coastline data, coastal erosion
+## Date Created
 
-Last updated : 2023-03-26
+2023-03-26
+
+## Changelog
+
+NA
+
+## Provider
+
+Digital Earth Africa
+
+## Curated in GEE by
+Samapriya Roy

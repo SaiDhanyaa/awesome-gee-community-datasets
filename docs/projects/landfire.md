@@ -1,4 +1,7 @@
+
 # Landfire Mosaics LF
+
+## Description:
 
 LANDFIRE (LF), Landscape Fire and Resource Management Planning Tools, is a shared program between the wildland fire management programs of the U.S. Department of Agriculture's Forest Service, U.S. Department of the Interior's Geological Survey, and The Nature Conservancy.
 
@@ -21,12 +24,32 @@ Important changes featured in the LF 2022 update include:
     * New rules for the "zero to one" TSD category were developed for surface fuel transitions and are designed to represent the effects of disturbance on fuels for the growing season immediately following the disturbance
 * The years represented in Historical Disturbance (HDist) and Fuel Disturbance (FDist) are now the same
 
+## Citations:
 
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+LANDFIRE spatial data products
+
+Homepage title: Data product.(Last update). Agency. [Online].Available: URL [Access date].
+
+```
+LANDFIRE: LANDFIRE Existing Vegetation Type layer.(2013, June - last update). U.S. Department of Interior, Geological Survey.[Online]. Available: http://landfire.cr.usgs.gov/viewer/ [2013,May 8].
+```
+
+### Published Paper Citations
+
+NA
 ![lf_others](https://user-images.githubusercontent.com/6677629/115133292-bc866080-9fcc-11eb-9cd1-286a46c67ad4.gif)
 
-Currently included layers are
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet: Fire Regime v2.3.0
+### Sample Code
+
+#### Fire Regime v2.3.0
 
 ```js
 var sclass = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/sclass");
@@ -34,19 +57,18 @@ var vcc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime
 var vdep = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fire-regime/vdep");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FIRE-REGIME
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FIRE-REGIME)
 
-#### Earth Engine Snippet: Disturbance 2.3.0
+#### Disturbance 2.3.0
 
 ```js
 var fdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/FDIST");
 var hdist = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/HDIST");
 var distyear = ee.ImageCollection("projects/sat-io/open-datasets/landfire/disturbance/DISTYEAR");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-DISTURBANCE)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-DISTURBANCE
-
-#### Earth Engine Snippet: Topographic 2.2.0
+#### Topographic 2.2.0
 
 ```js
 var elevation = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/ELEV");
@@ -55,12 +77,12 @@ var slope_degrees = ee.ImageCollection("projects/sat-io/open-datasets/landfire/t
 var slope_perc_rise = ee.ImageCollection("projects/sat-io/open-datasets/landfire/topographic/SlpP");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-TOPOGRAPHIC
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-TOPOGRAPHIC)
 
 ![topographic](https://user-images.githubusercontent.com/6677629/115172563-249b7c00-a08b-11eb-8fb5-c7603b9cb56f.gif)
 
 
-#### Earth Engine Snippet: Fuel 2.3.0
+#### Fuel 2.3.0
 
 ```js
 var cbd = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/CBD");
@@ -75,56 +97,58 @@ var fvh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVH");
 var fvt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FVT");
 ```
 
-#### Earth Engine Snippet: Fuel 2.2.0
+#### Fuel 2.2.0
 
 ```js
 var fccs = ee.ImageCollection("projects/sat-io/open-datasets/landfire/fuel/FCCS");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-FUEL)
 
 ![lf_veg](https://user-images.githubusercontent.com/6677629/115133326-e3449700-9fcc-11eb-81bf-450c622ca166.gif)
 
-#### Earth Engine Snippet: Vegetation 2.3.0
+#### Vegetation 2.3.0
 
 ```js
 var evc = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVC");
 var evh = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVH");
 var evt = ee.ImageCollection("projects/sat-io/open-datasets/landfire/vegetation/EVT");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION)
 
-
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-VEGETATION
-
-#### Earth Engine Snippet: Transportation 2.2.0
+#### Transportation 2.2.0
 
 ```js
 var roads = ee.ImageCollection("projects/sat-io/open-datasets/landfire/transportation/ROADS");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-TRANSPORTATION
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/LANDFIRE-TRANSPORTATION)
 
 Resolution:
 approx 30m
 
-#### Citation
-LANDFIRE spatial data products
+### Sample Application
 
-Homepage title: Data product.(Last update). Agency. [Online].Available: URL [Access date].
+NA
 
-```
-LANDFIRE: LANDFIRE Existing Vegetation Type layer.(2013, June - last update). U.S. Department of Interior, Geological Survey.[Online]. Available: http://landfire.cr.usgs.gov/viewer/ [2013,May 8].
-```
+## License
 
-#### License
 LANDFIRE data are public domain data with no use restrictions, though if modifications or derivatives of the product(s) are created, then please add some descriptive modifier to the data set to avoid confusion.
 
-Curated in GEE by: Samapriya Roy
+## Keywords
 
-Keywords: doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire
+doi, fire, landfire, nature-conservancy, usda, usgs, vegetation, wildfire
 
-Last updated: 2024-01-14
+## Date Created
 
-#### Changelog
+2024-01-14
+
+## Changelog
 
 * 2024-01-14 Updated to v2.2.3 for available collections
+
+## Provider
+
+NA
+## Curated in GEE by
+Samapriya Roy

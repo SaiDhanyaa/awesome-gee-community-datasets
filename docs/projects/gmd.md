@@ -1,4 +1,7 @@
+
 # Global Mangrove Distribution, Aboveground Biomass, and Canopy Height
+
+## Description:
 
 This dataset characterizes the global distribution, biomass, and canopy height of mangrove-forested wetlands based on remotely sensed and in situ field measurement data. Estimates of (1) mangrove aboveground biomass (AGB), (2) maximum canopy height (height of the tallest tree), and (3) basal-area weighted height (individual tree heights weighted in proportion to their basal area) for the nominal year 2000 were derived across a 30-meter resolution global mangrove ecotype extent map using remotely-sensed canopy height measurements and region-specific allometric models. Also provided are (4) in situ field measurement data for selected sites across a wide variety of forest structures (e.g., scrub, fringe, riverine and basin) in mangrove ecotypes of the global equatorial region. Within designated plots, selected trees were identified to species and diameter at breast height (DBH) and tree height was measured using a laser rangefinder or clinometer. Tree density (the number of stems) can be estimated for each plot and expressed per unit area. These data were used to derive plot-level allometry among AGB, basal area weighted height (Hba), and maximum canopy height (Hmax) and to validate the remotely sensed estimates.
 
@@ -34,20 +37,7 @@ The tree measurements CSV has lat lon 2,3,4 removed and lat and lon1 were rename
 |collected_by                             |                                                                                                        |Character|Collector of field observations                                                                                                                                                                             |
 |digitized_by                             |                                                                                                        |Character|Performer of GIS activities                                                                                                                                                                                 |
 
-
-#### Paper Citation
-
-```
-Simard, M., L. Fatpyinbo, C. Smetanka, V.H. Rivera-Monroy, E. Castaneda-Moya, N. Thomas, and T. Van der Stocken. 2019. Mangrove canopy height
-globally related to precipitation, temperature and cyclone frequency. Nature Geoscience, 12: 40–45. https://doi.org/10.1038/s41561-018-0279-1
-```
-
-#### Data Citation
-
-```
-Simard, M., T. Fatoyinbo, C. Smetanka, V.H. Rivera-monroy, E. Castaneda, N. Thomas, and T. Van der stocken. 2019. Global Mangrove Distribution,
-Aboveground Biomass, and Canopy Height. ORNL DAAC, Oak Ridge, Tennessee, USA. https://doi.org/10.3334/ORNLDAAC/1665
-```
+### Datset Description
 
 |File name                                |Variable/Description                                                                                    |Units  |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------|-------|
@@ -66,10 +56,33 @@ Aboveground Biomass, and Canopy Height. ORNL DAAC, Oak Ridge, Tennessee, USA. ht
 
 * Version 1.0: Preliminary data were released in November 2018 to accompany the publication of the Simard et al, 2019 paper in Nature Geosciences.
 
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+Simard, M., T. Fatoyinbo, C. Smetanka, V.H. Rivera-monroy, E. Castaneda, N. Thomas, and T. Van der stocken. 2019. Global Mangrove Distribution,
+Aboveground Biomass, and Canopy Height. ORNL DAAC, Oak Ridge, Tennessee, USA. https://doi.org/10.3334/ORNLDAAC/1665
+```
+
+### Published Paper Citations
+
+```
+Simard, M., L. Fatpyinbo, C. Smetanka, V.H. Rivera-Monroy, E. Castaneda-Moya, N. Thomas, and T. Van der Stocken. 2019. Mangrove canopy height
+globally related to precipitation, temperature and cyclone frequency. Nature Geoscience, 12: 40–45. https://doi.org/10.1038/s41561-018-0279-1
+```
+
 ![gmd](https://user-images.githubusercontent.com/6677629/146138883-76a5f7ce-07db-4727-8883-c0707745422e.gif)
 
 
-#### Earth Engine Snippet
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var agb = ee.ImageCollection("projects/sat-io/open-datasets/global_mangrove_distribution/agb");
@@ -78,16 +91,31 @@ var hmax95 = ee.ImageCollection("projects/sat-io/open-datasets/global_mangrove_d
 var americas_tree = ee.FeatureCollection("projects/sat-io/open-datasets/global_mangrove_distribution/americas_tree_measurements");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-BIOMASS-HEIGHT
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/GLOBAL-MANGROVE-BIOMASS-HEIGHT)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 Public Domain/No restrictions (CC0): Under the terms of this license you are free to use the material for any purpose without any restrictions.
 
-Created by: Simard et al
+## Keywords
 
-Curated by: Samapriya Roy
+global mangrove, above ground biomass, canopy height, basal-area weighted height, ecosystem, mangroves
 
-Keywords: : global mangrove, above ground biomass, canopy height, basal-area weighted height, ecosystem, mangroves
+## Date Created
 
-Last updated: 2021-12-15
+2021-12-15
+
+## Changelog
+
+NA
+
+## Provider
+
+Simard et al
+
+## Curated in GEE by
+Samapriya Roy

@@ -1,4 +1,8 @@
+
 # USGS MODIS Evapotranspiration
+
+## Description:
+
 The evapotranspiration (ET) dataset presented here is the result of remote sensing techniques, primarily harnessing MODIS-thermal imagery alongside global weather datasets. This dataset corresponds to version 5 of the global ET product employed by Climate Engine. It provides valuable insights into the spatiotemporal dynamics of ET, covering the period from 2003 to 2023'. The dataset's cornerstone is the operational Simplified Surface Energy Balance (SSEBop) model, meticulously detailed by Senay et al. (2013). Built upon the foundations of the Simplified Surface Energy Balance (SSEB) approach, initially proposed by Senay et al. in 2007 and further refined in subsequent publications (Senay et al., 2011), the SSEBop model features unique parameterization specifically tailored for operational applications, akin to principles associated with psychrometry. Its robustness is underscored by a comprehensive model evaluation conducted by Velpuri et al. in 2013.
 
 The global ET estimates are meticulously derived by integrating MODIS-based land surface temperature data, acquired from the Aqua satellite, with maximum air temperature data sourced from WorldClim. Additionally, reference ET values are obtained through [global data assimilation systems (GDAS)](https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/global-data-assimilation-system-gdas) for calibration and validation purposes, further enhancing the accuracy of this dataset. This comprehensive approach not only enriches our understanding of the intricate processes of evapotranspiration on a global scale but also offers invaluable temporal and spatial insights into these dynamics. Additional information regarding this [dataset can be found here](https://earlywarning.usgs.gov/fews/search/Global). You can find a link to this dataset [within climate engine org here](https://support.climateengine.org/article/110-usgs-modis-et)
@@ -27,7 +31,17 @@ The global ET estimates are meticulously derived by integrating MODIS-based land
 
 </center>
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Senay, G.B., Kagone S., Velpuri N.M., 2020, Operational Global Actual Evapotranspiration using the SSEBop model: U.S. Geological Survey data release, [https://doi.org/10.5066/P9OUVUUI.](https://doi.org/10.5066/P9OUVUUI) Publication: https://www.mdpi.com/1424-8220/20/7/1915
@@ -41,7 +55,9 @@ Velpuri, N. M., Senay, G. B., Singh, R. K., Bohms, S., and Verdin, J. P. (2013).
 
 ![modis_et_img](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/7e799a2e-ab35-4657-b470-6712ca9e3a1b)
 
-### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in dekadal, monthly, and annual Image Collections and get single image from each
@@ -63,14 +79,31 @@ Map.addLayer(modis_et_d_i.select('et'), {min: 0, max: 10, palette: et_palette}, 
 Map.addLayer(modis_et_m_i.select('et'), {min: 0, max: 30, palette: et_palette}, 'et, monthly')
 Map.addLayer(modis_et_a_i.select('et'), {min: 0, max: 1000, palette: et_palette}, 'et, annual')
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USGS-MODIS-ET)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/USGS-MODIS-ET
+### Sample Application
 
-#### License
+NA
+
+## License
+
 USGS-authored or produced data and information are considered to be in the U.S. Public Domain.
 
-Keywords: evapotranspiration, MODIS, ETa, SSEBop, global, near real-time, monthly, annual, dekadal
+## Keywords
 
-Created & provided by: USGS
+evapotranspiration, MODIS, ETa, SSEBop, global, near real-time, monthly, annual, dekadal
 
-Curated by: USGS & Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+USGS
+
+## Curated in GEE by
+USGS & Climate Engine Org

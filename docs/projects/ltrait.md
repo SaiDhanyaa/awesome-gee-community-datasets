@@ -1,4 +1,7 @@
+
 # Global Leaf trait estimates for land modelling
+
+## Description:
 
 At the organismal level, **plant traits**, which **are measurable morphological, anatomical, physiological, and phenological characteristics**, can
 influence individuals' establishment, fitness, and survival. These measurable characteristics provide essential information to **explain long-term**
@@ -26,7 +29,17 @@ version of the processing chain uses the random forest algorithm (RF) with surro
 obtaining an ensemble of models inside the convex hull of the input data for the predictions. Additionally, the use of an updated and more extensive
 categorical trait table allowed increasing the amount of training samples to produce the maps.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Moreno-Martínez, Á., Camps-Valls, G., Kattge, J., Robinson, N., Reichstein, M., Bodegom, P. V., Kramer, K., Cornelissen, J. H. C., Reich, P. B.,
@@ -35,9 +48,9 @@ Soudzilovskaia, N. A., Running, S. W. (2018). A methodology to derive global map
 Remote Sensing of Environment, 218, 69-88. [doi](https://doi.org/10.1016/j.rse.2018.09.006)
 ```
 
+## Earth Engine Snippet:
 ![image](https://user-images.githubusercontent.com/49197052/206224734-0aa2feb6-ca7f-4ec9-8ac5-71cfa557af29.png)
-
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 // SLA (mm2/g)
@@ -66,22 +79,31 @@ var vis_vi = {min:7 , max: 22, palette: ["ffffd9", "edf8b1", "c7e9b4", "7fcdbb",
 Map.addLayer(SLA, vis_vi,  'SLA (mm2 / g)',true)
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GLOBAL-LEAF-TRAITS)
 
-#### License
+### Sample Application
+NA
+
+## License
+
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any
 medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link
 to the license, and indicate if changes were made.
 
-#### Contact information
+## Keywords
+
+Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat
+
+## Date Created
+
+2022-12-18
+
+## Changelog
+Nov 2021
+
+## Provider
+
 If you have any further questions or doubts, please don't hesitate to contact [us](mailto:alvaro.moreno@uv.es).
 
-Curated by: Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running
-
-Curated copy in GEE by: Samapriya Roy
-
-Keywords: Plant traits, Machine learning, Remote sensing, Plant ecology, Climate, MODIS, Landsat
-
-Last updated: Nov 2021
-
-Last updated in GEE: 2022-12-18
+## Curated in GEE by
+ Alvaro Moreno-Martínez, Gustau Camps-Valls, Jens Kattge, Nathaniel Robinson, Markus Reichstein, Peter van Bodegom, Josep Peñuelas, Brady Allred, Steve W. Running

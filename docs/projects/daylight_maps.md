@@ -1,4 +1,7 @@
+
 # Daylight Map Distribution map data
+
+## Description:
 
 Daylight is a complete distribution of global, open map data that’s freely available with support from community and professional mapmakers. We combine the work of global contributors to projects like OpenStreetMap with quality and consistency checks from Daylight mapping partners to create a free, stable, and easy-to-use street-scale global map. Daylight Map Distribution will include a new dataset consisting of vectorized landcover features derived from the European Space Agency’s 2020 World Cover (10m) rasters. This dataset provides global coverage and is suitable for use in maps up to 1:1 million (zoom level 8).
 
@@ -18,13 +21,29 @@ Dataset releases are created by the team periodically and will be ingested accor
 
 ![daylight_small](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/41a023c4-e104-41b2-aced-8e0f65e96883)
 
-#### Earth Engine snippet
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var water_polygons = ee.FeatureCollection("projects/sat-io/open-datasets/DAYLIGHTMAP/water_polygons");
 var land_polygons = ee.FeatureCollection("projects/sat-io/open-datasets/DAYLIGHTMAP/land_polygons");
 ```
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/DAYLIGHT-LAND-WATER-POLY
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/DAYLIGHT-LAND-WATER-POLY)
 
 Landcover layer: ESA 2020
 
@@ -32,16 +51,31 @@ Landcover layer: ESA 2020
 var landcover = ee.FeatureCollection("projects/sat-io/open-datasets/DAYLIGHTMAP/LANDCOVER_ESA_2020");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/DAYLIGHT-LANDCOVER
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-landuse-landcover/DAYLIGHT-LANDCOVER)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 Daylight Map Distribution is open data, licensed under the Open Data Commons Open Database License (ODbL). Daylight is built from upstream sources, primarily from OpenStreetMap contributors with optional additions from Esri Community Maps Contributors and Microsoft Corporation.
 
-Provided by: Daylight Map Distribution
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Daylight Map Distribution, landcover, land polygons, water polygons, OSM, OpenStreetMap
 
-Keywords: Daylight Map Distribution, landcover, land polygons, water polygons, OSM, OpenStreetMap
+## Date Created
 
-Last updated in GEE: 2023-10-20
+2023-10-20
+
+## Changelog
+
+NA
+
+## Provider
+
+ Daylight Map Distribution
+
+## Curated in GEE by
+Samapriya Roy

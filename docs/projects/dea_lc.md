@@ -1,4 +1,7 @@
+
 # Digital Earth Australia(DEA) Landsat Land Cover 25m v1.0.0
+
+## Description:
 
 Land cover is the observed physical cover on the Earth's surface including trees, shrubs, grasses, soils, exposed rocks, water bodies, plantations, crops and built structures. A consistent, Australia-wide land cover product helps understanding of how the different parts of the environment change and inter-relate. Earth observation data recorded over a period of time firstly allows the observation of the state of land cover at a specific time and secondly the way that land cover changes by comparison between times.
 
@@ -6,12 +9,22 @@ DEA Land Cover provides annual land cover classifications for Australia using th
 
 Additional information including descriptors above [can be found here](https://cmi.ga.gov.au/data-products/dea/607/dea-land-cover-landsat) and you can also [explore the map here](https://maps.dea.ga.gov.au)
 
-Disclaimer: Parts or all of the dataset description is borrowed from existing description provided by authors.
+**Disclaimer:** Parts or all of the dataset description is borrowed from existing description provided by authors.
 
-#### Data preprocessing
+### Data preprocessing
 Datasets were downloaded from Amazon S3 buckets and each years tiles were composited to create single year derivatives. Start and end date for years were also added to metadata and the collection included the version 1.0.0 as v100. Since this is a classified imagery MODE pyramiding scheme was used and default nodata value from tif at 0 was utilized for no data value during upload.
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Lucas R, Mueller N, Siggins A, Owers C, Clewley D, Bunting P, Kooymans C, Tissott B, Lewis B, Lymburner L, Metternicht G. Land Cover Mapping using Digital Earth Australia. Data.
@@ -25,23 +38,39 @@ Christopher J. Owers, Richard M. Lucas, Daniel Clewley, Carole Planque, Suvarna 
 
 ![dea_lc_resize](https://user-images.githubusercontent.com/6677629/156893565-fe323b1e-dcae-4974-8b52-4ded30f251e7.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var dea_lcv100 = ee.ImageCollection("projects/sat-io/open-datasets/DEA/landcover_v100")
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/DEA-LANDSAT-LC
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/DEA-LANDSAT-LC)
 
+### Sample Application
 
-#### License
+NA
+
+## License
 
 Creative Commons Attribution-Share Alike 4.0 International License
 
-Created by: Geoscience Australia and Digital Earth Australia
+## Keywords
 
-Curated by: Samapriya Roy
+Australia, land cover, remote sensing, landsat, satellite
 
-Keywords: : Australia, land cover, remote sensing, landsat, satellite
+## Date Created
 
-Last updated in GEE: 2022-03-05
+2022-03-05
+
+## Changelog
+
+NA
+
+## Provider
+
+Geoscience Australia and Digital Earth Australia
+
+## Curated in GEE by
+Samapriya Roy

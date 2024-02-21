@@ -1,4 +1,7 @@
+
 # USGS Historical Imagery Western US
+
+## Description:
 
 This dataset contains an imagery base layer representing conditions from the mid-1950s across the western United States. We sourced the imagery from over 160,000 aerial images in the [USGS EROS Archive](https://www.usgs.gov/centers/eros/science/usgs-eros-archive-aerial-photography-aerial-photo-single-frames) taken between 1940 and 1970, with the median acquisition date being 1954. The imagery provides complete coverage for 17 western U.S. states: Arizona, California, Colorado, Idaho, Kansas, Montana, North Dakota, Nebraska, New Mexico, Nevada, Oklahoma, Oregon, South Dakota, Texas, Utah, Washington, and Wyoming. Explore the dataset visually through our easy-to-use web map application at [LandscapeExplorer.org](https://LandscapeExplorer.org).
 
@@ -40,7 +43,17 @@ An approach was taken to convert and standardize these dates and add the corresp
 
 </center>
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Morford, S.L., Allred, B.W., Jensen, E.R., Maestas, J.D., Mueller, K.R., Pacholski, C.L., Smith, J.T., Tack, J.D., Tackett, K.N. and Naugle, D.E.
@@ -50,7 +63,9 @@ Morford, S.L., Allred, B.W., Jensen, E.R., Maestas, J.D., Mueller, K.R., Pachols
 
 ![landscape_explorer](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/15743e82-4cce-440f-9a5a-d2b5f2fb5f35)
 
-### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var conusWest_imagery = ee.ImageCollection("projects/wlfw-um/assets/historical-imagery/conus-west");
@@ -58,17 +73,31 @@ var conusWest_metadata = ee.FeatureCollection("projects/wlfw-um/assets/historica
 var conusWest_metadata_with_date = ee.FeatureCollection("projects/sat-io/open-datasets/wlfm-um-extra/wlfm-um-seamlines");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:analysis-ready-data/USGS-HISTORICAL-AERIAL-IMAGERY)
+
+### Sample Application
 
 Sample app: https://sat-io.earthengine.app/view/landscape-explorer
 
-#### License
+## License
+
 These datasets are available under the [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
 
-Keywords: Aerial imagery, United States, Great Plains, Great Basin, Historical, photogrammetry
+## Keywords
 
-Provided by:  University of Montana, Lands for Wildlife, Montana NRCS and Intermountain West Joint Venture
+ Aerial imagery, United States, Great Plains, Great Basin, Historical, photogrammetry
 
-Curated in GEE by: University of Montana, Lands for Wildlife, Montana NRCS and Intermountain West Joint Venture
+## Date Created
 
-Last updated: 2023-09-24
+2023-09-24
+
+## Changelog
+
+NA
+
+## Provider
+
+University of Montana, Lands for Wildlife, Montana NRCS and Intermountain West Joint Venture
+
+## Curated in GEE by
+University of Montana, Lands for Wildlife, Montana NRCS and Intermountain West Joint Venture

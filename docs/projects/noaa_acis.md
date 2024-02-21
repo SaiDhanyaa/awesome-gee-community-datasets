@@ -1,4 +1,7 @@
+
 # Applied Climate Information System (ACIS) NRCC NN
+
+## Description:
 
 The ACIS Climate Maps are produced daily using data from the Applied Climate Information System (ACIS) at a 5-km (0.04-deg x 0.04-deg) spatial
 resolution from 1951-present, updated every 1-2 weeks.You can find additiona [information here](https://www.rcc-acis.org/examples.html) and the [Climate Engine org dataset page](https://support.climateengine.org/article/47-acis-nrcc-nn). Station data in ACIS primarily come from the following networks:
@@ -34,7 +37,23 @@ Note: All near-real-time data are considered preliminary and subject to change.
 | Precipitation ('precip')  | - Units: Inches                        |
 |                           | - Scale factor: 1.0                    |
 
-#### Earth Engine Snippet if dataset already in GEE
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in Image Collection and get first image
@@ -52,14 +71,31 @@ Map.addLayer(acis_nrcc_nn_i.select('tmin'), {min: -10, max: 50, palette: temp_pa
 Map.addLayer(acis_nrcc_nn_i.select('tmax'), {min: -10, max: 50, palette: temp_palette}, 'tmax')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NOAA-NRCC-ACIS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NOAA-NRCC-ACIS)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 NOAA data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no restrictions on their subsequent use by the public. Once obtained, they may be put to any lawful use. The forgoing data is in the public domain and is being provided without restriction on use and distribution. For more information visit the NWS disclaimer site.
 
-Keywords: climate, precipitation, temperature, NOAA, reanalysis, CONUS, daily, near real-time
+## Keywords
 
-Dataset provider: NOAA
+climate, precipitation, temperature, NOAA, reanalysis, CONUS, daily, near real-time
 
-Curated in GEE by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+NOAA
+
+## Curated in GEE by
+Climate Engine Org

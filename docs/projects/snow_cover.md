@@ -1,4 +1,7 @@
+
 # Global MODIS-based snow cover monthly values (2000-2020)
+
+## Description:
 
 The Global monthly snow cover repository contains multiple products (based on the MODIS/Terra MOD10A2), the description along with the [datasets can be found here](https://zenodo.org/record/5774954)
 
@@ -23,7 +26,12 @@ All files provided as Cloud-Optimized GeoTIFFs / internally compressed using "CO
 * s0..0cm = vertical reference: land surface,
 * 2000_2012 = time reference aggregated: from 2000 to 2012
 
-#### Data citation
+## Citations:
+
+### Publication DOI
+NA
+
+### Dataset DOI
 
 ```
 Hengl, T. (2021). Global MODIS-based snow cover monthly long-term (2000-2012) at 500 m, and aggregated monthly values (2000-2020)
@@ -34,7 +42,14 @@ Zenodo. https://doi.org/10.5281/zenodo.5774954
 ![modis_lt_snow](https://user-images.githubusercontent.com/6677629/146651916-0fb69540-63c9-436c-8fa2-5aa365114fe9.gif)
 
 
-#### Earth Engine Snippet
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var lt_p90 = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/monthly_lt_p90");
@@ -44,16 +59,30 @@ var tmax_geom = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/
 var tmin_geom = ee.ImageCollection("projects/sat-io/open-datasets/MODIS_LT_SNOW/midmonth_geom_tmin");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-MODIS-SNOWCOVER
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/GLOBAL-MODIS-SNOWCOVER)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 This work is licensed under the Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0). Users are free to use, copy, distribute, transmit, and adapt the work for commercial and non-commercial purposes, without restriction, as long as clear attribution of the source is provided.
 
-Created by: Hengl 2021
+## Keywords
 
-Curated by: Samapriya Roy
+snow cover, global, openlandmap
 
-Keywords: : snow cover, global, openlandmap
+## Date Created
+2021-12-18
 
-Last updated: 2021-12-18
+## Changelog
+
+NA
+
+## Provider
+
+Hengl 2021
+
+## Curated in GEE by
+Samapriya Roy

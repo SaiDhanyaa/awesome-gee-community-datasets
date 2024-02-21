@@ -1,4 +1,7 @@
+
 # Global River Width from Landsat (GRWL)
+
+## Description:
 
 The Global River Width from Landsat (GRWL) layers are the major output from the GRWL paper and is extremely large with over 64 million features after joining all the subparts and this is a combination from the subpart files provided by the author. You can read the [paper here](https://science.sciencemag.org/content/361/6402/585)
 
@@ -22,7 +25,7 @@ The shapefile contains the following attributes:
 
 2) GRWL Mask (raster): water_mask_v01_01
 
-The file contains the following values:
+**The file contains the following values:**
 
 |DN Value |Classification |
 |---------|-------------------|
@@ -34,7 +37,7 @@ The file contains the following values:
 
 3) GRWL Vector Product: water_vector_v01_01
 
-The shapefile contains the following attributes:
+**The shapefile contains the following attributes:**
 
 |Index|Attribute |Description |
 |-----|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -57,11 +60,30 @@ and
 
 GRWL vector product has a feature Count: 64,572,998 features.
 
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+Allen, George H., & Pavelsky, Tamlin M. (2018). Global River Widths from Landsat (GRWL) Database (Version V01.01) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.1297434
+```
+
+### Published Paper Citations
+
+```
+Allen, George H., and Tamlin M. Pavelsky. "Global extent of rivers and streams."
+Science 361, no. 6402 (2018): 585-588.
+```
+
 ![grwl_layers](https://user-images.githubusercontent.com/6677629/115134104-06724500-9fd3-11eb-8ae2-2822d6f6705e.gif)
 
-Currently included layers are
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet:
+### Sample Code
 
 ```js
 var grwl_summary = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/grwl_SummaryStats_v01_01");
@@ -70,32 +92,34 @@ var grwl_water_vector = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL
 var grwl_tiles = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/grwl_tiles");
 var grwl_rssa_basins = ee.FeatureCollection("projects/sat-io/open-datasets/GRWL/rssa_basins");
 ```
-
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-WIDTH-LANDSAT
-
 Resolution:
 approx 30m
 
-#### Cite the dataset using
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:hydrology/GLOBAL-RIVER-WIDTH-LANDSAT)
 
-```
-Allen, George H., & Pavelsky, Tamlin M. (2018). Global River Widths from Landsat (GRWL) Database (Version V01.01) [Data set]. Zenodo. http://doi.org/10.5281/zenodo.1297434
-```
+### Sample Application
 
+NA
 
-#### Cite the paper using
+## License
 
-```
-Allen, George H., and Tamlin M. Pavelsky. "Global extent of rivers and streams."
-Science 361, no. 6402 (2018): 585-588.
-```
+This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-#### License
-Shared License: This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
+## Keywords
 
+GRWL, Fluvial Geomorphology, Hydrology, Rivers, River Width, Landsat, MNDWI
 
-Curated by: Samapriya Roy
+## Date Created
 
-Keywords: :"GRWL, Fluvial Geomorphology, Hydrology, Rivers, River Width, Landsat, MNDWI"
+2021-04-17
 
-Last updated: 2021-04-17
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

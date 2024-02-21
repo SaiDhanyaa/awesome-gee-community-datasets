@@ -1,4 +1,7 @@
+
 # NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid)
+
+## Description:
 
 The NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid) dataset is available as either a daily (NClimGrid-d) or a monthly (NClimGrid-m) dataset.
 The datasets contain gridded fields and area averages of maximum, minimum, and mean temperature and precipitation amounts for the contiguous United
@@ -34,7 +37,17 @@ uncertainties, and time series of such aggregated values can be shown to be suit
 | Precipitation ('precip')  | - Units: Millimeters                 |
 |                           | - Scale factor: 1.0                  |
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Vose, Russell S., Applequist, Scott, Squires, Mike, Durre, Imke, Menne, Matthew J., Williams, Claude N. Jr., Fenimore, Chris, Gleason, Karin, and
@@ -42,9 +55,9 @@ Arndt, Derek (2014): NOAA Monthly U.S. Climate Gridded Dataset (NClimGrid), Vers
 Environmental Information. DOI:10.7289/V5SX6B56 [access date].
 ```
 
+## Earth Engine Snippet:
 ![clim_grid](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/c40c521a-bf2b-40f8-8eb8-e82802dad700)
-
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 
@@ -71,14 +84,31 @@ Map.addLayer(nclimgrid_d_i.select('tmax'), {min: -20, max: 20, palette: temp_pal
 Map.addLayer(nclimgrid_d_i.select('tavg'), {min: -20, max: 20, palette: temp_palette}, 'tavg, daily')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NOAA-NCLIM-GRID
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NOAA-NCLIM-GRID)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 NOAA data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no restrictions on their subsequent use by the public. Once obtained, they may be put to any lawful use. The forgoing data is in the public domain and is being provided without restriction on use and distribution. For more information visit the NWS disclaimer site. NClimGrid Data Use And Access Constraints: https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.ncdc:C00332#Constraints
 
-Keywords: NOAA, nclim, CONUS, United Stated, daily, near real-time, temperature, precipitation
+## Keywords
 
-Provider: NOAA
+NOAA, nclim, CONUS, United Stated, daily, near real-time, temperature, precipitation
 
-Curated in Earth Engine by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+NOAA
+
+## Curated in GEE by
+Climate Engine Org

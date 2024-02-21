@@ -1,4 +1,7 @@
+
 # Global Fire Atlas (2003-2016)
+
+## Description:
 
 The Global Fire Atlas is a new freely available global dataset that tracks the daily dynamics of individual fires to determine the timing and location of ignitions, fire size and duration, and daily expansion, fire line length, speed, and direction of spread. Data are available in easily accessible GIS-layers and can also be explored online here and a detailed description of the underlying methodology is provided by Andela et al. (2019).
 
@@ -6,8 +9,17 @@ The data provide unique insights in the environmental conditions that give rise 
 
 While the world's largest fires occurred in more arid ecosystems, the longest fires burned for over 2 months in seasonal regions of the humid tropics and high-latitude forests. In these sparsely populated high fuel-load systems fires can continuously burn as long as weather conditions are favorable. Abnormal weather conditions often synchronized the occurrence of multiple extreme wildfires across larger regions. Global patterns of fire velocity were reversely related to fuel loads, and the highest fire velocities typically occurred in areas of low fuel loads.
 
+## Citations:
 
-#### Citation
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA       
+
+### Published Paper Citations
 
 ```
 Andela, Niels, Douglas C. Morton, Louis Giglio, Ronan Paugam, Yang Chen, Stijn Hantson, Guido R. Werf, and James T. Randerson.
@@ -17,7 +29,10 @@ Andela, Niels, Douglas C. Morton, Louis Giglio, Ronan Paugam, Yang Chen, Stijn H
 
 ![gfa](https://user-images.githubusercontent.com/6677629/118379283-ccc73680-b59e-11eb-91b6-a957a8691c91.gif)
 
-#### Earth Engine Snippet
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var day_of_burn = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-atlas/day_of_burn");
@@ -26,7 +41,8 @@ var fire_line = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-at
 var fire_speed = ee.ImageCollection("projects/sat-io/open-datasets/global-fire-atlas/fire_speed");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:fire-monitoring-analysis/GLOBAL-FIRE-ATLAS)
+
 
 |Data                       |Location                                                                  |
 |:--------------------------|:-------------------------------------------------------------------------|
@@ -72,7 +88,7 @@ var perimeter_2015 = ee.FeatureCollection("projects/sat-io/open-datasets/global-
 var perimeter_2016 = ee.FeatureCollection("projects/sat-io/open-datasets/global-fire-atlas/perimeter/Global_fire_atlas_V1_perimeter_2016");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-events-layers/GLOBAL-FIRE-ATLAS)
 
 
 |GEE_Property_Name|Property_Name                   |Property_Example|
@@ -91,15 +107,28 @@ Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 |start_date:      |Start Date                      |2/2/2003        |
 |tile_ID:         |Tile_ID                         |h17v05          |
 
+### Sample Application
+NA
 
-#### License & Usage
+## License
 
 This work is licensed under a Creative Commons Attribution 4.0 International License. You are free to copy and redistribute the material in any medium or format, and to transform and build upon the material for any purpose, even commercially. You must give appropriate credit, provide a link to the license, and indicate if changes were made.
 
-Curated by: Samapriya Roy
+## Keywords
 
-Keywords: Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence
+Human Dimensions, Natural Hazards, Wild Fires, Burned Area, Biosphere, Ecological Dynamics, Fire Ecology, Fire Dynamics, Fire Occurrence
 
-Contact details & Created by: Niels Andela (niels.andela@nasa.gov)
+## Date Created
 
-Last updated: 2019-04-24
+2019-04-24
+
+## Changelog
+
+NA
+
+## Provider
+
+Niels Andela (niels.andela@nasa.gov)
+
+## Curated in GEE by
+Samapriya Roy

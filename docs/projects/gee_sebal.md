@@ -1,4 +1,7 @@
+
 # geeSEBAL-MODIS Continental scale ET for South America
+
+## Description:
 
 The geeSEBAL-MODIS Version 0-02 Evapotranspiration (ET) product is an 8-day product produced at 500 meter pixel resolution. The algorithm for ET calculation is based on the SEBAL model and the FAO Penman-Monteith equation, which includes inputs of daily meteorological reanalysis data along with MODIS remotely sensed data products such as vegetation property dynamics, albedo, land cover and land surface temperature (LST).
 
@@ -18,7 +21,17 @@ The pixel values for the layers are the average of all eight days within the per
 |LST_lat    |Land surface temperature, corrected by the adiabatic lapse rate and normalized by the solar zenith angle.                           |272879  |330413 |K       |0.001|0     |
 |LST_dem    |Land surface temperature, corrected by the adiabatic lapse rate                                                                     |254456  |331505 |K       |0.001|0     |
 
-#### Citation Preprint
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Comini, Bruno & Ruhoff, Anderson & Laipelt, Leonardo & Fleischmann, Ayan & Huntington, Justin & Morton, Charles & Melton, Forrest & Erickson,
@@ -28,19 +41,42 @@ scale evapotranspiration based on the surface energy balance for South America. 
 
 ![gee-sebal](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/51baa12f-fcf8-4f95-ad6b-d616e20e3ec4)
 
-#### Code Snippet
+## Earth Engine Snippet:
+
+### Sample Code
+
 ```js
 var geesebal = ee.ImageCollection("projects/et-brasil/assets/geesebal/myd11a2/sa/v0-02")
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GEESEBAL-ET-SOUTH-AMERICA
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GEESEBAL-ET-SOUTH-AMERICA)
 
-#### License
+https://code.earthengine.google.com/ba815cfffab1b2f60ef92446693b9170
+
+### Sample Application
+
+NA
+
+## License
+
 The datset is made available under a CC-BY-4.0 license.
 
-Curated by: Bruno Comini de Andrade, Anderson Ruhoff, Leonardo Laipelt
+## Keywords
 
-Keywords: evapotranspiration, South America, water resources
+evapotranspiration, South America, water resources
 
-Last updated: 2023-03-26
-https://code.earthengine.google.com/ba815cfffab1b2f60ef92446693b9170
+## Date Created
+
+2023-03-26
+
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Bruno Comini de Andrade, Anderson Ruhoff, Leonardo Laipelt

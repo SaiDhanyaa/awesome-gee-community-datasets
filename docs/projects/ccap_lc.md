@@ -1,4 +1,7 @@
+
 # C-CAP High-Resolution Land Cover
+
+## Description:
 
 The NOAA Coastal Change Analysis Program (C-CAP) produces national standardized land cover and change products for the coastal regions of the U.S. C-CAP products inventory coastal intertidal areas, wetlands, and adjacent uplands with the goal of monitoring changes in these habitats. The timeframe for this metadata is summer 2016. These maps are developed utilizing high resolution National Agriculture Imagery Program (NAIP) imagery, and can be used to track changes in the landscape through time. This trend information gives important feedback to managers on the success or failure of management policies and programs and aid in developing a scientific understanding of the Earth system and its response to natural and human-induced changes. This understanding allows for the prediction of impacts due to these changes and the assessment of their cumulative effects, helping coastal resource managers make more informed regional decisions. NOAA C-CAP is a contributing member to the Multi-Resolution Land Characteristics consortium and C-CAP products are included as the coastal expression of land cover within the National Land Cover Database.
 
@@ -6,24 +9,31 @@ These detailed products bring NOAA’s national land cover mapping framework to 
 
 This dataset was created by NOAA's Ocean Service, Office for Coastal Management (OCM). Random Forest Classification: The initial 1m spatial resolution 6 class high resolution land cover product was developed using a Geographic Object-Based Image Analysis (GEOBIA) processing framework. This involves taking each image to be classified and grouping the pixels based on spectral and spatial properties into regions of homogeneity called objects. You can [read a sample metadata file here](https://coast.noaa.gov/htdata/raster1/landcover/bulkdownload/hires/ma/MA_2016_lc.xml)
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description were provided by the author(s) or their works.
 
-#### Citation
+## Citations:
 
+### Publication DOI
+
+NA
+
+### Dataset DOI
 ```
 National Oceanic and Atmospheric Administration, Office for Coastal Management. “Name of Data Set.” Coastal Change Analysis Program (C-
 CAP) High-Resolution Land Cover. Charleston, SC: NOAA Office for Coastal Management. Accessed [Month Year] at www.coast.noaa.gov/
 htdata/raster1/landcover/bulkdownload/hires/.
 ```
-
-#### Preprocessing
-
 The regional land cover dataset files were downloaded for each region. If the files were img then they were convert to GeoTIFF. Each region was converted into a collection and start and end dates were added based on available information and filenames.
 
 
 ![CCAP_LC_small](https://user-images.githubusercontent.com/6677629/173275567-d9b8a15a-d592-4227-ba8f-9b81081f53bf.gif)
 
-#### Earth Engine Snippet
+### Published Paper Citations
+
+NA
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var CCAP_AS_LC = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_AS_LC");
@@ -43,17 +53,31 @@ var CCAP_VI_LC = ee.ImageCollection("projects/earthengine-legacy/assets/projects
 var CCAP_WA_LC = ee.ImageCollection("projects/earthengine-legacy/assets/projects/sat-io/open-datasets/HRLC/CCAP_WA_LC");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CCAP-HRLC-HI
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:regional-landuse-landcover/CCAP-HRLC-HI)
 
+### Sample Application
 
-#### License
+NA
+
+## License
 
 The dataset is released under an assumed CC0 1.0 Universal (CC0 1.0) Public Domain Dedication.
 
-Produced by: NOAA's Ocean Service, Office for Coastal Management (OCM)
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA
 
-Keywords: Land Use, Land Cover, Urban Watch, Remote Sensing, High Resolution, OBIA, NOAA
+## Date Created
 
-Last updated on GEE: 2022-06-12
+2022-06-12
+
+## Changelog
+
+NA
+
+## Provider
+
+NOAA's Ocean Service, Office for Coastal Management (OCM)
+
+## Curated in GEE by
+Samapriya Roy

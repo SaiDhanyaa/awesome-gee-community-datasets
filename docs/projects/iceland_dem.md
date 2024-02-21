@@ -1,4 +1,7 @@
+
 # ÍslandsDEM v1.0 10m
+
+## Description:
 
 Since 2015, elevation data from the Arctic (north of 60°N, including Iceland) started to be openly available through the ArcticDEM project, led by the Polar Geospatial Center, University of Minnesota (https://www.pgc.umn.edu/data/arcticdem/).
 
@@ -10,11 +13,25 @@ In a collaborative effort between the National Land Survey of Iceland, the Icela
 
 * Robust mosaicking into one single DEM of Iceland, by taking advantage of the multi-temporal coverage of DEMs. Each pixel of the mosaic corresponds to a median elevation value from the possible elevations available from the ArcticDEM. More details on the dataset [available here](https://gatt.lmi.is/geonetwork/srv/eng/catalog.search#/metadata/e6712430-a63c-4ae5-9158-c89d16da6361). This DEM is resampled for 10x10m resolution.
 
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
 
 ![iceland_dem](https://user-images.githubusercontent.com/6677629/168207259-0ecfd923-91be-43ae-8747-7064e48b09d0.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var DEM_10m_isn93 = ee.Image("projects/ee-landmaelingar/assets/IslandsDEMv1_10m_isn93")
@@ -22,16 +39,31 @@ var DEM_10m_isn93 = ee.Image("projects/ee-landmaelingar/assets/IslandsDEMv1_10m_
 
 Projection used: EPSG 3057 (ISN93/Lambert 1993)
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ICELAND-DEM-10m
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ICELAND-DEM-10m)
 
+### Sample Application
 
-#### License
+NA
+
+## License
+
 The datasets are distributed under a Attribution 4.0 International (CC BY 4.0) license.
 
-Produced by : National Land Survey of Iceland & PGC
+## Keywords
 
-Curated in GEE by : National Land Survey of Iceland
+Elevation, DEM, ArticDEM, Iceland, Geophysical
 
-Keywords: : Elevation, DEM, ArticDEM, Iceland, Geophysical
+## Date Created
 
-Last updated on GEE: 2022-03-29
+2022-03-29
+
+## Changelog
+
+NA
+
+## Provider
+
+National Land Survey of Iceland & PGC
+
+## Curated in GEE by
+National Land Survey of Iceland

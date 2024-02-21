@@ -1,4 +1,7 @@
+
 # General Bathymetric Chart of the Oceans (GEBCO)
+
+## Description:
 
 The GEBCO_2023 Grid is a global terrain model for ocean and land, providing elevation data in meters on a 15 arc-second interval grid. This means that the grid has a spatial resolution of about 1 kilometer at the equator. The data values are pixel-center registered, meaning that they refer to the elevation at the center of each grid cell.
 
@@ -6,23 +9,6 @@ The grid is accompanied by a Type Identifier (TID) Grid, which provides informat
 
 The GEBCO_2023 Grid was published in April 2023 and is the fifth GEBCO grid developed through the Nippon Foundation-GEBCO Seabed 2030 Project. This is a collaborative project between the Nippon Foundation of Japan and GEBCO, which aims to bring together all available bathymetric data to produce the definitive map of the world ocean floor and make it available to all. The GEBCO_2023 Grid is a valuable resource for a variety of applications, including oceanography, geology, marine biology, climate change research, and disaster management.For information on the data sets included in the GEBCO_2021 Grid, please see the [list of contributions included in this release of the grid.](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)
 
-#### Data Citation & Attribution
-
-```
-GEBCO Compilation Group (2023) GEBCO 2023 Grid (doi:10.5285/f98b053b-0cbc-6c23-e053-6c86abc0af7b)
-```
-
-![gebco_grids](https://user-images.githubusercontent.com/6677629/115973752-0c10e300-a51d-11eb-8858-16f51762a948.gif)
-
-#### Earth Engine Snippet
-
-```js
-var gebco_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_grid");
-var gebco_sub_ice_topo = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo");
-var gebco_tid_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_tid_grid");
-```
-
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO
 
 #### GEBCO Type Identifier (TID) grid coding
 
@@ -50,13 +36,60 @@ Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesom
 |71                   |Unknown source - depth value from an unknown source                                                                                                                                                            |
 |72                   |Steering points - depth value used to constrain the grid in areas of poor data coverage                                                                                                                        |
 
-#### License
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+```
+GEBCO Compilation Group (2023) GEBCO 2023 Grid (doi:10.5285/f98b053b-0cbc-6c23-e053-6c86abc0af7b)
+```
+
+### Published Paper Citations
+
+NA
+
+![gebco_grids](https://user-images.githubusercontent.com/6677629/115973752-0c10e300-a51d-11eb-8858-16f51762a948.gif)
+
+## Earth Engine Snippet:
+
+### Sample Code
+
+```js
+var gebco_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_grid");
+var gebco_sub_ice_topo = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_sub-ice-topo");
+var gebco_tid_grid = ee.ImageCollection("projects/sat-io/open-datasets/gebco/gebco_tid_grid");
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/GEBCO)
+
+### Sample Application
+
+NA
+
+## License
+
 The GEBCO Grid is placed in the public domain and may be used free of charge. Use of the GEBCO Grid indicates that the user accepts the conditions of use and disclaimer information given below. Users are free to: Copy, publish, distribute and transmit The GEBCO Grid. Adapt The GEBCO Grid. Commercially exploit The GEBCO Grid, by, for example, combining it with other information, or by including it in their own product or application.
 
-Produced by : General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project
+## Keywords
 
-Curated by: Samapriya Roy
+Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation
 
-Keywords: :"Nippon Foundation-GEBCO Seabed 2030 Project, GEBCO, General Bathymetric Chart of the Oceans, Bathymetry , Elevation"
+## Date Created
 
-Last updated: 2023-08-28
+2023-08-28
+
+## Changelog
+
+NA
+
+## Provider
+
+General Bathymetric Chart of the Oceans (GEBCO), Nippon Foundation-GEBCO Seabed 2030 Project
+
+## Curated in GEE by
+Samapriya Roy

@@ -1,4 +1,7 @@
+
 # Relative Wealth Index (RWI)
+
+## Description:
 
 The Relative Wealth Index predicts the relative standard of living within countries using de-identified connectivity data, satellite imagery and other nontraditional data sources. This index is built using nontraditional data sources, including satellite imagery and de-identified Facebook connectivity data. The index is validated using ground truth measurements from the Demographic and Health Surveys. The data is provided for 93 low and middle-income countries at 2.4km resolution.
 
@@ -15,22 +18,53 @@ The datasets are provided as CSV files with lat long Relative Wealth Index (RWI)
 
 ![rwi](https://user-images.githubusercontent.com/6677629/115134793-efceec80-9fd8-11eb-8a6d-286528d985a1.gif)
 
-#### Earth Engine Snippet
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var rwi = ee.FeatureCollection("projects/sat-io/open-datasets/facebook/relative_wealth_index");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/RELATIVE-WEALTH-INDEX(RWI)
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:population-socioeconomics/RELATIVE-WEALTH-INDEX(RWI))
+
+### Sample Application
 
 Interactive Map: http://beta.povertymaps.net/
 
-#### License
+## License
 
 Public Domain/No restrictions (CC0): Under the terms of this license you are free to use the material for any purpose without any restrictions.
 
-Processed secondary/formatted & Curated by: Samapriya Roy
+## Keywords
 
-Keywords: :"Relative Wealth Index, RWI, Facebook, CIESIN, gridded"
+Relative Wealth Index, RWI, Facebook, CIESIN, gridded
 
-Last updated: 2021-04-18
+## Date Created
+
+2021-04-18
+
+## Changelog
+
+NA
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Samapriya Roy

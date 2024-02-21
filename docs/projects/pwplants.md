@@ -1,4 +1,7 @@
+
 # Global Power Plant Database
+
+## Description:
 
 #### release version: 1.3, release date: 2021-06-02
 
@@ -13,7 +16,6 @@ Generation unit-level information is not currently available.
 
 You can find the dataset and related details at https://datasets.wri.org/dataset/globalpowerplantdatabase
 
-#### Citation
 
 ```
 Global Energy Observatory, Google, KTH Royal Institute of Technology in Stockholm, Enipedia,
@@ -61,25 +63,57 @@ Published on Resource Watch and Google Earth Engine. http://resourcewatch.org/ h
 |33 |estimated_generation_note_2016|est_gen_nt2016  | label of the model/method used to estimate generation for the year 2016 (see section on this field below)|
 |34 |estimated_generation_note_2017|est_gen_nt2017  | label of the model/method used to estimate generation for the year 2017 (see section on this field below)|
 
-#### Earth Engine Snippet
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var global_power_plants = ee.FeatureCollection("projects/sat-io/open-datasets/global_power_plant_DB_1-3")
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-POWERPLANT-DATABASE
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/GLOBAL-POWERPLANT-DATABASE)
 
-#### License
+**Note: Older version of this dataset is [available in GEE](https://developers.google.com/earth-engine/datasets/catalog/WRI_GPPD_power_plants) and might be updated to reflect in the public catalog**
+
+### Sample Application
+
+NA
+
+## License
+
 The Global Power Planet Database is available under a CC BY 4.0 license
 
 Data download page: [Download v1.3 from here](https://datasets.wri.org/dataset/globalpowerplantdatabase)
 
-Dataset created by: World Resources Institute
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+infrastructure, energy, climate, power, power-plants, wri
 
-Keywords: : infrastructure, energy, climate, power, power-plants, wri
+## Date Created
 
-Last updated: 2021-07-16
+2021-07-16
 
-**Note: Older version of this dataset is [available in GEE](https://developers.google.com/earth-engine/datasets/catalog/WRI_GPPD_power_plants) and might be updated to reflect in the public catalog**
+## Changelog
+
+NA
+
+## Provider
+World Resources Institute
+
+## Curated in GEE by
+Samapriya Roy

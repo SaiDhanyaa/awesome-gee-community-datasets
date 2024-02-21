@@ -1,4 +1,7 @@
+
 # United States Seasonal Drought Outlook
+
+## Description:
 
 The United States Drought Outlook raster dataset is produced by the National Weather Service Climate Prediction Center. It is released on the last day of each month and provides information on the drought outlook for the following month. The "US Seasonal Drought Outlook" dataset is released on a monthly basis, specifically on the third Thursday of each month. This dataset provides a qualitative assessment of the likelihood of drought conditions across different regions of the United States. The assessment is conducted using a four-category scale to characterize the anticipated drought conditions:
 
@@ -37,9 +40,26 @@ You can find [additional information here](https://www.cpc.ncep.noaa.gov/product
 | Drought category ('drought_outlook_class') | - Units: Drought outlook classification |
 |                         | - Scale factor: 1.0                |
 
+
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+### Published Paper Citations
+
+NA
+
 ![ussdo](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/cd354bfc-6e79-4ebe-a887-b068f1483b1e)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 // Read in Image Collection and get single image
@@ -54,16 +74,33 @@ print(usdo_i)
 var usdo_palette = ["#ffffff", "#ABA362", "#DACBB5", "#FFD861", "#935743"]
 Map.addLayer(usdo_i, {min:0, max:4, palette: usdo_palette}, 'usdo_i')
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-DROUGHT-OUTLOOK)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/US-DROUGHT-OUTLOOK
+### Sample Application
 
-#### License
+NA
+
+## License
+
 NOAA data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no restrictions on their
 subsequent use by the public. Once obtained, they may be put to any lawful use. The forgoing data is in the public domain and is being provided
 without restriction on use and distribution. For more information visit the NWS disclaimer site.
 
-Keywords: drought, United Stated, outlook, forecast, NOAA, NWS, CPC, monthly
+## Keywords
 
-Provided by: NOAA
+drought, United Stated, outlook, forecast, NOAA, NWS, CPC, monthly
 
-Curated in GEE by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+NOAA
+
+## Curated in GEE by
+Climate Engine Org

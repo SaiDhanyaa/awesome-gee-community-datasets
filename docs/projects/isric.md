@@ -1,4 +1,7 @@
+
 # Soil Grids 250m v2.0
+
+## Description:
 
 SoilGrids is designed as a globally consistent, data-driven system that predicts soil properties and classes using global covariates and globally fitted models. If you are looking for soil information on national and/or local levels we advise to compare SoilGrids predictions with soil maps derived from national and local soil geographical databases. National soil maps are usually based on more detailed input soil information and therefore are often more accurate than SoilGrids (within the local coverage area). For an overview of national and regional soil databases, please refer to the Soil Geographic Databases compendium. The ‘mean’ and ‘median (0.5 quantile)’ may both be used as predictions of the soil property for a given cell. The mean represents the ‘expected value’ and provides an unbiased prediction of the soil property.
 
@@ -17,7 +20,19 @@ SoilGrids is designed as a globally consistent, data-driven system that predicts
 | ocd | Organic carbon density | hg/dm³ | 10 | kg/dm³ |[ocd_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/ocd_mean) |
 | ocs | Organic carbon stocks | t/ha | 10 | kg/m² |[ocs_mean](https://code.earthengine.google.com/?asset=projects/soilgrids-isric/ocs_mean) |
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+**Data available from:**
+www.soilgrids.org.
+https://doi.org/10.17027/isric-soilgrids.713396fa-1687-11ea-a7c0-a0481ca9e724
+
+### Published Paper Citations
 
 ```
 Poggio, L., de Sousa, L. M., Batjes, N. H., Heuvelink, G. B. M., Kempen, B., Ribeiro, E., and Rossiter, D.: SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty, SOIL, 7, 217–240, https://doi.org/10.5194/soil-7-217-2021, 2021.
@@ -25,7 +40,10 @@ Poggio, L., de Sousa, L. M., Batjes, N. H., Heuvelink, G. B. M., Kempen, B., Rib
 
 ![gee_isric_main](https://user-images.githubusercontent.com/6677629/96608670-44f6a380-12bf-11eb-9e0b-1419a891fa84.gif)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
+
 ```js
 var isric_bdod_mean = ee.Image("projects/soilgrids-isric/bdod_mean");
 var isric_cec = ee.Image("projects/soilgrids-isric/cec_mean");
@@ -40,28 +58,33 @@ var isric_ocd = ee.Image("projects/soilgrids-isric/ocd_mean");
 var isric_ocs = ee.Image("projects/soilgrids-isric/ocs_mean");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250
+**Link for sample code:** [Sample code]( https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/ISRIC-SOIL-GRID-250)
 
-#### Data available from
-www.soilgrids.org.
+### Sample Application
 
-#### Publication date
-2020-05-04
+NA
+
+## License
+
+Attribution 4.0 International (CC BY 4.0)
+
+## Keywords
+
+For example Global Soilgrid, Sandy Soil, ISRIC
+
+## Date Created
+2020-10-20
 
 #### Period
 Fri Mar 31 1905 19:00:00 GMT-0500 Mon Jul 04 2016 20:00:00 GMT-0400
 
-#### Provided by :
+## Changelog
+
+NA
+
+## Provider
+
 International Soil Reference and Information Centre (ISRIC)
 
-#### License
-Attribution 4.0 International (CC BY 4.0)
-
-#### DOI
-https://doi.org/10.17027/isric-soilgrids.713396fa-1687-11ea-a7c0-a0481ca9e724
-
-Created and Curated by: International Soil Reference and Information Centre (ISRIC)
-
-Keywords: For example Global Soilgrid, Sandy Soil, ISRIC
-
-Last updated: 2020-10-20
+## Curated in GEE by
+International Soil Reference and Information Centre (ISRIC)

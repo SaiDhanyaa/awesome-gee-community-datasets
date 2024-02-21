@@ -1,4 +1,7 @@
+
 # Terraclimate Individual years for +2C and +4C climate futures
+
+## Description:
 
 TerraClimate layers commensurate with global mean temperatures +2C and +4C above preindustrial levels. These data are available for pseudo years 1985-2015. Future climate projections were developed for two different climate futures: (1) when global mean temperatures are 2C warmer than pre-industrial, and (2) when global mean temperatures are 4C above preindustrial. We use a pattern scaling approach that makes use of monthly projections from 23 CMIP5 global climate models as described in Qin et al., 2020 and provide projections for monthly climate by imposing projected changes in means and variance from the modes scalable to the change in global temperature. You can find [more information here](https://www.climatologylab.org/terraclimate.html)
 
@@ -6,13 +9,6 @@ This data is at two links
 
 * [+2C data](http://thredds.northwestknowledge.net:8080/thredds/catalog/TERRACLIMATE_ALL/data_plus2C/catalog.html)
 * [+4C data](http://thredds.northwestknowledge.net:8080/thredds/catalog/TERRACLIMATE_ALL/data_plus4C/catalog.html)
-
-#### Citation
-
-```
-Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water
-balance from 1958-2015, Scientific Data
-```
 
 #### Data preprocessing
 An automated script was created to fetch all datasets, which contains 31 annual NetCDF files with 12 bands each representing a month for each variable. The netcdf files for each variable was converted into Geotifs with global bounds and with lzw compressions. The collections were made available for both 2C and 4C scenarios and scale and offset were added as metadata for each collection to allow for processing in the appropriate units as mentioned in the variable list below.
@@ -43,10 +39,29 @@ Terraclimate variables and units can be found in the table below. As noted from 
 
 </center>
 
+
+
+## Citations:
+
+### Publication DOI
+
+```
+Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water
+balance from 1958-2015, Scientific Data
+```
+
+### Dataset DOI
+
+NA
+### Published Paper Citations
+
+NA
+
 ![terraclimate](https://user-images.githubusercontent.com/6677629/165516012-0a573b1e-3cee-44f5-a515-1a02da419c6b.gif)
 
+## Earth Engine Snippet:
 
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var aet_2c = ee.ImageCollection("projects/sat-io/open-datasets/TERRACLIMATE/2C/aet");
@@ -71,18 +86,31 @@ var tmin_4c = ee.ImageCollection("projects/sat-io/open-datasets/TERRACLIMATE/4C/
 var vpd_4c = ee.ImageCollection("projects/sat-io/open-datasets/TERRACLIMATE/4C/vpd");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/TERRACLIMATE-CLIMATE-FUTURES)
 
+### Sample Application
 
-#### License
+NA
+
+## License
+
 This work is licensed under a public domain license.
 
-Created by: Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch
+## Keywords
 
-Preprocessed and Curated in GEE by : Samapriya Roy
+Climate futures, +2C, +4C, TerraClimate
 
-Keywords: Climate futures, +2C, +4C, TerraClimate
+## Date Created
 
-Last updated: 2021-04-15
+2021-04-15
 
-Last updated on GEE: 2022-04-27
+## Changelog
+
+2022-04-27
+
+## Provider
+
+Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch
+
+## Curated in GEE by
+Samapriya Roy

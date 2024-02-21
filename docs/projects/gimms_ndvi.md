@@ -1,4 +1,7 @@
+
 # GIMMS Normalized Difference Vegetation Index 1982-2022
+
+## Description:
 
 The PKU GIMMS Normalized Difference Vegetation Index dataset (PKU GIMMS NDVI, version 1.2) offers consistent global NDVI data at half-month intervals and 1/12° resolution, spanning from 1982 to 2022. Its primary objective is to address key uncertainties prevalent in existing global long-term NDVI datasets, specifically mitigating the impact of NOAA satellite orbital drift and AVHRR sensor degradation.
 
@@ -9,14 +12,20 @@ The dataset is available in two versions for download: one exclusively reliant o
 #### Post Processing
 The datasets were renames since periods are not allowed in earth engine filenames so v1.2 was renamed to v12 and dates were added as start dates to each image in the collection.
 
-#### Dataset citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 Muyi Li, Sen Cao, Zaichun Zhu, Zhe Wang, Ranga B. Myneni, & Shilong Piao. (2023). Spatiotemporally consistent global dataset of the GIMMS Normalized
 Difference Vegetation Index (PKU GIMMS NDVI) from 1982 to 2022 (V1.2) (V1.2) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.8253971
 ```
 
-#### Citation
+### Published Paper Citations
 
 ```
 Li, Muyi, Sen Cao, Zaichun Zhu, Zhe Wang, Ranga B. Myneni, and Shilong Piao. "Spatiotemporally consistent global dataset of the GIMMS Normalized
@@ -25,23 +34,39 @@ Difference Vegetation Index (PKU GIMMS NDVI) from 1982 to 2022." Earth System Sc
 
 ![gimms_ndvi](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/e3029df9-3068-49b5-be77-81ff635658fa)
 
+## Earth Engine Snippet:
 
-#### Earth Engine snippet
-
+### Sample Code
 ```js
 var avhrr_modis_consolidated = ee.ImageCollection("projects/sat-io/open-datasets/PKU-GIMMS-NDVI/AVHRR_MODIS_CONSOLIDATED");
 var avhrr_solely = ee.ImageCollection("projects/sat-io/open-datasets/PKU-GIMMS-NDVI/AVHRR_SOLELY");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GIMMS-NDVI-1982-2022
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/GIMMS-NDVI-1982-2022)
 
-#### License
+### Sample Application
+
+NA
+
+## License
+
 This work is licensed under Creative Commons Attribution 4.0 International license.
 
-Created by: Li, Muyi, Sen Cao, Zaichun Zhu, Zhe Wang, Ranga B. Myneni, and Shilong Piao
+## Keywords
 
-Curated in GEE by : Samapriya Roy
+PKU GIMMS NDVI, Landsat, MODIS, Back Propagation Neural Network
 
-keywords: PKU GIMMS NDVI, Landsat, MODIS, Back Propagation Neural Network
+## Date Created
 
-Last updated on GEE: 2023-10-10
+2023-10-10
+
+## Changelog
+
+NA
+
+## Provider
+
+Li, Muyi, Sen Cao, Zaichun Zhu, Zhe Wang, Ranga B. Myneni, and Shilong Piao
+
+## Curated in GEE by
+Samapriya Roy

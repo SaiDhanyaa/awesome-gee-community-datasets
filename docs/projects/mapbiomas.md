@@ -1,4 +1,7 @@
+
 # Mapbiomas Annual land cover and use maps
+
+## Description:
 
 The Brazilian Annual Land Use and Land Cover Mapping Project is an initiative that involves a collaborative network of biomes, land use, remote sensing, GIS and computer science experts that rely on Google Earth Engine platform and its cloud processing and automated classifiers capabilities to generate Brazil’s annual land use and land cover time series. MapBiomas Project - is a multi-institutional initiative to generate annual land cover and use maps using automatic classification processes applied to satellite images. The complete description of the project can be [found here](http://mapbiomas.org).
 
@@ -7,22 +10,30 @@ Other regions such as Pan Amazonia, Indonesia, Bolivia , Peru and others were sp
 Scale: 30 m to 10m
 Data Type: Multiple raster datasets and types
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
 Souza at. al. (2020) - Reconstructing Three Decades of Land Use and Land Cover Changes in Brazilian Biomes with Landsat Archive and Earth Engine -
 Remote Sensing, Volume 12, Issue 17, 10.3390/rs12172735 doi: 10.3390/rs12172735 https://doi.org/10.3390 /rs12172735
 ```
 
-#### Dataset Citation
+### Dataset DOI
 
 ```
 "Project MapBiomas - Collection [version] of [region] Land Cover & Use Map Series, accessed on [date] through the link: [LINK]"
 ```
 
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
 ![MapBiomas](https://user-images.githubusercontent.com/6677629/81698669-5300e800-9434-11ea-9c5f-e8bf9588e737.gif)
 
-#### Earth Engine Snippet
+### Sample Code
+
 
 ```js
 //From collection 8
@@ -40,24 +51,34 @@ assets: {
 },
 ```
 
-Add repo link: https://code.earthengine.google.com/?accept_repo=users/mapbiomas/user-toolkit
+**Add repo link:** https://code.earthengine.google.com/?accept_repo=users/mapbiomas/user-toolkit
 
-Extra Info: [GitHub Tutorial](https://github.com/mapbiomas-brazil/user-toolkit)
+**Extra Info:** [GitHub Tutorial](https://github.com/mapbiomas-brazil/user-toolkit)
 
-Curated by: [MapBiomas](https://mapbiomas.org/)
+### Sample Application
 
-#### License
+NA
+
+## License
 
 All these datasets are shared under Creative Commons Attribution-Share Alike 4.0 International License
 
-Keywords: Mapbiomas, Land Use, Land Cover
+## Keywords
 
-Last updated: [Refer to webpage](https://mapbiomas.org/)
+ Mapbiomas, Land Use, Land Cover
 
-Last updated on GEE community datasets: 2023-10-14
+## Date Created
 
+2023-10-14
 
-#### Changelog
+## Changelog
 
 * Catalog links updated to v8 and other regions were added
 * Catalog links updated to v6 additional dataset links were added.
+
+## Provider
+
+Company's/Agency
+
+## Curated in GEE by
+[MapBiomas](https://mapbiomas.org/)

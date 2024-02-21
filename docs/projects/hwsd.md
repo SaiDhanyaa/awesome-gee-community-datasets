@@ -1,4 +1,7 @@
+
 # Harmonized World Soil Database (HWSD) version 2.0
+
+## Description:
 
 The Harmonized World Soil Database version 2.0 (HWSD v2.0) is a unique global soil inventory providing information on the morphological, chemical and physical properties of soils at approximately 1 km resolution. Its main objective is to serve as a basis for prospective studies on
 agro-ecological zoning, food security and climate change.
@@ -7,7 +10,7 @@ This updated version (HWSD v2.0) is built on the previous versions of HWSD with 
 
 You can download the files and tutorials [for the datasets here](https://data.isric.org/geonetwork/srv/all/catalog.search#/metadata/54aebf11-ec73-4ff8-bf6c-ecff4b0725ea)
 
-Disclaimer: Whole or parts of the dataset description were provided by the author(s) or their works.
+**Disclaimer:** Whole or parts of the dataset description were provided by the author(s) or their works.
 
 #### Dataset preprocessing
 
@@ -37,29 +40,56 @@ The band order is the following:
 - `IL` (numeric)
 - `ADD_PROP` (numeric)
 
-#### Citation
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 ```
 FAO & IIASA. 2023. Harmonized World Soil Database version 2.0. Rome and Laxenburg. https://doi.org/10.4060/cc3823en
 ```
 
+### Published Paper Citations
+
+NA
+
 ![hwsd](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/2dfd67f3-f3f3-4c83-a2da-8597af9bfb54)
 
-#### Earth Engine Snippet
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var hwsd2 = ee.Image("projects/sat-io/open-datasets/FAO/HWSD_V2_SMU");
 ```
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HWSD-V2-SMU)
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:soil-properties/HWSD-V2-SMU
+### Sample Application
 
-#### License
+NA
+
+## License
+
 This dataset is made available under [Attribution-NonCommercial-ShareAlike 3.0 International (CC BY-NC-SA 3.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-Created by: FAO & IIASA
+## Keywords
 
-Curated in GEE by: William Ouellette & Samapriya Roy
+Soil, World Soil properties, Texture, USDA, FAO, IIASA
 
-Keywords: Soil, World Soil properties, Texture, USDA, FAO, IIASA
+## Date Created
 
-Last updated in GEE: 23/03/2023
+23/03/2023
+
+## Changelog
+
+NA
+
+## Provider
+
+FAO & IIASA
+
+## Curated in GEE by
+William Ouellette & Samapriya Roy

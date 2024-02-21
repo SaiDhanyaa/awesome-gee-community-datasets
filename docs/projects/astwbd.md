@@ -1,4 +1,7 @@
+
 # ASTER Global Water Bodies Database (ASTWBD) Version 1
+
+## Description:
 
 The Terra Advanced Spaceborne Thermal Emission and Reflection Radiometer (ASTER) Global Water Bodies Database (ASTWBD) Version 1 data product provides global coverage of water bodies larger than 0.2 square kilometers at a spatial resolution of 1 arc second (approximately 30 meters) at the equator, along with associated elevation information.
 
@@ -11,7 +14,9 @@ Disclaimer: Parts or all of the dataset description is borrowed from existing de
 #### Source Data structure
 The data are in Geotiff format, with each file divided into 1x1 degree tiles. To allow for adding a single image instead of a collection output, the zip files were unzipped and a single composite tif file was generated.
 
-#### Citation
+## Citations:
+
+### Publication DOI
 
 ```
 NASA/METI/AIST/Japan Spacesystems, and U.S./Japan ASTER Science Team. ASTER Global
@@ -21,20 +26,47 @@ https://doi.org/10.5067/ASTER/ASTGTM.003
 
 ![astwbd](https://user-images.githubusercontent.com/6677629/158250993-cf99f11d-d1bd-4661-b152-81546a42827c.gif)
 
-#### Earth Engine Snippet
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var astwbd_att = ee.Image("projects/sat-io/open-datasets/ASTER/ASTWBD_ATT");
 ```
 
-Sample Code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTWBD
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:elevation-bathymetry/ASTWBD)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 All LP DAAC current data and products acquired through the LP DAAC have no restrictions on reuse, sale, or redistribution. This license can thus be treated similar to a public domain CC0 license. ASTER GDEM Version 3 (ASTGTM V003) was released on August, 5, 2019 and contains no redistribution requirements. The LP DAAC kindly requests that you properly cite the data in your research.
 
-Created by:  NASA, METI, AIST, Japan Spacesystems and U.S./Japan ASTER Science Team
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+ASTER, DEM, elevation, remote sensing, Water Bodies Database
 
-Keywords: ASTER, DEM, elevation, remote sensing, Water Bodies Database
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+NASA, METI, AIST, Japan Spacesystems and U.S./Japan ASTER Science Team
+
+## Curated in GEE by
+Samapriya Roy

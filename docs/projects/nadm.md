@@ -1,4 +1,8 @@
+
 # North American Drought Monitor (NADM)
+
+## Description:
+
 The North American Drought Monitor (NADM) raster dataset is produced by the National Centers for Environmental Information (NCEI) and the National Oceanic and Atmospheric Administration's (NOAA) National Integrated Drought Information System (NIDIS). This dataset is a gridded version of the North American Drought Monitor (NADM) produced by Canadian, Mexican and US authors where for each 2.5-km gridcell, the value is given by the current NADM drought classification for that region is:
 
 Drought categories are coded as the following values in the images:
@@ -37,8 +41,17 @@ Additional [details can be found here](https://www.ncdc.noaa.gov/temp-and-precip
 
 </center>
 
+## Citations:
 
-#### Citation
+### Publication DOI
+
+NA
+
+### Dataset DOI
+
+NA
+
+### Published Paper Citations
 
 ```
 Heim, Jr., R. R., 2002. A review of Twentieth-Century drought indices used in the United States. Bulletin of the American Meteorological Society, 83, 1149-1165.
@@ -50,9 +63,9 @@ Lott, N., and T. Ross, 2000. NCDC Technical Report 2000-02, A Climatology of Rec
 Svoboda, M., et al., 2002. The Drought Monitor. Bulletin of the American Meteorological Society, 83, 1181-1190.
 ```
 
+## Earth Engine Snippet:
 ![nadm_img](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/bf161494-350b-49da-a724-b55b768c6a50)
-
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 // Read in Image Collection and mosaic to single image
@@ -67,14 +80,31 @@ var nadm_palette = ["#ffffff", "#ffff00", "#fcd37f", "#ffaa00", "#e60000", "#730
 Map.addLayer(nadm_i, {min:-1, max:4, palette: nadm_palette}, 'nadm_i')
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NADM-MONTHLY
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:weather-climate/NADM-MONTHLY)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 NOAA data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no restrictions on their subsequent use by the public. Once obtained, they may be put to any lawful use. The forgoing data is in the public domain and is being provided without restriction on use and distribution. For more information visit the NWS disclaimer site.
 
-Keywords: drought, NADM, North America, United States, Canada, Mexico
+## Keywords
 
-Created & provided by: NOAA, NIDIS, NCEI
+drought, NADM, North America, United States, Canada, Mexico
 
-Curated by: Climate Engine Org
+## Date Created
+
+NA
+
+## Changelog
+
+NA
+
+## Provider
+
+NOAA, NIDIS, NCEI
+
+## Curated in GEE by
+Climate Engine Org

@@ -1,4 +1,7 @@
+
 # Oil and Gas Infrastructure Mapping (OGIM) database
+
+## Description:
 
 The Oil and Gas Infrastructure Mapping (OGIM) dataset, available in the Awesome Google Earth Engine (GEE) Community Catalog, is a comprehensive global repository of spatially explicit information on oil and gas infrastructure. Developed by the Environmental Defense Fund (EDF) (www.edf.org), the OGIM database is meticulously curated to facilitate the quantification and characterization of methane emissions from oil and gas sources.
 
@@ -6,21 +9,6 @@ This dataset is a result of extensive efforts at EDF, involving the acquisition,
 
 You can read more about [the OGIM dataset here](https://essd.copernicus.org/articles/15/3761/2023/essd-15-3761-2023.pdf) and you can find the [dataset here](https://zenodo.org/records/7922117).
 
-
-#### Citation
-
-```
-Omara, Mark, Ritesh Gautam, Madeleine O'Brien, Anthony Himmelberger, Alex Franco, Kelsey Meisenhelder, Grace Hauser et al.
-"Developing a spatially explicit global oil and gas infrastructure database for characterizing methane emission sources at
-high resolution." Earth System Science Data Discussions 2023 (2023): 1-35.
-```
-
-#### Dataset citation
-
-```
-Ritesh Gautam. (2023). Oil and Gas Infrastructure Mapping (OGIM) database (OGIM_v1.1) [Data set]. Zenodo.
-https://doi.org/10.5281/zenodo.7922117
-```
 
 #### OGIM Layer Descriptors
 
@@ -46,10 +34,30 @@ https://doi.org/10.5281/zenodo.7922117
 
     <center>
 
+## Citations:
+
+### Publication DOI
+
+```
+Omara, Mark, Ritesh Gautam, Madeleine O'Brien, Anthony Himmelberger, Alex Franco, Kelsey Meisenhelder, Grace Hauser et al.
+"Developing a spatially explicit global oil and gas infrastructure database for characterizing methane emission sources at
+high resolution." Earth System Science Data Discussions 2023 (2023): 1-35.
+```
+
+### Dataset DOI
+
+```
+Ritesh Gautam. (2023). Oil and Gas Infrastructure Mapping (OGIM) database (OGIM_v1.1) [Data set]. Zenodo.
+https://doi.org/10.5281/zenodo.7922117
+```
+
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
 ![ogim_v11](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/11cbe7b9-ae51-413a-adfa-cd85c05d278e)
-
-
-#### Earth Engine Snippet
+### Sample Code
 
 ```js
 var crude_oil_refineries = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/crude_oil_refineries");
@@ -67,17 +75,31 @@ var stations_other = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/st
 var tank_battery = ee.FeatureCollection("projects/sat-io/open-datasets/OGIM/tank_battery");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/OGIM
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:global-utilities-assets-amenities/OGIM)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 These datasets are provided under a Creative Commons Attribution 4.0 International Public License, unless otherwise noted.
 
-Created by: Omara et al
+## Keywords
 
-Curated in GEE by: Samapriya Roy
+OGIM dataset, Methane emissions, Environmental Defense Fund (EDF), infrastructure types, oil and gas wells, offshore platforms, Compressor stations, Liquefied natural gas facilities, Crude oil refineries
 
-Keywords: OGIM dataset, Methane emissions, Environmental Defense Fund (EDF), infrastructure types, oil and gas wells, offshore platforms, Compressor stations, Liquefied natural gas facilities, Crude oil refineries
+## Date Created
 
-Last updated: 2024-01-19
+2024-01-19
 
+## Changelog
+
+NA
+
+## Provider
+
+Omara et al
+
+## Curated in GEE by
+Samapriya Roy

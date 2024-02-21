@@ -1,4 +1,8 @@
+
 # Rangeland Analysis Platform layers
+
+## Description:
+
 Rangeland Analysis Platform data products are available as GEE assets and are made publicly available for analysis through the web application at [rangelands.app](https://rangelands.app)
 
 **Vegetation Cover:** Vegetation Cover: Rangeland Analysis Platform (RAP) Vegetation Cover, version 3.0 consists of gridded fractional estimates of plant functional groups for rangelands in the continental United States. The estimates are produced at 30-meter spatial resolution for each year between 1984–present. The six plant functional groups are Annual Forbs and Grasses, Perennial Forbs and Grasses, Shrubs, Trees, Litter, and Bare Ground. Cover values are reported as percentages on a pixel-by-pixel basis. The estimates were produced using a temporal convolutional network using field measures of plant functional groups collected by the Natural Resources Conservation Service Natural Resources Inventory (NRI) program, the Bureau of Land Management Assessment, Inventory, and Monitoring (AIM) program, and the National Park Service Northern Colorado Plateau Network (NCPN) alongside spatially continuous earth observations from Landsat TM, ETM+, and OLI Collection 2.
@@ -9,20 +13,17 @@ Dataset was updated based on specifications provided in changelog below. Updated
 
 ![RAP_v3](https://user-images.githubusercontent.com/33233973/148469528-e8e45e3b-bee6-4c00-907e-4f3b3dfb35c1.JPG)
 
-#### Earth Engine Asset Snippets
+## Citations:
 
-```js
-// Vegetation Cover
-var RAP_veg = ee.ImageCollection("projects/rap-data-365417/assets/vegetation-cover-v3")
+### Publication DOI
 
-// Net Primary Production (annual)
-var RAP_npp = ee.ImageCollection("projects/rap-data-365417/assets/npp-partitioned-v3")
+NA
 
-```
+### Dataset DOI
 
-Code Snippets: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/RANGELAND-ANALYSIS-PLATFORM-EXAMPLE
+NA
 
-#### Citation
+### Published Paper Citations
 
 ```
 Jones, M.O., N.P. Robinson, D.E. Naugle, J.D. Maestas, M.C. Reeves, R.W.
@@ -46,20 +47,37 @@ Sample scripts are available on the [RAP Support Site](https://rangelands.app/su
 
 Extra Info: See any of the three herbaceous biomass scripts for the function to convert from net primary production to biomass.
 
+## Earth Engine Snippet:
+
+### Sample Code
+
+```js
+// Vegetation Cover
+var RAP_veg = ee.ImageCollection("projects/rap-data-365417/assets/vegetation-cover-v3")
+
+// Net Primary Production (annual)
+var RAP_npp = ee.ImageCollection("projects/rap-data-365417/assets/npp-partitioned-v3")
+
+```
+
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/RANGELAND-ANALYSIS-PLATFORM-EXAMPLE)
+
+### Sample Application
+
 Download Tool/Code snippets if any: Analysis can be performed on these datasets for your regions of interest through the GUI at [rangelands.app](https://rangelands.app)
 
-#### License Information
+## License
 
 Public Domain-CC0
 
-#### Curated by
-Sarah McCord, Point of Contact, and Jeb Williamson, Agricultural Research Service, U.S. Department of Agriculture
+## Keywords
 
-Keywords: rangelands, vegetation, time-series, machine learning, landsat
+rangelands, vegetation, time-series, machine learning, landsat
 
-Last updated: 2022-01-06
+## Date Created
 
-#### Changelog
+2022-01-06
+## Changelog
 
 RAP v3 was released on 2022-01-01
 
@@ -69,3 +87,10 @@ Primary changes include:
 * Addition of the National Park Service Northern Colorado Plateau Network (NCPN) monitoring data for cover training
 * Identify agriculture, development, and water
 * Addition of the eastern states
+
+## Provider
+
+NA
+
+## Curated in GEE by
+Sarah McCord, Point of Contact, and Jeb Williamson, Agricultural Research Service, U.S. Department of Agriculture

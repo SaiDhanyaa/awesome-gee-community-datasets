@@ -1,4 +1,7 @@
+
 # Digital Earth Africa's cropland extent map Africa 2019
+
+## Description:
 
 These maps shows the estimated location of croplands in the following countries for the period January to December 2019 where cropland is defined as a piece of land of minimum 0.01 ha (a single 10m x 10m pixel) that is sowed/planted and harvestable at least once within the 12 months after the sowing/planting date. It was also noted that "This definition will exclude non-planted grazing lands and perennial crops which can be difficult for satellite imagery to differentiate from natural vegetation." The provisional cropland extent maps have a resolution of 10 metres, and were built using Copernicus Sentinel-2 satellite images from 2019. The cropland extent maps were built seperately using extensive training data from Eastern, Western, Northern, and Sahel Africa, coupled with a Random Forest machine learning model. A detailed exploration of the methods used to produce the cropland extent map can be found in the [Jupyter Notebooks in DE Africa’s crop-mask](https://github.com/digitalearthafrica/crop-mask). Easiest place to download the datasets is from [AWS Open data registry](https://registry.opendata.aws/deafrica-crop-extent/)
 
@@ -12,7 +15,7 @@ These maps shows the estimated location of croplands in the following countries 
 * crop_mask_central: Angola, Democratic Republic of the Congo, Congo, Gabon, Cameroon, Equatorial Guinea, and Central African Republic
 * crop_mask_indian_ocean: Madagascar, Mauritius, Reunion, and Comoros
 
-The products contain three measurements:
+**The products contain three measurements:**
 
 * mask: This band displays cropped regions as a binary map. Values of 1 indicate the presence of crops, while a value of 0 indicates the absence of cropping. This band is a pixel-based cropland extent map, meaning the map displays the raw output of the pixel-based Random Forest classification.
 
@@ -29,7 +32,15 @@ The products contain three measurements:
 
 You can details on the [method and more here](https://docs.digitalearthafrica.org/en/latest/data_specs/Cropland_extent_specs.html)
 
-Disclaimer: Parts or all of the dataset description is borrowed from existing description provided by authors.
+**Disclaimer:** Parts or all of the dataset description is borrowed from existing description provided by authors.
+
+## Citations:
+
+### Publication DOI
+
+NA
+
+### Dataset DOI
 
 #### Preprocessing for GEE
 
@@ -37,7 +48,13 @@ All images were download and merged into single collections. The metadata tags i
 
 ![dea_cropmask](https://user-images.githubusercontent.com/6677629/224822199-ec9c800f-e6be-489d-9e94-3a9d82c893f1.gif)
 
-#### Earth Engine snippet
+### Published Paper Citations
+
+NA
+
+## Earth Engine Snippet:
+
+### Sample Code
 
 ```js
 var filtered = ee.ImageCollection("projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/filtered")
@@ -46,17 +63,31 @@ var prob = ee.ImageCollection("projects/sat-io/open-datasets/DEAF/CROPLAND-EXTEN
 var validation = ee.FeatureCollection("projects/sat-io/open-datasets/DEAF/CROPLAND-EXTENT/validation");
 ```
 
-Sample code: https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/DEA-CROPLAND-EXTENT
+**Link for sample code:** [Sample code](https://code.earthengine.google.com/?scriptPath=users/sat-io/awesome-gee-catalog-examples:agriculture-vegetation-forestry/DEA-CROPLAND-EXTENT)
 
-#### License
+### Sample Application
+
+NA
+
+## License
 
 This dataset is made available under the CC BY Attribution 4.0 International License.
 
-Created by: Digital Earth Africa
+## Keywords
 
-Curated by: Samapriya Roy
+agriculture, cog, deafrica, earth observation, food security, geospatial, satellite imagery, stac,sustainability
 
-Keywords: agriculture, cog, deafrica, earth observation, food security, geospatial, satellite imagery, stac,sustainability
+## Date Created
 
-Last updated in GEE: 2023-03-13
+2023-03-13
 
+## Changelog
+
+NA
+
+## Provider
+
+Digital Earth Africa
+
+## Curated in GEE by
+Samapriya Roy
