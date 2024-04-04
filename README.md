@@ -22,6 +22,6 @@ https://gee-community-catalog.org/
 #### Citation
 
 ```
-Samapriya Roy, Alec L. Robitaille, Swetnam, T. & Somasundaram, Dhanya (2024). SaiDhanyaa/awesome-gee-community-datasets: Community Catalog (2.5.0).
+Samapriya Roy, Alec L. Robitaille, Swetnam, T. & Somasundaram, Dhanya (2024). samapriya/awesome-gee-community-datasets: Community Catalog (2.5.0).
 Zenodo. https://doi.org/10.5281/zenodo.10913399
 ```
