@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/SaiDhanyaa/example/</loc>
+         <lastmod>2024-04-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/SaiDhanyaa/insiders/</loc>
          <lastmod>2024-04-04</lastmod>
          <changefreq>daily</changefreq>
@@ -42,6 +47,11 @@
     </url>
     <url>
          <loc>https://github.com/SaiDhanyaa/submit/</loc>
+         <lastmod>2024-04-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://github.com/SaiDhanyaa/update/</loc>
          <lastmod>2024-04-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
