@@ -1,11 +1,11 @@
 site_name: awesome-gee-community-catalog
 site_description: Community Datasets in Google Earth Engine
-site_author: Samapriya Roy
-site_url: https://github.com/samapriya
+site_author: Dhanyapriya Somasundaram
+site_url: https://github.com/SaiDhanyaa
 
 # Repository
 repo_name: awesome-gee-community-datasets
-repo_url: https://github.com/samapriya/awesome-gee-community-datasets
+repo_url: https://github.com/SaiDhanyaa/awesome-gee-community-datasets
 
 # Copyright
 copyright: "Copyright &copy; 2020 - 2024 Samapriya Roy"
@@ -59,15 +59,13 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/samapriya
+      link: https://github.com/SaiDhanyaa
     - icon: fontawesome/brands/medium
-      link: https://medium.com/@samapriyaroy
-    - icon: fontawesome/brands/mastodon
-      link: https://mapstodon.space/@samapriya
+      link: https://medium.com/@dhanyapriyas
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/samapriyaroy
+      link: https://twitter.com/dhanyapriyas
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/in/samapriya
+      link: https://www.linkedin.com/in/Dhanyapriya-somasundaram
   analytics:
     provider: google
     property: G-G7SXDJEWXV
