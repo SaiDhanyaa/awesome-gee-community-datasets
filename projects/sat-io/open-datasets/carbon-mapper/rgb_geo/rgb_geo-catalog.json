@@ -1,0 +1,28 @@
+{
+    "stac_version": "1.0.0",
+    "id": "rgb_geo",
+    "description": "STAC catalog for rgb_geo",
+    "type": "Collection",
+    "license": "CC-BY-4.0",
+    "links": [],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    }
+}

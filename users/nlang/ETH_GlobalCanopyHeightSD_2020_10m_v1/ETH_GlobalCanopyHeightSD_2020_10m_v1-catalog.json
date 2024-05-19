@@ -1,0 +1,28 @@
+{
+    "stac_version": "1.0.0",
+    "id": "ETH_GlobalCanopyHeightSD_2020_10m_v1",
+    "description": "STAC catalog for ETH_GlobalCanopyHeightSD_2020_10m_v1",
+    "type": "Collection",
+    "license": "CC-BY-4.0",
+    "links": [],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    }
+}

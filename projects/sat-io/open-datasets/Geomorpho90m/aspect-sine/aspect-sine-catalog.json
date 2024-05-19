@@ -1,0 +1,28 @@
+{
+    "stac_version": "1.0.0",
+    "id": "aspect-sine",
+    "description": "STAC catalog for aspect-sine",
+    "type": "Collection",
+    "license": "CC-BY-4.0",
+    "links": [],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    }
+}

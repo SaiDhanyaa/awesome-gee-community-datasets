@@ -1,0 +1,28 @@
+{
+    "stac_version": "1.0.0",
+    "id": "Global_fire_atlas_V1_perimeter_2015",
+    "description": "STAC catalog for Global_fire_atlas_V1_perimeter_2015",
+    "type": "Collection",
+    "license": "CC-BY-4.0",
+    "links": [],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    }
+}

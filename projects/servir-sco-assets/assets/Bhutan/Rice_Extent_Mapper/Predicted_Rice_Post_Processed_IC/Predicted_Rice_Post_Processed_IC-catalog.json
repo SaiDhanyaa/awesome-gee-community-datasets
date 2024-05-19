@@ -1,0 +1,28 @@
+{
+    "stac_version": "1.0.0",
+    "id": "Predicted_Rice_Post_Processed_IC",
+    "description": "STAC catalog for Predicted_Rice_Post_Processed_IC",
+    "type": "Collection",
+    "license": "CC-BY-4.0",
+    "links": [],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    }
+}

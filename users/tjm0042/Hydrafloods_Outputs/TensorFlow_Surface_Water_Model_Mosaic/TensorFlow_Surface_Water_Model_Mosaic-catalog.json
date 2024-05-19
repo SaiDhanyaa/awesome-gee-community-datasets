@@ -1,0 +1,28 @@
+{
+    "stac_version": "1.0.0",
+    "id": "TensorFlow_Surface_Water_Model_Mosaic",
+    "description": "STAC catalog for TensorFlow_Surface_Water_Model_Mosaic",
+    "type": "Collection",
+    "license": "CC-BY-4.0",
+    "links": [],
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    }
+}
