@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "ICESat2_forest_canopy_height_250m_v1-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./ICESat2_forest_canopy_height_250m_v1-catalog.json"
+        }
+    ]
+}

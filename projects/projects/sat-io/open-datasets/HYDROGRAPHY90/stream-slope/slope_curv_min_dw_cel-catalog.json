@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "slope_curv_min_dw_cel-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./slope_curv_min_dw_cel-catalog.json"
+        }
+    ]
+}

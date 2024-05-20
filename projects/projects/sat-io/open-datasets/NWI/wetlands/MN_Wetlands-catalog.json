@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "MN_Wetlands-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./MN_Wetlands-catalog.json"
+        }
+    ]
+}

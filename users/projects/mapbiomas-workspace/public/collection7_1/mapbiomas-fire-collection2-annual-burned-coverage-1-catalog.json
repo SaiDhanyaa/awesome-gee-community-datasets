@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "mapbiomas-fire-collection2-annual-burned-coverage-1-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./mapbiomas-fire-collection2-annual-burned-coverage-1-catalog.json"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "project_urban_scenarios-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./project_urban_scenarios-catalog.json"
+        }
+    ]
+}

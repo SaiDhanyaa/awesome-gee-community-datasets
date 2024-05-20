@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "large_flood_events_1985-2016-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./large_flood_events_1985-2016-catalog.json"
+        }
+    ]
+}

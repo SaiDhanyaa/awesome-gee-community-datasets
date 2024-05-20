@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "CT_Wetlands_Project_Metadata-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./CT_Wetlands_Project_Metadata-catalog.json"
+        }
+    ]
+}

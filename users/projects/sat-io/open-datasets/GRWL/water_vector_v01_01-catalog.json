@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "water_vector_v01_01-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./water_vector_v01_01-catalog.json"
+        }
+    ]
+}

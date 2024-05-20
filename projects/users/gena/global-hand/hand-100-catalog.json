@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "hand-100-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./hand-100-catalog.json"
+        }
+    ]
+}

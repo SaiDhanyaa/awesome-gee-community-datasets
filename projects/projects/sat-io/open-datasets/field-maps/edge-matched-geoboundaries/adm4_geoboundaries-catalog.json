@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "adm4_geoboundaries-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./adm4_geoboundaries-catalog.json"
+        }
+    ]
+}

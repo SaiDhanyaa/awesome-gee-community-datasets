@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "VT_BaseLC_2016-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./VT_BaseLC_2016-catalog.json"
+        }
+    ]
+}

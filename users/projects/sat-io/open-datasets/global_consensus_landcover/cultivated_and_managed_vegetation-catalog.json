@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "cultivated_and_managed_vegetation-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./cultivated_and_managed_vegetation-catalog.json"
+        }
+    ]
+}

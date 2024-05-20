@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "flow_direction-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./flow_direction-catalog.json"
+        }
+    ]
+}

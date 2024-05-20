@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "gmw_v3_tiles-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./gmw_v3_tiles-catalog.json"
+        }
+    ]
+}

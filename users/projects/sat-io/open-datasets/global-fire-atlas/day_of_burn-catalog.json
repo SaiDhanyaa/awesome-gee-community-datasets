@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "day_of_burn-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./day_of_burn-catalog.json"
+        }
+    ]
+}

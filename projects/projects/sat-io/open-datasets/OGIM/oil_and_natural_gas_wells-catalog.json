@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "oil_and_natural_gas_wells-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./oil_and_natural_gas_wells-catalog.json"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "RAIN_GAUGES-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./RAIN_GAUGES-catalog.json"
+        }
+    ]
+}

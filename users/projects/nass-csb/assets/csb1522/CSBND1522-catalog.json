@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "CSBND1522-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./CSBND1522-catalog.json"
+        }
+    ]
+}

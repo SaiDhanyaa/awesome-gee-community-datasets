@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "afghanistan_earthquake_2022-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./afghanistan_earthquake_2022-catalog.json"
+        }
+    ]
+}

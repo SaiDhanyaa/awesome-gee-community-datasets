@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "LEAD_TREE_SPECIES-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./LEAD_TREE_SPECIES-catalog.json"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "normalized_s1_backscatter_VH-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./normalized_s1_backscatter_VH-catalog.json"
+        }
+    ]
+}

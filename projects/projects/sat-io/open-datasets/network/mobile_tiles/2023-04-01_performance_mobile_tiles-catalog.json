@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "2023-04-01_performance_mobile_tiles-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./2023-04-01_performance_mobile_tiles-catalog.json"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "solid-waste-disposal_emissions-sources-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./solid-waste-disposal_emissions-sources-catalog.json"
+        }
+    ]
+}

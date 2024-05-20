@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "ecosystem_extent-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./ecosystem_extent-catalog.json"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "PM10_yearly_avg-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./PM10_yearly_avg-catalog.json"
+        }
+    ]
+}

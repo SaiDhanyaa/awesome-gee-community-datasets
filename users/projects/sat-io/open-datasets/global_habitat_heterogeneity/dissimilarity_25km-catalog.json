@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "dissimilarity_25km-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./dissimilarity_25km-catalog.json"
+        }
+    ]
+}

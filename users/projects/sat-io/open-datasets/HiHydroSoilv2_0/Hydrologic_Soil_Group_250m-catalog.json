@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "Hydrologic_Soil_Group_250m-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./Hydrologic_Soil_Group_250m-catalog.json"
+        }
+    ]
+}

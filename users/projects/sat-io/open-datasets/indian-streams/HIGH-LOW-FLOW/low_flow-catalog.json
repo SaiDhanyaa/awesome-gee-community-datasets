@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "low_flow-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./low_flow-catalog.json"
+        }
+    ]
+}

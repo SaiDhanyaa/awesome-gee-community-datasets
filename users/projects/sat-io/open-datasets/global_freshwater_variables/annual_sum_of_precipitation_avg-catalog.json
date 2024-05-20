@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "annual_sum_of_precipitation_avg-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./annual_sum_of_precipitation_avg-catalog.json"
+        }
+    ]
+}

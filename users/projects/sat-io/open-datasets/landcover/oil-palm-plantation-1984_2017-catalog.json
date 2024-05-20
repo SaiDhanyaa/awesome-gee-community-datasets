@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "oil-palm-plantation-1984_2017-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./oil-palm-plantation-1984_2017-catalog.json"
+        }
+    ]
+}

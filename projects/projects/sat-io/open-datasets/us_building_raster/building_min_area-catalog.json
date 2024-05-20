@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "building_min_area-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./building_min_area-catalog.json"
+        }
+    ]
+}

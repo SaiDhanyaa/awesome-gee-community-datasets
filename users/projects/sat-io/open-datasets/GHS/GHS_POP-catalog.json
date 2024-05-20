@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "GHS_POP-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./GHS_POP-catalog.json"
+        }
+    ]
+}

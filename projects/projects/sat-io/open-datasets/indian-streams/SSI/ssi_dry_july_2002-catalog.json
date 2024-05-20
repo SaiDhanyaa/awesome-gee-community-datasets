@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "ssi_dry_july_2002-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./ssi_dry_july_2002-catalog.json"
+        }
+    ]
+}

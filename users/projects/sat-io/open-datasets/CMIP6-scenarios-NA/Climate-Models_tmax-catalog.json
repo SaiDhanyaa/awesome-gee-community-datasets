@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "Climate-Models_tmax-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./Climate-Models_tmax-catalog.json"
+        }
+    ]
+}

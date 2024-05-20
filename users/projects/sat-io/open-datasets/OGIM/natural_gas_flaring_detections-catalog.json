@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "natural_gas_flaring_detections-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./natural_gas_flaring_detections-catalog.json"
+        }
+    ]
+}

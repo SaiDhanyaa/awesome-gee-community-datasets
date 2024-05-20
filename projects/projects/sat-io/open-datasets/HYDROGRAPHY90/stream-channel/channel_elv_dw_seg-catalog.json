@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "channel_elv_dw_seg-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./channel_elv_dw_seg-catalog.json"
+        }
+    ]
+}

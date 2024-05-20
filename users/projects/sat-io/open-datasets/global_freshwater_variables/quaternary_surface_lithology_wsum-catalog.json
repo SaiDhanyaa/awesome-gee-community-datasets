@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "quaternary_surface_lithology_wsum-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./quaternary_surface_lithology_wsum-catalog.json"
+        }
+    ]
+}

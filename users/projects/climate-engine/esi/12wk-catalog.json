@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "12wk-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./12wk-catalog.json"
+        }
+    ]
+}

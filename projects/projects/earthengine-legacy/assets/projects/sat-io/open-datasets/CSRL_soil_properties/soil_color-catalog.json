@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "soil_color-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./soil_color-catalog.json"
+        }
+    ]
+}

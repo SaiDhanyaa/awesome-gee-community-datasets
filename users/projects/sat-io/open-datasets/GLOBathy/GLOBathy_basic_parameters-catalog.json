@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "GLOBathy_basic_parameters-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./GLOBathy_basic_parameters-catalog.json"
+        }
+    ]
+}

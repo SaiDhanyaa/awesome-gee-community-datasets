@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "gti_LTAy_AvgDailyTotals-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./gti_LTAy_AvgDailyTotals-catalog.json"
+        }
+    ]
+}

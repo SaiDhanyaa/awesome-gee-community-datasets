@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "sci_user_loc-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./sci_user_loc-catalog.json"
+        }
+    ]
+}

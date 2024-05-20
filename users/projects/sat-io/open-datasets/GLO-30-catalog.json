@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "GLO-30-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./GLO-30-catalog.json"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "full_ortho_classified_may_2019_5cm-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./full_ortho_classified_may_2019_5cm-catalog.json"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "Final_subsidence_proba_greater_1cm_2013_2019_recoded-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./Final_subsidence_proba_greater_1cm_2013_2019_recoded-catalog.json"
+        }
+    ]
+}

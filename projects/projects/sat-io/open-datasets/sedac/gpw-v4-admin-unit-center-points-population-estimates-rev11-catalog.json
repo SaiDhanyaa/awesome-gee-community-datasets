@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "gpw-v4-admin-unit-center-points-population-estimates-rev11-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./gpw-v4-admin-unit-center-points-population-estimates-rev11-catalog.json"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "ETH_GlobalCanopyHeight_2020_10m_v1-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./ETH_GlobalCanopyHeight_2020_10m_v1-catalog.json"
+        }
+    ]
+}

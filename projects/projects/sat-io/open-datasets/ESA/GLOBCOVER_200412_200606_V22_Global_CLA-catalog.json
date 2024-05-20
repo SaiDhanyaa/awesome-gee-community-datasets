@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "GLOBCOVER_200412_200606_V22_Global_CLA-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./GLOBCOVER_200412_200606_V22_Global_CLA-catalog.json"
+        }
+    ]
+}

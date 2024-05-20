@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "Global_fire_atlas_V1_perimeter_2015-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./Global_fire_atlas_V1_perimeter_2015-catalog.json"
+        }
+    ]
+}

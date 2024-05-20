@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "iucn_habitatclassification_2016changemask_lvl1_ver004-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./iucn_habitatclassification_2016changemask_lvl1_ver004-catalog.json"
+        }
+    ]
+}

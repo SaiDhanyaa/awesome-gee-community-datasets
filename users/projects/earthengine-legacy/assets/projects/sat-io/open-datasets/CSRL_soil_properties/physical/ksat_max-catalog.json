@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "ksat_max-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./ksat_max-catalog.json"
+        }
+    ]
+}

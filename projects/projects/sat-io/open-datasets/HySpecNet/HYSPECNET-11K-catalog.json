@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "HYSPECNET-11K-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./HYSPECNET-11K-catalog.json"
+        }
+    ]
+}

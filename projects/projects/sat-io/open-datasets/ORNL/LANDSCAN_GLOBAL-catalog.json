@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "LANDSCAN_GLOBAL-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./LANDSCAN_GLOBAL-catalog.json"
+        }
+    ]
+}

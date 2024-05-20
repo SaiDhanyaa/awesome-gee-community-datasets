@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "GHS_BUILT_C_MSZ_E2018_GLOBE_R2023A_54009_10_V1_0-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./GHS_BUILT_C_MSZ_E2018_GLOBE_R2023A_54009_10_V1_0-catalog.json"
+        }
+    ]
+}

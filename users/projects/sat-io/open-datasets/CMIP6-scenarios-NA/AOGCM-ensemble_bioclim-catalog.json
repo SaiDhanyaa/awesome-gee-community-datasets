@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "AOGCM-ensemble_bioclim-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./AOGCM-ensemble_bioclim-catalog.json"
+        }
+    ]
+}

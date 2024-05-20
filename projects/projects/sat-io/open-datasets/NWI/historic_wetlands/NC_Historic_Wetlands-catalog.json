@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "NC_Historic_Wetlands-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./NC_Historic_Wetlands-catalog.json"
+        }
+    ]
+}

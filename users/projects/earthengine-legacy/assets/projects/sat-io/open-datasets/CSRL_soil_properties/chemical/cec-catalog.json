@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "cec-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./cec-catalog.json"
+        }
+    ]
+}

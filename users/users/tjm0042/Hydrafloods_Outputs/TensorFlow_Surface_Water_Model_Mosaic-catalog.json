@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "TensorFlow_Surface_Water_Model_Mosaic-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./TensorFlow_Surface_Water_Model_Mosaic-catalog.json"
+        }
+    ]
+}

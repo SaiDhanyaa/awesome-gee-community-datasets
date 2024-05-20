@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "americas_tree_measurements-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./americas_tree_measurements-catalog.json"
+        }
+    ]
+}

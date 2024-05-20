@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "coastlines_v040_rates_of_change-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./coastlines_v040_rates_of_change-catalog.json"
+        }
+    ]
+}

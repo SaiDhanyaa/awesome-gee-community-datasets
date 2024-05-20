@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "GDP_PPP_1990_2015_5arcmin_v2-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./GDP_PPP_1990_2015_5arcmin_v2-catalog.json"
+        }
+    ]
+}

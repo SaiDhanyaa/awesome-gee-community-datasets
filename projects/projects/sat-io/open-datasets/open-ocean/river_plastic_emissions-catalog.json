@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "river_plastic_emissions-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./river_plastic_emissions-catalog.json"
+        }
+    ]
+}

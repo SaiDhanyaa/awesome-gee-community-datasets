@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "theta_s_mean-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./theta_s_mean-catalog.json"
+        }
+    ]
+}

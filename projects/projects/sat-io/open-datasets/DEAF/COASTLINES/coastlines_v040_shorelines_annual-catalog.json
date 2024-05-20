@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "coastlines_v040_shorelines_annual-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./coastlines_v040_shorelines_annual-catalog.json"
+        }
+    ]
+}

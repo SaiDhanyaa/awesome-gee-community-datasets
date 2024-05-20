@@ -1,0 +1,33 @@
+{
+    "stac_version": "1.0.0",
+    "id": "coastlines_v210_shorelines_annual-collection",
+    "title": "File Not Found",
+    "description": "Description not available",
+    "license": "CC-BY-4.0",
+    "extent": {
+        "spatial": {
+            "bbox": [
+                [
+                    -180,
+                    -90,
+                    180,
+                    90
+                ]
+            ]
+        },
+        "temporal": {
+            "interval": [
+                [
+                    "2016-01-01T00:00:00Z",
+                    null
+                ]
+            ]
+        }
+    },
+    "links": [
+        {
+            "rel": "self",
+            "href": "./coastlines_v210_shorelines_annual-collection.json"
+        }
+    ]
+}

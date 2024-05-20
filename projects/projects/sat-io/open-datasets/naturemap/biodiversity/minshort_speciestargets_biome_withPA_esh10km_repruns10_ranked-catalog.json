@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "minshort_speciestargets_biome_withPA_esh10km_repruns10_ranked-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./minshort_speciestargets_biome_withPA_esh10km_repruns10_ranked-catalog.json"
+        }
+    ]
+}

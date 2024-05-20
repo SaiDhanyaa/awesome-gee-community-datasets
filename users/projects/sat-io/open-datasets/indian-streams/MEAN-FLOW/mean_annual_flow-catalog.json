@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "mean_annual_flow-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./mean_annual_flow-catalog.json"
+        }
+    ]
+}

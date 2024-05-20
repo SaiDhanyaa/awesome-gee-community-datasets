@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "ESACCI-LC-L4-LC10-Map-20m-P1Y-2016-v10-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./ESACCI-LC-L4-LC10-Map-20m-P1Y-2016-v10-catalog.json"
+        }
+    ]
+}

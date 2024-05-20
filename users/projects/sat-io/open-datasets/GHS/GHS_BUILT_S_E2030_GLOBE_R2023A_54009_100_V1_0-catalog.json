@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "GHS_BUILT_S_E2030_GLOBE_R2023A_54009_100_V1_0-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./GHS_BUILT_S_E2030_GLOBE_R2023A_54009_100_V1_0-catalog.json"
+        }
+    ]
+}

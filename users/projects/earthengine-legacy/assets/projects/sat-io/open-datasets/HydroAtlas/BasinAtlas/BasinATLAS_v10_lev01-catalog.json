@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "BasinATLAS_v10_lev01-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./BasinATLAS_v10_lev01-catalog.json"
+        }
+    ]
+}

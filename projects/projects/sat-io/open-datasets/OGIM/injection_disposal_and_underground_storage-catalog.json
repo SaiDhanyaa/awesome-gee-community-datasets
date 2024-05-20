@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "injection_disposal_and_underground_storage-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./injection_disposal_and_underground_storage-catalog.json"
+        }
+    ]
+}

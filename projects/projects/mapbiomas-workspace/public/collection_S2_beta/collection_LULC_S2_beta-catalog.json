@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "collection_LULC_S2_beta-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./collection_LULC_S2_beta-catalog.json"
+        }
+    ]
+}

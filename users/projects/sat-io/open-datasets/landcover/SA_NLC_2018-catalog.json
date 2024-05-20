@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "SA_NLC_2018-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./SA_NLC_2018-catalog.json"
+        }
+    ]
+}

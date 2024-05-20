@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "VCT_30m_last-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./VCT_30m_last-catalog.json"
+        }
+    ]
+}

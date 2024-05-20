@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "regularly_flooded_shrub_herbaceous_vegetation_avg-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./regularly_flooded_shrub_herbaceous_vegetation_avg-catalog.json"
+        }
+    ]
+}

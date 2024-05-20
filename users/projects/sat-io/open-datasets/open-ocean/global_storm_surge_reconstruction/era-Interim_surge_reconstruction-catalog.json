@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "era-Interim_surge_reconstruction-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./era-Interim_surge_reconstruction-catalog.json"
+        }
+    ]
+}

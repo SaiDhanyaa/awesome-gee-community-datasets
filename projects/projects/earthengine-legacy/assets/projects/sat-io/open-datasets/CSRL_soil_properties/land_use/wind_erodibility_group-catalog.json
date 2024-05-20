@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "wind_erodibility_group-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./wind_erodibility_group-catalog.json"
+        }
+    ]
+}

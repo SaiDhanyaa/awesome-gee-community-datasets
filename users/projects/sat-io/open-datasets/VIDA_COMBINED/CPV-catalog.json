@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "CPV-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./CPV-catalog.json"
+        }
+    ]
+}

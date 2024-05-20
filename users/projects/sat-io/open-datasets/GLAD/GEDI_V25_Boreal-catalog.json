@@ -1,0 +1,12 @@
+{
+    "stac_version": "1.0.0",
+    "id": "GEDI_V25_Boreal-catalog",
+    "description": "Catalog for File Not Found",
+    "type": "Catalog",
+    "links": [
+        {
+            "rel": "self",
+            "href": "./GEDI_V25_Boreal-catalog.json"
+        }
+    ]
+}
