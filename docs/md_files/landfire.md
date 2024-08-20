@@ -43,6 +43,7 @@ LANDFIRE: LANDFIRE Existing Vegetation Type layer.(2013, June - last update). U.
 ### Published Paper Citations
 
 NA
+
 ![lf_others](https://user-images.githubusercontent.com/6677629/115133292-bc866080-9fcc-11eb-9cd1-286a46c67ad4.gif)
 
 ## Earth Engine Snippet:

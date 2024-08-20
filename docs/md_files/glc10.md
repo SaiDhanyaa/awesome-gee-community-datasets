@@ -42,8 +42,7 @@ NA
 ### Dataset DOI
 
 ```
-Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, and J. J. S. B. Yang. "Stable classification with limited sample: Transferring a
-30-m resolution sample set collected in 2015 to mapping 10-m resolution global land cover in 2017." Sci. Bull 64 (2019): 370-373.
+Chen, B., B. Xu, Z. Zhu, C. Yuan, H. Ping Suen, J. Guo, N. Xu, W. Li, Y. Zhao, and J. J. S. B. Yang. "Stable classification with limited sample: Transferring a 30-m resolution sample set collected in 2015 to mapping 10-m resolution global land cover in 2017." Sci. Bull 64 (2019): 370-373.
 ```
 
 ### Published Paper Citations

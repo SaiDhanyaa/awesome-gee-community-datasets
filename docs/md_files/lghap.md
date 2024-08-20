@@ -57,8 +57,7 @@ Zenodo. https://doi.org/10.5281/zenodo.5655807
 ### Published Paper Citations
 
 ```
-Bai, K., Li, K., Ma, M., Li, K., Li, Z., Guo, J., Chang, N.-B., Tan, Z., and Han, D.: LGHAP: a Long-term Gap-free High-resolution Air Pollutants concentration dataset derived
-via tensor flow based multimodal data fusion, Earth Syst. Sci. Data Discuss. [preprint], https://doi.org/10.5194/essd-2021-404, in review, 2021.
+Bai, K., Li, K., Ma, M., Li, K., Li, Z., Guo, J., Chang, N.-B., Tan, Z., and Han, D.: LGHAP: a Long-term Gap-free High-resolution Air Pollutants concentration dataset derived via tensor flow based multimodal data fusion, Earth Syst. Sci. Data Discuss. [preprint], https://doi.org/10.5194/essd-2021-404, in review, 2021.
 ```
 
 ## Earth Engine Snippet:

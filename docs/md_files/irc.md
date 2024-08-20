@@ -17,9 +17,7 @@ NA
 ### Dataset DOI
 
 ```
-Noon, Monica, Goldstein, Allie, Ledezma, Juan Carlos, Roehrdanz, Patrick, Cook-Patton, Susan C., Spawn-Lee, Seth A., Wright, Timothy Maxwell,
-Gonzalez-Roglich, Mariano, Hole, David G., Rockström, Johan, & Turner, Will R. (2021). Mapping the irrecoverable carbon in Earth's ecosystems
-(1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.4091029
+Noon, Monica, Goldstein, Allie, Ledezma, Juan Carlos, Roehrdanz, Patrick, Cook-Patton, Susan C., Spawn-Lee, Seth A., Wright, Timothy Maxwell, Gonzalez-Roglich, Mariano, Hole, David G., Rockström, Johan, & Turner, Will R. (2021). Mapping the irrecoverable carbon in Earth's ecosystems (1.0) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.4091029
 ```
 
 ### Published Paper Citations

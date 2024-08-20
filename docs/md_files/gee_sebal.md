@@ -34,9 +34,7 @@ NA
 ### Published Paper Citations
 
 ```
-Comini, Bruno & Ruhoff, Anderson & Laipelt, Leonardo & Fleischmann, Ayan & Huntington, Justin & Morton, Charles & Melton, Forrest & Erickson,
-Tyler & Roberti, Débora & Souza, Vanessa & Biudes, Marcelo & Machado, Nadja & Santos, Carlos & Cosio, Eric. (2023). geeSEBAL-MODIS: Continental
-scale evapotranspiration based on the surface energy balance for South America. 10.13140/RG.2.2.17579.11041.
+Comini, Bruno & Ruhoff, Anderson & Laipelt, Leonardo & Fleischmann, Ayan & Huntington, Justin & Morton, Charles & Melton, Forrest & Erickson, Tyler & Roberti, Débora & Souza, Vanessa & Biudes, Marcelo & Machado, Nadja & Santos, Carlos & Cosio, Eric. (2023). geeSEBAL-MODIS: Continental scale evapotranspiration based on the surface energy balance for South America. 10.13140/RG.2.2.17579.11041.
 ```
 
 ![gee-sebal](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/51baa12f-fcf8-4f95-ad6b-d616e20e3ec4)

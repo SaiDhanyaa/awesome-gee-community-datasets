@@ -33,8 +33,7 @@ Science Data Bank https://doi.org/10.57760/sciencedb.06669 (2022).
 ### Published Paper Citations
 
 ```
-Aybar, C., Ysuhuaylas, L., Loja, J. et al. CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2.
-Sci Data 9, 782 (2022). https://doi.org/10.1038/s41597-022-01878-2
+Aybar, C., Ysuhuaylas, L., Loja, J. et al. CloudSEN12, a global dataset for semantic understanding of cloud and cloud shadow in Sentinel-2.Sci Data 9, 782 (2022). https://doi.org/10.1038/s41597-022-01878-2
 ```
 
 <center>

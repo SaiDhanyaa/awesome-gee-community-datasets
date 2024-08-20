@@ -26,7 +26,7 @@ Included indices, names and GEE Variable are included in the table below
 |WBT                  | wet bulb temperature              |WBT         |Min,Mean, Max |
 |WCT                  | wind chill temperature            |WCT         |Min,Mean, Max |
 |AT                   | apparent temperature              |AT          |Min,Mean, Max |
-|NET                  | net effective temperature          |NET         |Min,Mean, Max |
+|NET                  | net effective temperature          |NET        |Min,Mean, Max |
 
 
 ## Citations:

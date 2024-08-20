@@ -33,8 +33,7 @@ NA
 ### Published Paper Citations
 
 ```
-Elvidge, C.D, Zhizhin, M., Ghosh T., Hsu FC, Taneja J. Annual time series of global VIIRS nighttime lights derived from monthly averages:2012 to
-2019. Remote Sensing 2021, 13(5), p.922, https://doi.org/10.3390/rs13050922
+Elvidge, C.D, Zhizhin, M., Ghosh T., Hsu FC, Taneja J. Annual time series of global VIIRS nighttime lights derived from monthly averages:2012 to 2019. Remote Sensing 2021, 13(5), p.922, https://doi.org/10.3390/rs13050922
 ```
 
 ![eog_viirs](https://user-images.githubusercontent.com/6677629/215304379-2cbf6e19-1c66-4dd5-b974-5db99ba719f6.gif)
@@ -63,9 +62,7 @@ NA
 Public domain license with properitary license language.
 
 ```
-Colorado School of Mines data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no
-restrictions on their subsequent use by the public. Once obtained, they may be put to any lawful use. The forgoing data is in the public domain and
-is being provided without restriction on use and distribution.
+Colorado School of Mines data, information, and products, regardless of the method of delivery, are not subject to copyright and carry no restrictions on their subsequent use by the public. Once obtained, they may be put to any lawful use. The forgoing data is in the public domain and is being provided without restriction on use and distribution.
 ```
 
 ## Keywords

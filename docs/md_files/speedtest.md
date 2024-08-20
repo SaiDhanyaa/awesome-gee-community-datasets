@@ -102,7 +102,7 @@ var mobile = ee.ImageCollection("projects/sat-io/open-datasets/network/raster_ti
 NA
 ## License
 
-These datasets are made available under a Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
+These datasets are made available under a Attribution-Non-Commercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 
 ## Keywords
 

@@ -20,15 +20,13 @@ Raster tiles were mosaiced so that all extents and allied rasters can fit into s
 ### Publication DOI
 
 ```
-Bunting, P.; Rosenqvist, A.; Hilarides, L.; Lucas, R.M.; Thomas, T.; Tadono, T.; Worthington, T.A.; Spalding, M.; Murray, N.J.; Rebelo, L-M. Global
-Mangrove Extent Change 1996 – 2020: Global Mangrove Watch Version 3.0. Remote Sensing. 2022
+Bunting, P.; Rosenqvist, A.; Hilarides, L.; Lucas, R.M.; Thomas, T.; Tadono, T.; Worthington, T.A.; Spalding, M.; Murray, N.J.; Rebelo, L-M. Global Mangrove Extent Change 1996 – 2020: Global Mangrove Watch Version 3.0. Remote Sensing. 2022
 ```
 
 ### Dataset DOI
 
 ```
-Bunting, Pete, Rosenqvist, Ake, Hilarides, Lammert, Lucas, Richard, Thomas, Nathan, Tadono , Takeo, Worthington, Thomas, Spalding , Mark, Murray,
-Nicholas, & Rebelo, Lisa-Maria. (2022). Global Mangrove Watch (1996 - 2020) Version 3.0 Dataset (3.0) [Data set]. Zenodo. https://doi.org/10.5281/
+Bunting, Pete, Rosenqvist, Ake, Hilarides, Lammert, Lucas, Richard, Thomas, Nathan, Tadono , Takeo, Worthington, Thomas, Spalding , Mark, Murray,Nicholas, & Rebelo, Lisa-Maria. (2022). Global Mangrove Watch (1996 - 2020) Version 3.0 Dataset (3.0) [Data set]. Zenodo. https://doi.org/10.5281/
 zenodo.6894273
 ```
 

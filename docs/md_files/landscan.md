@@ -32,8 +32,7 @@ Sims, K., Reith, A., Bright, E., McKee, J., & Rose, A. (2022). LandScan Global 2
 **LandScan USA 2021 for [other years find citation information here](https://landscan.ornl.gov/citations)**
 
 ```
-Weber, E., Moehl, J., Weston, S., Rose, A., Brelsford, C., & Hauser, T. (2022). LandScan USA 2021 [Data set]. Oak Ridge National Laboratory. https://
-doi.org/10.48690/1527701
+Weber, E., Moehl, J., Weston, S., Rose, A., Brelsford, C., & Hauser, T. (2022). LandScan USA 2021 [Data set]. Oak Ridge National Laboratory. https://doi.org/10.48690/1527701
 ```
 
 **LandScan HD 2021 for [find citation information for each country here](https://landscan.ornl.gov/citations)**
