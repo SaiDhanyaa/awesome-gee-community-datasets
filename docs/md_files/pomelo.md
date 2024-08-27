@@ -25,8 +25,7 @@ NA
 ### Published Paper Citations
 
 ```
-Metzger, Nando, John E. Vargas-Muñoz, Rodrigo C. Daudt, Benjamin Kellenberger, Thao Ton-That Whelan, Ferda Ofli, Muhammad Imran, Konrad Schindler,
-and Devis Tuia. "Fine-grained population mapping from coarse census counts and open geodata." Scientific Reports 12, no. 1 (2022): 20085.
+Metzger, Nando, John E. Vargas-Muñoz, Rodrigo C. Daudt, Benjamin Kellenberger, Thao Ton-That Whelan, Ferda Ofli, Muhammad Imran, Konrad Schindler, and Devis Tuia. "Fine-grained population mapping from coarse census counts and open geodata." Scientific Reports 12, no. 1 (2022): 20085.
 ```
 
 ![pomelo_small](https://github.com/samapriya/awesome-gee-community-datasets/assets/6677629/41cc1651-327b-4aee-84f5-75f630cf5a00)

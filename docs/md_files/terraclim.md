@@ -46,8 +46,7 @@ Terraclimate variables and units can be found in the table below. As noted from 
 ### Publication DOI
 
 ```
-Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water
-balance from 1958-2015, Scientific Data
+Abatzoglou, J.T., S.Z. Dobrowski, S.A. Parks, K.C. Hegewisch, 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958-2015, Scientific Data
 ```
 
 ### Dataset DOI
